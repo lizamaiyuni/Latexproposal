@@ -1,0 +1,933 @@
+% Encoding: UTF-8
+
+@InProceedings{Al-Ammar2014,
+  author    = {M. A. {Al-Ammar} and S. {Alhadhrami} and A. {Al-Salman} and A. {Alarifi} and H. S. {Al-Khalifa} and A. {Alnafessah} and M. {Alsaleh}},
+  title     = {Comparative Survey of Indoor Positioning Technologies, Techniques, and Algorithms},
+  booktitle = {2014 International Conference on Cyberworlds},
+  year      = {2014},
+  pages     = {245-252},
+  month     = {Oct},
+  doi       = {10.1109/CW.2014.41},
+  issn      = {null},
+  keywords  = {Global Positioning System;mobile computing;indoor positioning technologies;indoor positioning techniques;indoor positioning algorithms;user location information;user context;human-centered services;quality of life;outdoor environments;indoor environments;Buildings;Accuracy;Wireless LAN;Radiofrequency identification;Bluetooth;Cameras;Dead reckoning;Indoor positioning;survey;localization;technologies;positioning algorithms},
+}
+
+@Book{Wesfix2017,
+  title     = {Branding Itu Dipraktekin},
+  publisher = {Grasindo},
+  year      = {2017},
+  author    = {Tim Wesfix},
+  editor    = {Tim Wesfix},
+  address   = {Jakarta},
+}
+
+@Misc{Schwab2013,
+  author       = {Ken Schwab},
+  title        = {{Scrum Guide {I}{D}}},
+  howpublished = {http://scrum.org},
+  month        = jul,
+  year         = {2013},
+  note         = {Diakses pada tanggal 28 September 2018},
+  timestamp    = {2018-09-28},
+  url          = {scrum.org},
+}
+
+@Misc{Paganini2015,
+  author       = {Pierluigi Paganini},
+  title        = {{Tracking Wearable Devices Could Be Very Easy via Bluetooth Low Energy}},
+  howpublished = {http://securityaffairs.co/wordpress/37149/hacking/tracking-bluetooth-low-energy-devices.html},
+  year         = {2015},
+  note         = {Diakses pada tanggal 25 Maret 2019},
+  url          = {http://securityaffairs.co/wordpress/37149/hacking/tracking-bluetooth-low-energy-devices.html},
+}
+
+@Article{Fuqaha2015,
+  author   = {A. {Al-Fuqaha} and M. {Guizani} and M. {Mohammadi} and M. {Aledhari} and M. {Ayyash}},
+  title    = {Internet of Things: A Survey on Enabling Technologies, Protocols, and Applications},
+  journal  = {IEEE Communications Surveys Tutorials},
+  year     = {2015},
+  volume   = {17},
+  number   = {4},
+  pages    = {2347-2376},
+  month    = {Fourthquarter},
+  issn     = {1553-877X},
+  doi      = {10.1109/COMST.2015.2444095},
+  keywords = {Internet of Things;mobile communication;protocols;radiofrequency identification;Internet of Things;RFID;smart sensors;communication technologies;Internet protocols;machine-to-machine;M2M technologies;intelligent decision making;fog computing;big data analytics;cloud computing;Internet of things;Computer architecture;Radiofrequency identification;Intelligent sensors;Mobile communication;Internet of things;IoT;CoAP;MQTT;AMQP;XMPP;DDS;mDNS;IoT Gateway;Internet of Things (IoT);CoAP;MQTT;AMQP;XMPP;DDS;mDNS;IoT gateway},
+}
+
+@Article{Errington2010,
+  author   = {A. F. C. {Errington} and B. L. F. {Daku} and A. F. {Prugger}},
+  title    = {Initial Position Estimation Using RFID Tags: A Least-Squares Approach},
+  journal  = {IEEE Transactions on Instrumentation and Measurement},
+  year     = {2010},
+  volume   = {59},
+  number   = {11},
+  pages    = {2863-2869},
+  month    = {Nov},
+  issn     = {0018-9456},
+  doi      = {10.1109/TIM.2010.2046366},
+  keywords = {Global Positioning System;indoor communication;least squares approximations;position control;radiofrequency identification;RFID tags;position estimation;least-squares approach;GPS;RFID-based positioning;localization;mapping;SLAM algorithm;stationary vehicle;underground potash mine;indoor environment;Saskatchewan University;RFID tags;Global Positioning System;Simultaneous localization and mapping;Vehicles;Radio frequency;Radiofrequency identification;Position measurement;Laser radar;Robots;Indoor environments;Least squares methods;modeling;parameter estimation;position measurement;radio position measurement},
+}
+
+@Article{Wagh2012,
+  author  = {Wagh, Dr. K and Thool, Ravindra},
+  title   = {{A} {C}omparative {S}tudy of {S}{O}{A}{P} {v}{s} {R}{E}{S}{T} {W}eb {S}ervices {P}rovisioning {T}echniques {F}or {M}obile {H}ost},
+  journal = {Journal of Information Engineering and Applications},
+  year    = {2012},
+  volume  = {2},
+  pages   = {12-16},
+  month   = {07},
+}
+
+@Article{collota2015,
+  author  = {Collotta, Mario and Pau, Giovanni},
+  title   = {A Solution Based on Bluetooth Low Energy for Smart Home Energy Management},
+  journal = {Energies},
+  year    = {2015},
+  volume  = {8},
+  pages   = {11916-11938},
+  month   = {10},
+  doi     = {10.3390/en81011916},
+}
+
+@Proceedings{faragher2014,
+  title     = {An analysis of the accuracy of bluetooth low energy for indoor positioning applications},
+  year      = {2014},
+  volume    = {1},
+  month     = {01},
+  author    = {R. Faragher and R. Harle},
+  booktitle = {Proceedings of the 27th International Technical Meeting of the Satellite Division of The Institute of Navigation},
+  pages     = {201-210},
+}
+{thapa2019,
+  %author  = {Thapa, Kiran and Case, Steven},
+  %title   = {An indoor positioning service for bluetooth ad hoc networks},
+  %journal = {Midwest Instruction and Computing Symposium, MICS},
+  %year    = {2019},
+  %month   = {04},
+%}
+
+@Article{Imandoust2013,
+  author  = {Imandoust, S.B. and Bolandraftar, Mohammad},
+  title   = {{A}pplication of {K}-{N}earest {N}eighbor ({K}{N}{N}) {A}pproach {F}or {P}redicting {E}conomic {E}vents {T}heoretical {B}ackground},
+  journal = {International Journal of Engineering Research and Applications},
+  year    = {2013},
+  volume  = {3},
+  pages   = {605-610},
+  month   = {01},
+}
+
+@TechReport{Lindh2015,
+  author      = {Joakim Lindh},
+  title       = {{Bluetooth® Low Energy Beacons}},
+  institution = {Texas Intruments},
+  year        = {2016},
+}
+
+@Misc{Ericson2010,
+  author       = {Ericson},
+  title        = {CEO to shareholders: 50 billion connections 2020},
+  howpublished = {ericsson.com},
+  month        = jul,
+  year         = {2010},
+  note         = {Diakses pada tanggal 13 April 2019},
+  url          = {https://www.ericsson.com/news/1403231},
+}
+
+@Article{sinha2014,
+  author  = {Ritesh Sinha and Manisha Khatkar and Subhash Chand Gupta},
+  title   = {{D}esign \& {D}evelopment of {A} {R}{E}{S}{T} {B}ased {P}latform {F}or {M}obile {A}pplications {I}ntegration on {C}loud},
+  journal = {IJISET - International Journal of Innovative Science, Engineering \& Technology},
+  year    = {2014},
+  pages   = {385-389},
+}
+
+@Article{brena2017,
+  author  = {Ramon F. Brena and Juan Pablo García-Vázquez and Carlos E. Galván-Tejada and David Muñoz-Rodriguez and Cesar Vargas-Rosales and James Fangmeyer, Jr},
+  title   = {{E}volution of {I}ndoor {P}ositioning {T}echnologies: {A} {S}urvey},
+  journal = {Journal of Sensors},
+  year    = {2017},
+  pages   = {1-21},
+}
+
+@InProceedings{livermore2007,
+  author    = {J. A. {Livermore}},
+  title     = {Factors that impact implementing an agile software development methodology},
+  booktitle = {Proceedings 2007 IEEE SoutheastCon},
+  year      = {2007},
+  pages     = {82-86},
+  month     = {March},
+  doi       = {10.1109/SECON.2007.342860},
+  issn      = {1091-0050},
+  keywords  = {Internet;intranets;software engineering;agile software development;Internet economy;software engineering;agile methodology implementation;Crystal methods;XP;extreme programming;intranet implementation;Programming;Internet;Resource management;Software engineering;Management training;Testing;Educational institutions;Iterative methods;Software prototyping;Software development management},
+}
+
+@Article{Yim2010,
+  author  = {Yim, Jaegeol and Jeong, Seunghwan and Gwon, Kiyoung and Joo, Jaehun},
+  title   = {{I}mprovement of {K}alman {F}ilter {F}or {W}{L}{A}{N} {B}ased {I}ndoor {T}racking},
+  journal = {Expert Syst. Appl.},
+  year    = {2010},
+  volume  = {37},
+  pages   = {426-433},
+  month   = {01},
+  doi     = {10.1016/j.eswa.2009.05.047},
+}
+
+@Misc{Insoft2016,
+  author       = {Insoft},
+  title        = {{Quick Start: Indoor Positioning Systems}},
+  howpublished = {insoft.com},
+  year         = {2016},
+  note         = {Diakses pada tanggal 25 Maret 2019},
+  url          = {https://www.infsoft.com/indoor-positioning},
+}
+
+@Article{Gomez2012,
+  author  = {Carles Gomez and Joaquim Oller and Josep Paradells},
+  title   = {Overview and Evaluation of Bluetooth Low Energy: An Emerging Low-Power Wireless Technology},
+  journal = {Journal of Sensors},
+  year    = {2012},
+  volume  = {12},
+  number  = {9},
+  pages   = {11734-11753},
+  doi     = {10.3390/s120911734},
+}
+
+@Article{Juansyah2016,
+  author  = {Andi Juansyah},
+  title   = {Pembangunan Aplikasi Child Tracker Berbasis Assisted-Global Positioning System (A-GPS) Dengan Platform Android},
+  journal = {Jurnal Ilmiah Komputer dan Informatika (KOMPUTA)},
+  year    = {2016},
+}
+
+@Book{Safaat2011,
+  title     = {Pemrograman Aplikasi Mobile Smarthphone dan Tablet PC Berbasis Android},
+  publisher = {Informatika},
+  year      = {2011},
+  author    = {Nazruddin Safaat},
+  address   = {Bandung},
+}
+
+@Article{Rahman2013,
+  author  = {Muhamad Aminudin Rahman and Imam Kuswardayan and Ridho Rahman Hariadi},
+  title   = {{P}erancangan dan {I}mplementasi {R}{E}{S}{T}ful {W}eb {S}ervice {u}ntuk {G}ame {S}osial {F}ood {M}erchant {S}aga pada {P}erangkat {A}ndroid},
+  journal = {JURNAL TEKNIK POMITS},
+  year    = {2013},
+  volume  = {2},
+  number  = {1},
+  pages   = {1-4},
+}
+
+@Article{Mikhaylov2013,
+  author  = {Mikhaylov, Konstantin and Plevritakis, Nikolaos and Tervonen, Jouni},
+  title   = {Performance Analysis and Comparison of Bluetooth Low Energy with IEEE 802.15.4 and SimpliciTI},
+  journal = {Journal of Sensor and Actuator Networks},
+  year    = {2013},
+  volume  = {2},
+  pages   = {589-613},
+  month   = {09},
+  doi     = {10.3390/jsan2030589},
+}
+
+@InProceedings{Jianyong2014,
+  author    = {Jianyong, Zhu and Luo, Haiyong and Zili, Chen and Zhaohui, Li},
+  title     = {RSSI based Bluetooth low energy indoor positioning},
+  booktitle = {In Proceedings of the 5th International Conference on Indoor Positioning and Indoor Navigation},
+  year      = {2014},
+  pages     = {526-533},
+  month     = {10},
+  doi       = {10.1109/IPIN.2014.7275525},
+}
+
+@Article{Grossman2008,
+  author  = {Grossmann, Uwe and , Gansemer and , Suttorp},
+  title   = {RSSI-Based WLAN Indoor Positioning Used Within a Digital Museum Guide} # journal,
+  journal = {International Journal of Computing},
+  year    = {2008},
+  pages   = {66-72},
+  month   = {01},
+}
+
+@InProceedings{Noguchi2015,
+  author    = {S. {Noguchi} and M. {Niibori} and E. {Zhou} and M. {Kamada}},
+  title     = {{S}tudent {A}ttendance {M}anagement {S}ystem with {B}luetooth {L}ow {E}nergy {B}eacon and {A}ndroid {D}evices},
+  booktitle = {2015 18th International Conference on Network-Based Information Systems},
+  year      = {2015},
+  pages     = {710-713},
+  month     = {Sep.},
+  doi       = {10.1109/NBiS.2015.109},
+  keywords  = {Android (operating system);Bluetooth;educational technology;student experiments;student attendance management system;Bluetooth low energy beacon;Android devices;student ID cards;BLE;Androids;Humanoid robots;Servers;Integrated circuits;Registers;Bluetooth;Electronic mail;android;NFC;BLE Beacon;attendance management system},
+}
+
+@Article{Paul2013,
+  author  = {Ann Paul},
+  title   = {Support Vector Machine in Apache Spark},
+  journal = {International Journal of Advanced Research},
+  year    = {2013},
+  pages   = {76-80},
+}
+{Ciezkowski2017,
+ % author    = {M. {Ciezkowski}},
+  %title     = {Triangulation positioning system based on a static IR beacon-receiver system},
+  %booktitle = {2017 22nd International Conference on Methods and Models in Automation and Robotics (MMAR)},
+  %year      = {2017},
+  %pages     = {84-88},
+  %month     = {Aug},
+  %doi       = {10.1109/MMAR.2017.8046803},
+  %keywords  = {Global Positioning System;inertial navigation;position measurement;triangulation positioning system;static IR beacon-receiver system;navigation systems;local positioning systems;transmitter;beacon-based triangulation system;inertial navigation;celestial navigation;Mathematical model;Navigation;Receivers;Position measurement;Time measurement;Robot sensing systems;positioning system;triangulation;infrared transmitter;infrared receiver;EKF},
+%}
+
+@Misc{VerisIndustries2013,
+  author       = {{Veris Industries}},
+  title        = {{Veris Aerospond Wireless Sensors: Received Signal Strength Indicator ({R}{S}{S}{I})}},
+  howpublished = {veris.com},
+  year         = {2013},
+  note         = {Diakses pada tanggal 17 April 2019},
+  url          = {www.veris.com/docs/whitePaper/vwp18_RSSI_RevA.pdf},
+}
+
+@Book{Beck2004,
+  title     = {Extreme Programming Explained: Embrace Change (2nd Edition)},
+  publisher = {Addison-Wesley Professional},
+  year      = {2004},
+  author    = {Kent Beck and Cyntia Andres},
+}
+
+@Book{Brooke1996,
+  title     = {{U}sability {E}valuation in {I}ndustry},
+  publisher = {Taylor and Francis},
+  year      = {1996},
+  author    = {John Brooke},
+  address   = {London},
+}
+
+@Article{Cortes1995,
+  author  = {Corinna Cortes and Vladimir Vapnik},
+  title   = {Support Vector Networks. Machine Learning},
+  journal = {Machine Learning},
+  year    = {1995},
+  volume  = {20},
+  number  = {3},
+  pages   = {273-297},
+}
+
+@Article{G2010,
+  author  = {Krishnalal, G and Babu Rengarajan, S and G Srinivasagan, K},
+  title   = {A New Text Mining Approach Based on HMM-SVM for Web News Classification},
+  journal = {International Journal of Computer Applications},
+  year    = {2010},
+  volume  = {1},
+  pages   = {98-104},
+  month   = {02},
+  doi     = {10.5120/395-589},
+}
+
+@InProceedings{Gansemer2010,
+  author    = {S. {Gansemer} and U. {Großmann} and S. {Hakobyan}},
+  title     = {RSSI-based Euclidean Distance algorithm for indoor positioning adapted for the use in dynamically changing WLAN environments and multi-level buildings},
+  booktitle = {2010 International Conference on Indoor Positioning and Indoor Navigation},
+  year      = {2010},
+  pages     = {1-6},
+  month     = {Sep.},
+  doi       = {10.1109/IPIN.2010.5648247},
+  keywords  = {wireless LAN;RSSI based Euclidean distance algorithm;indoor positioning;WLAN environment;median location estimation error;size 2.12 m to 2.69 m;Calibration;Estimation error;Position measurement;Base stations;Euclidean distance;Phase measurement;Floors;WLAN;Indoor Positioning;Fingerprinting;RSSI;Euclidean Distance},
+}
+
+@InProceedings{Golhar2016,
+  author    = {R. V. {Golhar} and P. A. {Vyawahare} and P. H. {Borghare} and A. {Manusmare}},
+  title     = {{D}esign and {I}mplementation of {A}ndroid {B}ase {M}obile {A}pp {F}or {A}n {I}nstitute},
+  booktitle = {2016 International Conference on Electrical, Electronics, and Optimization Techniques (ICEEOT)},
+  year      = {2016},
+  pages     = {3660-3663},
+  month     = {March},
+  doi       = {10.1109/ICEEOT.2016.7755391},
+  keywords  = {Android (operating system);educational administrative data processing;educational institutions;mobile computing;Android base mobile application;global mobile market;Android base operating system;academics;administration department;account department;students section;Androids;Humanoid robots;Java;Mobile communication;Mobile applications;XML;Android Mobile Application;Android Studio;Core JAVA;Android SDK;XML},
+}
+
+@Article{HaliliRamadani2018,
+  author  = {Halili, Festim and Ramadani, Erenis},
+  title   = {{W}eb {S}ervices: {A} {C}omparison of {S}oap and {R}est {S}ervices},
+  journal = {Modern Applied Science},
+  year    = {2018},
+  volume  = {12},
+  pages   = {175},
+  month   = {02},
+  doi     = {10.5539/mas.v12n3p175},
+}
+
+@Article{Indrayana2018,
+  author  = {Arief Sukma Indrayana and Rakhmadhany Primananda and Kasyful Amron},
+  title   = {Rancang Bangun Sistem Komunikasi Bluetooth Low Energy (BLE) Pada Sistem Pengamatan Tekanan Darah Sistem Pengamatan Tekanan Darah},
+  journal = {Jurnal Pengembangan Teknologi Informasi dan Ilmu Komputer},
+  year    = {2018},
+  volume  = {2},
+  pages   = {2462-2472},
+  nomor   = {8},
+}
+
+@InProceedings{Jiang2012,
+  author    = {W. {Jiang} and D. {Lee} and S. {Hu}},
+  title     = {Large-Scale Longitudinal Analysis of SOAP-Based and RESTful Web Services},
+  booktitle = {2012 IEEE 19th International Conference on Web Services},
+  year      = {2012},
+  pages     = {218-225},
+  month     = {June},
+  doi       = {10.1109/ICWS.2012.45},
+  keywords  = {quality of service;Web services;large-scale longitudinal analysis;SOAP-based Web services;RESTful Web services;Web services usage;large-scale real data;QoS values;Web services;Quality of service;Throughput;Time factors;Standards;Documentation;Google;Service Survey;RESTful Web Service;SOAP-Based Web Service},
+}
+
+@Article{Kadyan2016,
+  author  = {Divya Kadyan and Sanjay Singla},
+  title   = {{Sentiment Analysis}},
+  journal = {International Journal of Latest Trends in Engineering and Technology},
+  year    = {2016},
+  volume  = {7},
+  number  = {3},
+  pages   = {238-244},
+  doi     = {10.5539/mas.v12n3p175},
+}
+
+@InProceedings{Kajioka2014,
+  author    = {S. {Kajioka} and T. {Mori} and T. {Uchiya} and I. {Takumi} and H. {Matsuo}},
+  title     = {{E}xperiment of {I}ndoor {P}osition {P}resumption {B}ased on {R}{S}{S}{I} of {B}luetooth {L}{E} {B}eacon},
+  booktitle = {2014 IEEE 3rd Global Conference on Consumer Electronics (GCCE)},
+  year      = {2014},
+  pages     = {337-339},
+  month     = {Oct},
+  doi       = {10.1109/GCCE.2014.7031308},
+  issn      = {2378-8143},
+  keywords  = {Bluetooth;estimation theory;indoor navigation;radionavigation;RSSI;indoor position presumption;RSSI;Bluetooth LE beacon;real-time indoor location estimation;Bluetooth low energy beacon devices;signal sources;beacon fundamental knowledge;Modulation;Databases},
+}
+
+@Article{Keluza2017,
+  author  = {Keluža, Marin and Vukelic, Bernard},
+  title   = {{A}nalysis of {A}n {I}ndoor {P}ositioning {S}ystems},
+  journal = {Zbornik Veleučilišta u Rijeci},
+  year    = {2017},
+  volume  = {5},
+  pages   = {13-32},
+  month   = {01},
+  doi     = {10.31784/zvr.5.1.2},
+}
+
+@InProceedings{Keng2014,
+  author    = {D. {Keng} and S. G. M. {Koo}},
+  title     = {Spatial Standards for Internet of Things},
+  booktitle = {2014 IEEE International Conference on Internet of Things (iThings), and IEEE Green Computing and Communications (GreenCom) and IEEE Cyber, Physical and Social Computing (CPSCom)},
+  year      = {2014},
+  pages     = {284-287},
+  month     = {Sep.},
+  doi       = {10.1109/iThings.2014.50},
+  keywords  = {Internet of Things;mobile computing;spatial standard;Internet of Things;IoT;location-based service;spatial communication method;Standards;Internet of things;Spatial databases;Sensors;Mobile radio mobility management;Computers;internet of things;spatial standards;location-based service},
+}
+
+@Article{Liu2007,
+  author   = {H. {Liu} and H. {Darabi} and P. {Banerjee} and J. {Liu}},
+  title    = {{S}urvey of {W}ireless {I}ndoor {P}ositioning {T}echniques and {S}ystems},
+  journal  = {IEEE Transactions on Systems, Man, and Cybernetics, Part C (Applications and Reviews)},
+  year     = {2007},
+  volume   = {37},
+  number   = {6},
+  pages    = {1067-1080},
+  month    = {Nov},
+  issn     = {1094-6977},
+  doi      = {10.1109/TSMCC.2007.905750},
+  keywords = {indoor radio;radiowave propagation;wireless indoor positioning technique;location fingerprinting;Wireless sensor networks;Fingerprint recognition;Radio frequency;Automation;Inventory management;Image analysis;Scalability;Robustness;Costs;Object detection;Indoor location sensing;location fingerprinting;positioning algorithm;radio frequency (RF);wireless localization},
+}
+
+@Article{LukitoAntonius2015,
+  author  = {Lukito, Yuan and Rachmat, Antonius},
+  title   = {{Perbandingan Metode-Metode Klasifikasi untuk Indoor Positioning System}},
+  journal = {Jurnal Teknik Informatika dan Sistem Informasi},
+  year    = {2015},
+  volume  = {1},
+  pages   = {123-131},
+  month   = {08},
+  doi     = {10.28932/jutisi.v1i2.373},
+}
+
+@InProceedings{Muhammad2018,
+  author    = {Muhammad, Fadel and Saharuna, Zawiyah and Irmawati, Irmawati},
+  title     = {{I}ndoor {W}ifi {P}ositioning {S}ystem {M}enggunakan {M}etode {F}ingerprinting},
+  booktitle = {Seminar Nasional Teknik Elektro dan Informatika (SNTEI)},
+  year      = {2018},
+  pages     = {492-497},
+  month     = {09},
+}
+
+@InProceedings{Monika2016,
+  author    = {Selly, Monika and Nirwana, Hafsah and Saharuna, Zawiyah},
+  title     = {Penentuan Reference Point Untuk Indoor Wi-Fi Positioning Menggunakan Metode Fingerprinting},
+  booktitle = {Prosiding Seminar Teknik Elektro \& Informatika},
+  year      = {2016},
+  pages     = {161-167},
+  month     = {11},
+}
+
+@InProceedings{Olszewski2013,
+  author    = {B. {Olszewski} and S. {Fenton} and B. {Tworek} and J. {Liang} and K. {Yelamarthi}},
+  title     = {{{R}{F}{I}{D} Positioning Robot: An Indoor Navigation System}},
+  booktitle = {IEEE International Conference on Electro-Information Technology , EIT 2013},
+  year      = {2013},
+  pages     = {1-6},
+  month     = {May},
+  doi       = {10.1109/EIT.2013.6632687},
+  issn      = {2154-0373},
+  keywords  = {collision avoidance;embedded systems;infrared detectors;mobile robots;radiofrequency identification;RFID positioning robot;indoor navigation system;radio frequency identification;RFID technology;embedded system;RFID reader;mobile robot;ultrasonic sensor;IR sensor;obstacle detection;obstacle avoidance;indoor guidance system;triangulation method;Radiofrequency identification;Robot kinematics;Robot sensing systems;Acoustics;Antennas},
+}
+
+@Book{Park2015,
+  title     = {Advanced Modelling Techniques Studying Global Changes in Environmental Sciences, Volume 27},
+  publisher = {Elsevier},
+  year      = {2015},
+  author    = {Young-Seuk Park and Sovan Lek and Christophe Baehr and Sven Erik Jørgensen},
+  address   = {Copenhagen, Denmark},
+}
+
+@Article{Perdana2016,
+  author  = {Fananda Herda Perdana and Hari Ginardi},
+  title   = {Implementasi Indoor Positioning System Berbasis Smartphone dengan Penambahan Access Point untuk Studi Kasus Gedung Teknik Informatika ITS},
+  journal = {JURNAL TEKNIK ITS},
+  year    = {2016},
+  pages   = {336-341},
+}
+
+@Book{Roth2006,
+  title     = {Mobile Computing: Grundlagen, Technik, Konzepte},
+  publisher = {Dpunkt},
+  year      = {2006},
+  author    = {Jörg Roth},
+}
+
+@Article{Sarker2015,
+  author  = {Sarker, Iqbal and Faruque, Md and Hossen, Ujjal and Rahman, Atikur},
+  title   = {{A} {s}urvey of {s}oftware {d}evelopment {p}rocess {m}odels in {s}oftware {e}ngineering},
+  journal = {International Journal of Software Engineering and its Applications},
+  year    = {2015},
+  volume  = {9},
+  pages   = {55-70},
+  month   = {01},
+  doi     = {10.14257/ijseia.2015.9.11.05},
+}
+
+@InProceedings{Schneegans2007,
+  author    = {Schneegans, Sebastian and Vorst, Philipp and Zell, Andreas},
+  title     = {{Using RFID Snapshots for Mobile Robot Self-Localization}},
+  booktitle = {Conference: Proceedings of the 3rd European Conference on Mobile Robots (EMCR)} # .,
+  year      = {2007},
+  pages     = {241-246},
+  month     = {01},
+}
+
+@Book{Schwaber2001,
+  title     = {Agile Software Development with Scrum},
+  publisher = {Prentice Hall},
+  year      = {2001},
+  author    = {Ken Schwaber and Mike Beedle},
+  address   = {New Jersey},
+}
+
+@Article{Setiawan2015,
+  author  = {Eko Budi Setiawan and Bobi Kurniawan},
+  title   = {{P}erancangan {S}istem {A}bsensi {K}ehadiran {P}erkuliahan dengan {M}enggunakan {R}adio {F}requency {I}dentification ({R}{F}{I}{d})},
+  journal = {Jurnal CoreIT},
+  year    = {2015},
+  pages   = {44-49},
+}
+
+@Article{Sharma2012,
+  author  = {Sharma, Sheetal and Sarkar, Darothi and Gupta, Divya},
+  title   = {Agile Processes and Methodologies: A Conceptual Study},
+  journal = {International Journal on Computer Science and Engineering},
+  year    = {2012},
+  volume  = {4},
+  pages   = {892-898},
+  month   = {05},
+}
+
+@Article{Singh2016,
+  author  = {Akshay Singh and Sakshi Sharma and Shashwat Singh},
+  title   = {{A}rticle: {A}ndroid {A}pplication {D}evelopment {u}sing {A}ndroid {S}tudio and {P}{H}{P} {F}ramework},
+  journal = {IJCA Proceedings on Recent Trends in Future Prospective in Engineering and Management Technology},
+  year    = {2016},
+  volume  = {RTFEM 2016},
+  number  = {1},
+  pages   = {5-8},
+  month   = {July},
+}
+
+@InProceedings{Subhan2011,
+  author    = {F. {Subhan} and H. {Hasbullah} and A. {Rozyyev} and S. T. {Bakhsh}},
+  title     = {{Indoor Positioning in Bluetooth Networks Using Fingerprinting and Lateration Approach}},
+  booktitle = {2011 International Conference on Information Science and Applications},
+  year      = {2011},
+  pages     = {1-9},
+  month     = {April},
+  doi       = {10.1109/ICISA.2011.5772436},
+  issn      = {2162-9048},
+  keywords  = {Bluetooth;distance measurement;Global Positioning System;indoor radio;parameter estimation;indoor positioning;Bluetooth networks;fingerprinting approach;lateration approach;global positioning system;GPS;navigation system;indoor environments;wireless communication;digital devices;Bluetooth devices;position estimation;radio propagation model;gradient filter;distance measurement;Mathematical model;Bluetooth;Fingerprint recognition;Accuracy;Equations;Kalman filters;Estimation},
+}
+
+@Article{suryanto2016,
+  author  = {Suryanto, Hizkia and Rachmat, Antonius and Lukito, Yuan},
+  title   = {{I}ndoor {P}ositioning {S}ystem dengan {A}lgoritma {K}-{M}eans dan {K}{N}{N}},
+  journal = {Jurnal Teknik Informatika dan Sistem Informasi (JuTiSi)},
+  year    = {2016},
+  volume  = {Vol 2},
+  month   = {12},
+  doi     = {10.28932/jutisi.v2i3.518},
+}
+
+@InProceedings{Virrantaus2001,
+  author    = {K. {Virrantaus} and J. {Markkula} and A. {Garmash} and V. {Terziyan} and J. {Veijalainen} and A. {Katanosov} and H. {Tirri}},
+  title     = {{Developing {G}{I}{S}-Supported Location-Based Services}},
+  booktitle = {Proceedings of the Second International Conference on Web Information Systems Engineering},
+  year      = {2001},
+  volume    = {2},
+  pages     = {66-75 vol.2},
+  month     = {Dec},
+  doi       = {10.1109/WISE.2001.996708},
+  keywords  = {Internet;mobile communication;geographic information systems;open systems;standardisation;GIS-supported location-based services;mobile networking;mobile telecom subscribers;Mobile Internet;XML-based vector format;city maps;Java-enabled mobile terminals;PDAs;smart phones;Computational Intelligence Society;Business;Mobile handsets;Personal digital assistants;Web and internet services;Telecommunications;Context;Cities and towns;Mobile communication;Smart phones},
+}
+
+@Misc{W3C2007,
+  author       = {{W3C}},
+  title        = {{Simple object access protocol ({s}{o}{a}{p}) speciﬁcations}},
+  howpublished = {https://www.w3.org/TR/soap12/},
+  year         = {2007},
+  note         = {Diakses pada tanggal 17 April 2019},
+  url          = {https://www.w3.org/TR/soap12/},
+}
+
+@Article{Yudha2018,
+  author  = {Dendi Prana Yudha and Billy Ibrahim Hasbi and Royan Habibi Sukarna},
+  title   = {{I}NDOOR {P}OSITIONING {S}YSTEM {B}ERDASARKAN {F}INGERPRINTING {R}ECEIVED {S}IGNAL {S}TRENGTH {(R}{S}{S)} {W}I{F}I DENGAN {A}LGORITMA {K}-{N}EAREST {N}EIGHBOR ({K}-{N}{N})},
+  journal = {ILKOM Jurnal Ilmiah},
+  year    = {2018},
+  pages   = {274-283},
+  doi     = {10.33096/ilkom.v10i3.364.274-283},
+}
+
+@Article{Tong2001,
+  author  = {Simon Tong, Daphne Koller},
+  title   = {Support Vector Machine Active Learning with Applications to Text Classification},
+  journal = {Journal of Machine Learning Research},
+  year    = {2001},
+  volume  = {37},
+  pages   = {45-66},
+  month   = {11},
+}
+
+@Article{Odinma2006,
+  author  = {Augustine C. Odinma and Lawrence Oborkhale},
+  title   = {Quality of Service Mechanisms and Challenges for IP Networks},
+  journal = {The Paciafic Journal of Science and Technology},
+  year    = {2006},
+  volume  = {7},
+  number  = {1},
+}
+
+@Book{Wardhana2010,
+  title     = {Teknologi Wireless Communication dan Wireless Broadban},
+  publisher = {ANDI},
+  year      = {2010},
+  author    = {Lingga Wardhana and Ari Purbawati},
+  address   = {Yogyakarta},
+}
+
+@Book{Supardi2011,
+  title     = {Semua Bisa Menjadi Programmer Android},
+  publisher = {ELEX MEDIA KOMPUTINDO},
+  year      = {2011},
+  author    = {Ir. Yuniar Supardi},
+  address   = {Jakarta},
+}
+
+@Book{Sutabri2012,
+  title     = {Analisis Sistem Informasi},
+  publisher = {ANDI},
+  year      = {2012},
+  author    = {Tata Sutabri},
+}
+
+@Book{Rosa2015,
+  title     = {Rekayasa Perangkat Lunak Terstruktur dan Berorientasi Objek},
+  publisher = {Informatika},
+  year      = {2015},
+  author    = {A.S Rosa and Muhammad Shalahuddin},
+  address   = {Copenhagen, Denmark},
+}
+
+@Book{Beyer2010,
+  title     = {User-Centered Agile Methods},
+  publisher = {Morgan \& Claypool},
+  year      = {2010},
+  author    = {Hugh Beyer},
+  doi       = {10.2200/S00286ED1V01Y201002HCI010},
+}
+
+@InProceedings{christ1993,
+  author    = {{Christ} and {Godwin} and {Lavigne}},
+  title     = {{A} {P}rison {G}uard {D}uress {A}larm {L}ocation {S}ystem},
+  booktitle = {1993 Proceedings of IEEE International Carnahan Conference on Security Technology},
+  year      = {1993},
+  pages     = {106-116},
+  month     = {Oct},
+  doi       = {10.1109/CCST.1993.386816},
+  keywords  = {alarm systems;prison guard Duress alarm location system;CSC;Correctional Services Canada;Duress Alarm Location System;DALS;block diagram;test installation;indoor environment;Protection/safety;Hazardous areas},
+}
+
+@Article{mironela2009,
+  author  = {Mironela, Pîrnau},
+  title   = {{T}he {I}mportance of {W}eb {S}ervices {U}sing the {R}{P}{C} and {R}{E}{S}{T} {A}rchitecture},
+  journal = {Computer Technology and Development, International Conference on},
+  year    = {2009},
+  volume  = {1},
+  pages   = {377-379},
+  month   = {01},
+  doi     = {10.1109/ICCTD.2009.15},
+  isbn    = {978-0-7695-3892-1},
+}
+
+@InProceedings{sun2010,
+  author    = {S. {Sun} and R. {Huang}},
+  title     = {An adaptive k-nearest neighbor algorithm},
+  booktitle = {2010 Seventh International Conference on Fuzzy Systems and Knowledge Discovery},
+  year      = {2010},
+  volume    = {1},
+  pages     = {91-94},
+  month     = {Aug},
+  doi       = {10.1109/FSKD.2010.5569740},
+  keywords  = {learning (artificial intelligence);pattern classification;set theory;adaptive k-nearest neighbor algorithm;AdaNN;kNN algorithm;training set;Nearest neighbor searches;Training;Error analysis;Accuracy;Machine learning algorithms;Classification algorithms;Iris;pattern classification;k-nearest neighbor algorithm (kNN);adaptive k-nearest neighbor algorithm (AdaNN);nearest neighbors},
+}
+
+@InProceedings{sutarti2016,
+  author    = {{Sutarti}},
+  title     = {{Deteksi Lokasi Objek Dalam Gedung Berbasis {I}{E}{E}{E} 802.11 Menggunakan Metode {K}-{N}{N}}},
+  booktitle = {PROSISKO: Jurnal Pengembangan Riset dan Observasi Sistem Komputer},
+  year      = {2016},
+  volume    = {3},
+  pages     = {61-67},
+  issue     = {2},
+}
+
+@InProceedings{otsason2005,
+  author    = {Otsason, Veljo and Varshavsky, Alexander and LaMarca, Anthony and de Lara, Eyal},
+  title     = {{A}ccurate {G}{S}{M} {I}ndoor {L}ocalization},
+  booktitle = {UbiComp 2005: Ubiquitous Computing: 7th International Conference},
+  year      = {2005},
+  pages     = {141-158},
+  month     = {09},
+  doi       = {10.1007/11551201_9},
+}
+
+@PhdThesis{darshan2012,
+  author = {Shah, Darshan and Shah, Kavish},
+  title  = {{B}asic of {W}i-{F}i {B}ased {P}ositioning {S}ystem},
+  school = {Nirma University},
+  year   = {2012},
+  month  = {10},
+  pages  = {1-2},
+}
+
+@Book{han2006,
+  title     = {Data Mining Concepts and Techniques (2nd Edition)},
+  publisher = {Elsevier Science},
+  year      = {2006},
+  author    = {Han, Jiawei and Kamber, ‎Micheline},
+  month     = {01},
+  isbn      = {1-55860-901-6},
+}
+{chai2016,
+  %author    = {Chai, Song and An, Renbo and Du, Zhengzhong},
+  %title     = {An Indoor Positioning Algorithm using Bluetooth Low Energy RSSI},
+  %booktitle = {International Conference on Advanced Material Science and Environmental Engineering (AMSEE 2016)},
+  %year      = {2016},
+  %month     = {01},
+  %doi       = {10.2991/amsee-16.2016.72},
+%}
+
+@Book{bluetoothsig2010,
+  title     = {{Bluetooth Specification Version 4}},
+  publisher = {The Bluetooth Special Interest Group},
+  year      = {2010},
+  author    = {{Bluetooth SIG}},
+}
+
+@InProceedings{Wahl2000,
+  author    = {N. J. {Wahl}},
+  title     = {{Student-Run Usability Testing}},
+  booktitle = {Thirteenth Conference on Software Engineering Education and Training},
+  year      = {2000},
+  pages     = {123-131},
+  month     = {March},
+  doi       = {10.1109/CSEE.2000.827030},
+  issn      = {1093-0175},
+  keywords  = {program testing;software engineering;student-run usability testing;software development;software systems;end-user companies;user-centered design;software engineering sequence;Usability;Computer science;Software engineering;Software testing;User centered design;Software quality;System testing;Software systems;Watches;Human factors},
+}
+
+@Book{Rubin2008,
+  title     = {Handbook of Usability Testing, Second Edition: How to Plan, Design, and Conduct Effective Tests},
+  publisher = {Wiley Publishing, Inc},
+  year      = {2008},
+  author    = {Jeffrey Rubin and Dana Chisnell},
+}
+
+@Article{Mustaqbal2015,
+  author  = {M. Sidi Mustaqbal and Roeri Fajri Firdaus and Hendra Rahmadi},
+  title   = {{Pengujian Aplikasi Menggunakan Black Box Testing Boundary Value Analysis (Studi Kasus : Aplikasi Prediksi Kelulusan {S}{N}{M}{P}{T}{N})}},
+  journal = {Jurnal Ilmiah Teknologi Informasi Terapan},
+  year    = {2015},
+  volume  = {1},
+  pages   = {31-36},
+  month   = {08},
+  issue   = {3},
+}
+
+@Book{Alfatta2007,
+  title     = {Analisis dan Perancangan Sistem Informasi untuk Keunggulan Bersaing Perusahaan dan Organisasi Modern},
+  publisher = {Andi},
+  year      = {2007},
+  author    = {Hanif Al Fatta},
+  city      = {Yogyakarta},
+}
+
+@Book{Sugiyono2004,
+  title     = {Metode Penelitian Bisnis},
+  publisher = {Alfabeta},
+  year      = {2004},
+  author    = {Sugiyono},
+  editor    = {Sugiyono},
+  address   = {Bandung},
+}
+
+@Book{Brooke1996a,
+  title     = {{U}sability {E}valuation in {I}ndustry},
+  publisher = {Taylor and Francis},
+  year      = {1996},
+  author    = {John Brooke},
+  address   = {London},
+}
+
+@Article{Lee2019,
+  author  = {Lee, Sunmin and Kim, Jinah},
+  title   = {{R}andom {F}orest and {W}i{F}i {F}ingerprint-{B}ased {I}ndoor {L}ocation {R}ecognition {S}ystem {U}sing {S}mart {W}atch},
+  journal = {Human-centric Computing and Information Sciences},
+  year    = {2019},
+  volume  = {9},
+  pages   = {6},
+  month   = {02},
+  doi     = {10.1186/s13673-019-0168-7},
+}
+
+@InProceedings{Bahl2000,
+  author    = {P. {Bahl} and V. N. {Padmanabhan}},
+  title     = {{{R}{A}{D}{A}{R}: {a}n in-{b}uilding {R}{F}-{b}ased {u}ser {l}ocation and {t}racking {s}ystem}},
+  booktitle = {Proceedings IEEE INFOCOM 2000. Conference on Computer Communications. Nineteenth Annual Joint Conference of the IEEE Computer and Communications Societies (Cat. No.00CH37064)},
+  year      = {2000},
+  volume    = {2},
+  pages     = {775-784 vol.2},
+  month     = {March},
+  doi       = {10.1109/INFCOM.2000.832252},
+  issn      = {0743-166X},
+  keywords  = {mobile computing;wireless LAN;radio tracking;radiowave propagation;signal processing;RADAR;in-building tracking system;RF-based tracking system;user location;mobile computing devices;local-area wireless networks;location-aware systems;signal strength processing;multiple base stations;overlapping coverage;signal propagation modeling;Radar tracking;Radio frequency;Wireless networks;Mobile computing;Computer networks;Wireless LAN;Global Positioning System;Radar signal processing;Signal processing;Base stations},
+}
+
+@Article{Sharfina2016,
+  author  = {Zahra Sharfina and Harry Budi Santoso},
+  title   = {{An Indonesian Adaptation of the System Usability Scale (SUS)}},
+  journal = {ICACSIS},
+  year    = {2016},
+  pages   = {145-148s},
+}
+
+@Article{Ardiansyah2016,
+  author  = {Ardiansyah and Muhammad Imam Ghazali},
+  title   = {{P}ENGUJIAN {U}SABILITY {U}SER {I}NTERFACE DAN {U}SER {E}XPERIENCE {A}PLIKASI {E}-{R}EADER {S}KRIPSI {B}ERBASIS {H}YPERTEXT},
+  journal = {Jurnal Ilmiah Teknologi Informasi Terapan},
+  year    = {2016},
+  volume  = {2},
+  pages   = {213-220},
+  month   = {08},
+  issue   = {3},
+}
+
+@Article{Furqan2017,
+  author  = {Muhammad Furqan},
+  title   = {ANALISA PERFORMANSI GOOGLE MAPS DAN MAPBOX API PADA APLIKASI ABSEN KULIAH BERBASIS ANDROID},
+  journal = {Universitas Syiah Kuala},
+  year    = {2017},
+}
+
+@InProceedings{Haeberlen2004,
+  author    = {Haeberlen, Andreas and Flannery, Eliot and Ladd, Andrew M. and Rudys, Algis and Wallach, Dan S. and Kavraki, Lydia E.},
+  title     = {Practical Robust Localization over Large-scale 802.11 Wireless Networks},
+  booktitle = {Proceedings of the 10th Annual International Conference on Mobile Computing and Networking},
+  year      = {2004},
+  series    = {MobiCom '04},
+  pages     = {70--84},
+  address   = {New York, NY, USA},
+  publisher = {ACM},
+  acmid     = {1023728},
+  doi       = {10.1145/1023720.1023728},
+  isbn      = {1-58113-868-7},
+  keywords  = {802.11, Bayesian methods, location-aware computing, mobile systems, topological localization, wireless networks},
+  location  = {Philadelphia, PA, USA},
+  numpages  = {15},
+  url       = {http://doi.acm.org/10.1145/1023720.1023728},
+}
+
+@Article{Hasani2015,
+  author   = {M. {Hasani} and J. {Talvitie} and L. {Sydänheimo} and E. {Lohan} and L. {Ukkonen}},
+  title    = {Hybrid WLAN-RFID Indoor Localization Solution Utilizing Textile Tag},
+  journal  = {IEEE Antennas and Wireless Propagation Letters},
+  year     = {2015},
+  volume   = {14},
+  pages    = {1358-1361},
+  doi      = {10.1109/LAWP.2015.2406951},
+  keywords = {mobile communication;radiofrequency identification;wireless LAN;hybrid WLAN-RFID indoor localization solution;textile tag;hybrid configuration;indoor positioning;passive radio frequency identification;mobile device;WLAN receiver;RFID readers;passive textile RFID tag;human positioning;human tracking;indoor positioning service;received signal strengths;real-field measurements;Wireless LAN;Antenna measurements;Estimation;Accuracy;Passive RFID tags;UHF measurements;Backscattered power;fingerprinting;indoor positioning;received signal strength (RSS);RFID;wireless local area network (WLAN)},
+}
+
+@InProceedings{Narzullaev2013,
+  author    = {A. {Narzullaev} and H. S. {Mohd}},
+  title     = {Wi-Fi signal strengths database construction for indoor positioning systems using Wi-Fi RFID},
+  booktitle = {2013 IEEE International Conference on RFID-Technologies and Applications (RFID-TA)},
+  year      = {2013},
+  pages     = {1-5},
+  month     = {Sep.},
+  doi       = {10.1109/RFID-TA.2013.6694518},
+  keywords  = {calibration;indoor communication;radiofrequency identification;signal sampling;wireless LAN;Wi-Fi signal strengths;database construction;indoor positioning systems;Wi-Fi RFID;Wi-Fi positioning systems;calibration intensity;large-scale deployments;fingerprint database;hybrid calibration procedure;signal sampling process;path-loss prediction;Monitoring;Databases;Radiofrequency identification;Resource management;Transmitters;Training;Standards},
+}
+
+@InProceedings{Baniukevic2011,
+  author    = {A. {Baniukevic} and D. {Sabonis} and C. S. {Jensen} and H. {Lu}},
+  title     = {Improving Wi-Fi Based Indoor Positioning Using Bluetooth Add-Ons},
+  booktitle = {2011 IEEE 12th International Conference on Mobile Data Management},
+  year      = {2011},
+  volume    = {1},
+  pages     = {246-255},
+  month     = {June},
+  doi       = {10.1109/MDM.2011.50},
+  keywords  = {Bluetooth;indoor radio;mobility management (mobile radio);radiofrequency identification;wireless LAN;Wi-Fi;Bluetooth add-ons;indoor location-based services;mobile service;indoor positioning service;RFID;Bluetooth hotspots;system architecture;online position estimation algorithm;Bluetooth;IEEE 802.11 Standards;Estimation;Accuracy;Wireless communication;Wireless sensor networks;Radiofrequency identification},
+}
+
+@Article{Bangoor2009,
+  author  = {A. {Bangor} and P. T. {Kortum} and J. {Miller}},
+  title   = {{D}etermining {W}hat {I}ndividual {S}{U}{S} {S}cores {M}ean: {A}dding {A}n {A}djective {R}ating {S}cale},
+  journal = {Journal of usability studies},
+  year    = {2009},
+  pages   = {114-123},
+}
+
+@Article{Saputra2019,
+  author  = {Kurnia Saputra and Muhammad Furqan and Taufik Fuadi Abidin and Dalila Husna Yunardi},
+  title   = {{Google Maps and Mapbox API Performance Analysis on Android-Based Lecture Attendance Application}},
+  journal = {Jurnal Natural},
+  year    = {2019},
+  volume  = {19},
+  number  = {3},
+  pages   = {64-68},
+  doi     = {10.24815/jn.v19i3.14459},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
