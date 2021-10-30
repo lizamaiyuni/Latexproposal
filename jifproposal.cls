@@ -282,7 +282,7 @@
        {\normalfont
         Oleh:\\
 		\vspace{1.0cm}
-        \MakeUppercase{\normalfont\bfseries \@fullname}\\
+        \MakeUppercase{\normalfont\bfseries \underline{\@fullname}}\\
         \MakeUppercase{\normalfont\bfseries \@idnum}}\\
 		\vspace{2cm}
 		\vfill
