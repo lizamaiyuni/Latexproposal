@@ -78,224 +78,122 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
 
 	\item Antar Muka Aplikasi Mapping
 
-	      \par Gambar \ref{aplikasimappingbagian1} menampilkan halaman ketika menggunakan aplikasi, kemudian akan muncul notifikasi permintaan izin mengakses lokasi pada perangkat untuk pemindaian kekuatan sinyal Bluetooth. Halaman beranda menampilkan informasi nama ruangan, nama \textit{device} Bluetooth, RSSI dan MAC Address Bluetooth apabila proses pemindaian telah selesai dilakukan serta beberapa tombol untuk memulai proses pemindaian, tombol untuk menyimpan data hasil pemindaian, dan tombol untuk menampilkan data hasil pemindaian.
+	      \par Gambar \ref{aplikasimappingbagian1} menampilkan halaman ketika menggunakan aplikasi, kemudian akan muncul notifikasi permintaan izin mengakses lokasi pada perangkat untuk pemindaian kekuatan sinyal Bluetooth. Halaman beranda menampilkan informasi nama ruangan, nama \textit{device Bluetooth}, RSSI dan MAC Address \textit{Bluetooth} apabila proses pemindaian telah selesai dilakukan serta beberapa tombol untuk memulai proses pemindaian, dan fitur yang menunjukkan jumlah data yang sudah disimpan.
+
 
 	      \vspace{-0cm}
 	      \begin{figure} [H]
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mapping-permission}
-			      \caption{Izin mengakses lokasi}
+			      \includegraphics[width=.5\linewidth]{gambar/mapping1}
+			      \caption{Beranda Aplikasi Mapping}
 		      \end{subfigure}
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mapping-bluetooth}
+			      \includegraphics[width=.5\linewidth]{gambar/mapping2}
 			      \caption{Menghidupkan Bluetooth}
 		      \end{subfigure}
-		      \vspace{1cm}
-		      \newline
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include third image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mapping-scanning}
-			      \caption{Proses pemindaian kekuatan sinyal}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include fourth image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mapping-finish-scan}
-			      \caption{Selesai proses pemindaian}
-		      \end{subfigure}
-		      \vspace{0.5cm}
 		      \caption{Tampilan Halaman Aplikasi Mapping (Bagian 1)}
 		      \label{aplikasimappingbagian1}
 	      \end{figure}
 
-	      \par Apabila pengguna menekan tombol \textbf{save to}, akan muncul \textit{pop up} dimana pengguna dapat memilih tabel penyimpanan data hasil pemindaian, yaitu: tabel \textit{reference point} urut dan tabel \textit{reference point} acak. Jika pengguna menekan tombol \textbf{show data}, akan muncul \textit{pop up} dimana pengguna dapat memilih tabel untuk data yang ingin ditampilkan, kemudian pengguna akan diarahkan ke halaman daftar data hasil pemindaian kekuatan sinyal yang telah disimpan sebelumnya. Jika pengguna ingin menghapus sebuah data, pengguna harus menekan tombol \textit{icon} tong sampah dan lakukan konfirmasi. Fitur-fitur tersebut dapat dilihat pada Gambar \ref{aplikasimappingbagian2}.
+	      \par Apabila pengguna menekan tombol \textbf{scan}, akan muncul \textit{pop up} dimana pengguna diminta untuk mengaktifkan \textit{bluetooth} terlebih dahulu jika belum diaktifkan sebelumnya. Jika sudah diaktifkan, maka harus mengisi nama ruangan terlebih dahulu. lalu menekan tombol \textbf{scan} sekali lagi. Setelah itu, pada fitur \textit{Count} akan muncul waktu mundur dari detik 10 ke 0. Jika waktunya sudah habis, maka secara otomatis data hasil \textit{scan} tadi akan disimpan ke server dan berapa jumlah data yang sudah di simpan akan ditampilkan. Fitur-fitur tersebut dapat dilihat pada Gambar \ref{aplikasimappingbagian2}.
+
 
 	      \vspace{-0cm}
 	      \begin{figure} [H]
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mapping-save-data}
-			      \caption{Simpan hasil pemindaian}
+			      \includegraphics[width=.5\linewidth]{gambar/mapping3}
+			      \caption{Proses Menangkap sinyal RSSI}
 		      \end{subfigure}
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mapping-show-data}
-			      \caption{Pilihan menampilkan data}
+			      \includegraphics[width=.5\linewidth]{gambar/mapping4}
+			      \caption{Hasil tangkapan sinyal RSSI}
 		      \end{subfigure}
-		      \vspace{1cm}
-		      \newline
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include third image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mapping-data-list}
-			      \caption{Menampilkan data yang disimpan}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include fourth image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mapping-delete}
-			      \caption{Hapus data}
-		      \end{subfigure}
-		      \vspace{0.5cm}
 		      \caption{Tampilan Halaman Aplikasi Mapping (Bagian 2)}
 		      \label{aplikasimappingbagian2}
 	      \end{figure}
 	      %Akhir Gambar Aplikasi Mapping%
 
-	      \vspace{1cm}
-	\item Antar Muka Aplikasi Kehadiran Dosen
+	      %   \vspace{1cm}
+	\item Antar Muka Aplikasi Penentuan Lokasi dan Estimasi Orang
 
-	      \par Gambar \ref{aplikasidosenbagian1} memperlihatkan ketika dosen belum melakukan \textit{log in}, aplikasi akan menampilkan \textit{landing page} yang berisi langkah-langkah penggunaan aplikasi, selanjutnya dosen akan diarahkan ke halaman \textit{log in}. Untuk melakukan \textit{log in}, dosen diminta untuk memasukkan Nomor Induk Pegawai (NIP) dan kata sandi yang sesuai dengan Sistem Kepegawaian (SIMPEG) Unsyiah. Setelah itu, dosen akan diarahkan ke halaman beranda apabila telah berhasil melakukan \textit{log in}. Pada halaman beranda, terdapat informasi data diri dosen serta mata kuliah yang diajarkan oleh dosen yang bersangkutan. Jika dosen menekan salah-satu mata kuliah, dosen akan diarahkah ke halaman informasi mata kuliah tersebut.
+	      \par Gambar \ref{aplikasipenggunabagian1} memperlihatkan \textit{splashscreen} saat pertama kali membuka aplikasi. Aplikasi ini dinamakan dengan aplikasi LocaLization dan mempunyai logo khusus untuk aplikasi tersebut. Setelah itu akan muncul tampilan yang mengarahkan kita untuk mengecek lokasi dan mengaktifkan \textit{bluetooth}. Jika menekan tombol "cek lokasi", maka akan muncul hasil pencarian dimana lokasi kita berada saat itu juga. Posisi yang sedang kita tempati akan muncul di aplikasi dan diberikan warna hijau sebagai tanda bagian tempat yang sedang kita pijak. Jika pengguna sedang berada diluar gedung FMIPA USK maka hasil pencariannya menghasilkan diluar jangkauan.
 	      \vspace{-0cm}
 	      \begin{figure} [H]
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/android/dosen-1}
-			      \caption{\textit{Landing page}}
+			      \includegraphics[width=.5\linewidth]{gambar/splashscreen}
+			      \caption{\textit{Splashscreen}}
 		      \end{subfigure}
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/android/dosen-2}
-			      \caption{\textit{Log in}}
+			      \includegraphics[width=.5\linewidth]{gambar/tekancari.png}
+			      \caption{Belum melakukan pencarian}
 		      \end{subfigure}
-		      \vspace{1cm}
+		      \vspace{0.5cm}
 		      \newline
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include third image
-			      \includegraphics[width=.5\linewidth]{gambar/android/dosen-3}
-			      \caption{Beranda}
+			      \includegraphics[width=.5\linewidth]{gambar/applantai1.png}
+			      \caption{Tampilan Hasil Penentuan}
 		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include fourth image
-			      \includegraphics[width=.5\linewidth]{gambar/android/dosen-4}
-			      \caption{Informasi matakuliah}
-		      \end{subfigure}
-		      \vspace{0.5cm}
-		      \caption{Tampilan Halaman Aplikasi Kehadiran Dosen (Bagian 1)}
-		      \label{aplikasidosenbagian1}
-	      \end{figure}
-
-	      \vspace{0.5cm}
-	      \par Gambar \ref{aplikasidosenbagian2} memperlihatkan ketika dosen telah berada di halaman informasi mata kuliah Kemudian, aplikasi akan menampilkan notifikasi untuk menghidupkan Bluetooth apabila Bluetooth pada perangkat belum hidup. Terdapat dua tombol yaitu tombol \textbf{show students} untuk melihat daftar mahasiswa yang mengambil mata kuliah tersebut dan tombol \textbf{start attendance} untuk memulai proses kehadiran. Aplikasi akan melakukan klasifikasi dengan metode K-NN untuk memprediksi lokasi dosen.
-
-	      \vspace{-0cm}
-	      \begin{figure} [H]
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/android/dosen-5}
-			      \caption{Daftar mahasiswa}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/android/dosen-6}
-			      \caption{Proses kehadiran sedang berjalan}
-		      \end{subfigure}
-		      \vspace{1cm}
-		      \newline
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include third image
-			      \includegraphics[width=.5\linewidth]{gambar/android/dosen-7}
-			      \caption{Dosen diprediksi di dalam kelas}
+			      \includegraphics[width=.5\linewidth]{gambar/diluarjangkauan.png}
+			      \caption{Diluar jangkauan}
 		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include fourth image
-			      \includegraphics[width=.5\linewidth]{gambar/android/dosen-8}
-			      \caption{Dosen diprediksi di luar kelas}
-		      \end{subfigure}
-		      \vspace{0.5cm}
-		      \caption{Tampilan Halaman Aplikasi Kehadiran Dosen (Bagian 2)}
-		      \label{aplikasidosenbagian2}
+		      \caption{Tampilan Halaman Penentuan Lokasi dan Estimasi(Bagian 1)}
+		      \label{aplikasipenggunabagian1}
 	      \end{figure}
-	      %Akhir Gambar Aplikasi Kehadiran Dosen%
 
-	\item Antar Muka Aplikasi Kehadiran Mahasiswa
+	      %   \vspace{0.5cm}
+	      \par Gambar \ref{aplikasipenggunabagian2} memperlihatkan ketika pengguna telah berada didalam gedung. Jika pengguna berada di posisi tertentu dalam gedung, maka posisi yang di injak oleh pengguna akan aktif berwarna hijau. Selain itu, juga menampilkan informasi nama tempat yang sedang kita pijak saat itu dan nama detail dari fakultas tersebut. Adapun fitur penting lainnya yang ditampilkan adalah estimasi atau jumlah orang yang sedang berada didalam gedung. Serta catatan kecepatan prediksi dari hasil penentuan lokasi.
 
-	      \par Gambar \ref{aplikasimahasiswabagian1} memperlihatkan ketika mahasiswa belum melakukan \textit{log in}, aplikasi akan menampilkan \textit{landing page} yang berisi langkah-langkah penggunaan aplikasi, lalu mahasiswa akan diarahkan ke halaman \textit{log in}. Untuk melakukan \textit{log in}, mahasiswa diminta untuk memasukkan Nomor Pokok Mahasiswa (NPM) dan kata sandi yang sesuai dengan KRS Online Unsyiah. Setelah itu, mahasiswa akan diarahkan ke halaman beranda apabila telah berhasil melakukan \textit{log in}. Pada halaman beranda, terdapat beberapa menu seperti menu profil, menu daftar mata kuliah dan menu tentang aplikasi, serta informasi mata kuliah hari ini.
 
 	      \vspace{-0cm}
 	      \begin{figure} [H]
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mahasiswa-1}
-			      \caption{\textit{Landing page}}
+			      \includegraphics[width=.5\linewidth]{gambar/applantai1.png}
+			      \caption{Penentuan Lokasi dan Estimasi}
 		      \end{subfigure}
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mahasiswa-2}
-			      \caption{\textit{Log in}}
+			      \includegraphics[width=.5\linewidth]{gambar/applantai3.png}
+			      \caption{Penentuan Lokasi dan Estimasi}
 		      \end{subfigure}
 		      \vspace{1cm}
-		      \newline
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include third image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mahasiswa-3}
-			      \caption{Beranda}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include fourth image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mahasiswa-4}
-			      \caption{Profil}
-		      \end{subfigure}
-		      \vspace{0.5cm}
-		      \caption{Tampilan Halaman Aplikasi Kehadiran Mahasiswa (Bagian 1)}
-		      \label{aplikasimahasiswabagian1}
+		      %   \newline
+		      %   \begin{subfigure}{.5\textwidth}
+		      %       \centering
+		      %       % include third image
+		      %       \includegraphics[width=.5\linewidth]{gambar/android/dosen-7}
+		      %       \caption{Dosen diprediksi di dalam kelas}
+		      %   \end{subfigure}
+		      %   \begin{subfigure}{.5\textwidth}
+		      %       \centering
+		      %       % include fourth image
+		      %       \includegraphics[width=.5\linewidth]{gambar/android/dosen-8}
+		      %       \caption{Dosen diprediksi di luar kelas}
+		      %   \end{subfigure}
+		      %   \vspace{0.5cm}
+		      \caption{Tampilan Halaman Penentuan Lokasi dan Estimasi(Bagian 2)}
+		      \label{aplikasipenggunabagian2}
 	      \end{figure}
-
-	      \par Gambar \ref{aplikasimahasiswabagian1} memperlihatkan daftar mata kuliah yang diambil oleh mahasiswa. Apabila mahasiswa menekan salah satu daftar mata kuliah, aplikasi akan memulai proses kehadiran yang dipicu oleh dosen ketika dosen telah memulai proses kehadiran. Kemudian, aplikasi akan menampilkan notifikasi untuk menghidupkan Bluetooth apabila Bluetooth pada perangkat belum hidup. Jika Bluetooth telah dihidupkan, aplikasi akan melakukan pencatatan kehadiran secara \textit{background proccess} sampai waktu matakuliah berakhir. Aplikasi akan melakukan klasifikasi dengan metode K-NN untuk memprediksi lokasi mahasiswa seperti yang terlihat pada Gambar \ref{aplikasimahasiswabagian2}.
-
-	      \vspace{-0cm}
-	      \begin{figure} [H]
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mahasiswa-5}
-			      \caption{Daftar mata kuliah}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mahasiswa-6}
-			      \caption{Memulai proses kehadiran}
-		      \end{subfigure}
-		      \vspace{1cm}
-		      \newline
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include third image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mahasiswa-7}
-			      \caption{Mahasiswa diprediksi di dalam kelas}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include fourth image
-			      \includegraphics[width=.5\linewidth]{gambar/android/mahasiswa-8}
-			      \caption{Mahasiswa diprediksi di luar kelas}
-		      \end{subfigure}
-		      \vspace{0.5cm}
-		      \caption{Tampilan Halaman Aplikasi Kehadiran Mahasiswa (Bagian 2)}
-		      \label{aplikasimahasiswabagian2}
-	      \end{figure}
-
-	      %Akhir Gambar Aplikasi Kehadiran Mahasiswa%
+	      %Akhir Gambar Aplikasi Penentuan Lokasi dan Estimasi Orang%
 
 \end{enumerate}
 
