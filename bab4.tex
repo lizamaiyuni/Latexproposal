@@ -19,29 +19,29 @@ Kelompok pengguna dari aplikasi ini telah dapat diidentifikasikan pada tahap ana
 \end{enumerate}
 
 \subsection{Use Case Diagram}
-\textit{Use case} merupakan pemodelan untuk mendeskripsikan sebuah interaksi antara satu atau lebih aktor dengan sistem yang dibuat. Secara kasar, \textit{use case} digunakan untuk mengetahui fungsi apa saja yang ada di dalam sebuah sistem dan siapa saja yang berhak menggunakan fungsi-fungsi itu \citep{Rosa2015}. \textit{Use Case Diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{usecasemapping}, Gambar \ref{usecasedosen}, Gambar \ref{usecasemahasiswa} dan Gambar \ref{usecaseadmin}.
+\textit{Use case} diagram adalah diagram yang mendeskripsilam hubungan antara aktor dan sistem. \textit{Use case} diagram bisa mendeskripsikan sebuah interaksi antara satu atau lebih aktor dengan sistem yang akan dibuat. \textit{Use case} diagram juga bisa digunakan untuk mengetahui fungsi apa saja yang ada di dalam sebuah sistem dan  bisa juga mempresentasikan sebuah interaksi aktor dengan sistem. Komponen tersebut kemudian menjelaskan komunikasi antara aktor,  dengan sistem yang ada. Dengan demikian, \textit{use case} dapat dipresentasikan dengan urutan yang sederhana, dan akan mudah dipahami oleh para konsumen \citep{Yu2009}. \textit{Use Case Diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{usecasemapping} dan Gambar \ref{usecasedosen}.
 
 \begin{figure}[H]
 	\center
 	\shadowbox
-	{\includegraphics [width=7.5cm, height=7cm]{gambar/model/use-case-mapping}}
+	{\includegraphics [width=8.5cm, height=8cm]{gambar/mapping}}
 	\caption{\textit{Use Case Diagram} Aplikasi Mapping.}
 	\label{usecasemapping}
 \end{figure}
 
-\par Gambar \ref{usecasemapping} diatas menjelaskan aktivitas yang dapat dilakukan oleh peneliti saat menggunakan aplikasi. Ketika peneliti membuka aplikasi, muncul halaman beranda. Selanjutnya, peneliti diminta untuk mengizinkan aplikasi mengakses lokasi pada perangkat. Kemudian, peneliti dapat melakukan pemindaian kekuatan sinyal setelah menghidupkan Bluetooth pada perangkat. Setelah itu, hasil dari pemindaian kekuatan sinyal tersebut disimpan, lalu dapat ditampilkan pada sebuah halaman. Pengguna juga dapat menghapus data-data kekuatan sinyal sesuai keinginan.
+\par Gambar \ref{usecasemapping} diatas menjelaskan aktivitas yang dapat dilakukan oleh peneliti saat menggunakan aplikasi mapping. Ketika peneliti membuka aplikasi mapping, maka akan muncul halaman beranda. Kemudian, peneliti diminta untuk mengizinkan aplikasi mengakses lokasi pada perangkat. Selanjutnya, peneliti dapat melakukan pemindaian kekuatan sinyal setelah menghidupkan Bluetooth pada perangkat \textit{smartphone}. Setelah itu, hasil dari pemindaian kekuatan sinyal tersebut disimpan didalam server dan dapat ditampilkan jumlah data kekuatan sinyal.
 \fancyhf{}
 \fancyfoot[R]{\thepage}
 
 \begin{figure}[H]
 	\center
 	\shadowbox
-	{\includegraphics [width=10cm, height=9cm]{gambar/model/use-case-dosen}}
-	\caption{\textit{Use Case Diagram} Aplikasi Kehadiran Dosen.}
-	\label{usecasedosen}
+	{\includegraphics [width=10cm, height=9cm]{gambar/penentuanlokasi}}
+	\caption{\textit{Use Case Diagram} Aplikasi Penentuan Lokasi dan Estimasi Orang}
+	\label{usecaseuser}
 \end{figure}
 
-\par Gambar \ref{usecasedosen} menjelaskan aktivitas yang dapat dilakukan oleh dosen saat menggunakan aplikasi. Aktivitas pertama yang dilakukan adalah melakukan \textit{log in} ke aplikasi dengan memasukkan Nomor Induk Pegawai (NIP) dan kata sandi. Setelah melakukan \textit{log in}, dosen dapat menikmati fitur-fitur yang tersedia seperti melihat jadwal perkuliahan, memulai proses kehadiran dengan syarat keadaan Bluetooth pada perangkat dalam keadaan hidup dan melihat daftar mahasiswa yang mengambil suatu mata kuliah. Aktivitas yang terakhir adalah \textit{log out}, yaitu aktivitas yang berfungsi untuk keluar dari aplikasi. Apabila dosen telah melakukan \textit{log out}, maka dosen harus melakukan \textit{log in} kembali ke aplikasi.
+\par Gambar \ref{usecasedosen} menjelaskan aktivitas yang dapat dilakukan oleh setiap orang yang memasuki gedung Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala. Aktivitas pertama yang dapat dilakukan adalah membuka aplikasi LokaLization, pengguna dapat menikmati fitur-fitur yang tersedia seperti melihat estimasi atau jumlah orang yang sedang berada didalam gedung, memulai proses pengecekan lokasi diri sendiri saat berada didalam gedung FMIPA USK dengan syarat keadaan \textit{Bluetooth} pada perangkat dalam keadaan hidup dan melihat kecepatan prediksi berapa detik. Jika pengguna berada diluar gedung FMIPA USK, maka perangkat akan memprediksi pengguna sedang berada diluar jangkauan.
 
 \begin{figure}[H]
 	\center
