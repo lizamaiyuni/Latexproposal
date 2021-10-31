@@ -201,26 +201,26 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
 \subsection{Pembuatan Sistem}
 
 \begin{enumerate}[a.]
-	\item Aplikasi Mapping
-	      \\ Aplikasi \textit{mobile} berbasis Android yang dikembangkan menggunakan bahasa pemrograman Java dengan bantuan IDE Android Studio. Media penyimpanan basis data pada aplikasi ini menggunakan SQLite. SQLite merupakan media penyimpanan lokal untuk setiap aplikasi yang sudah terpasang di perangkat Android, dikarenakan aplikasi ini hanya perlu menyimpan data-data hasil pemindaian kekuatan sinyal Bluetooth. Aplikasi mapping ini juga sudah memiliki sertifikat Hak Kekayaan Intelektual (HKI) dengan nomor EC00201972853 yang dapat dilihat pada lampiran 1. Potongan kode program untuk melakukan pemindaian kekuatan sinyal Bluetooth dapat dilihat pada Program 4.1 berikut ini.
-	      \vspace{0.4cm}
-	      \lstset{language=Java,
-		      basicstyle=\ttfamily\scriptsize\color{black},
-		      keywordstyle=\color{javapurple}\bfseries,
-		      stringstyle=\color{javared},
-		      commentstyle=\color{javagreen},
-		      morecomment=[s][\color{javadocblue}]{/**}{*/},
-		      numbers=left,
-		      numberstyle=\tiny\color{black},
-		      showstringspaces=false,
-		      numbersep=10pt,
-		      tabsize=4,
-		      showspaces=false,
-		      showstringspaces=false,
-		      autogobble=true,
-		      xleftmargin=2em
-	      }
-	      \begin{lstlisting}[label=programScanBle]
+\item Aplikasi Mapping
+\\ Aplikasi \textit{mobile} berbasis Android yang dikembangkan menggunakan bahasa pemrograman Java dengan bantuan IDE Android Studio. Media penyimpanan basis data pada aplikasi ini menggunakan SQLite. SQLite merupakan media penyimpanan lokal untuk setiap aplikasi yang sudah terpasang di perangkat Android, dikarenakan aplikasi ini hanya perlu menyimpan data-data hasil pemindaian kekuatan sinyal Bluetooth. Aplikasi mapping ini juga sudah memiliki sertifikat Hak Kekayaan Intelektual (HKI) dengan nomor EC00201972853 yang dapat dilihat pada lampiran 1. Potongan kode program untuk melakukan pemindaian kekuatan sinyal Bluetooth dapat dilihat pada Program 4.1 berikut ini.
+\vspace{0.4cm}
+\lstset{language=Java,
+	basicstyle=\ttfamily\scriptsize\color{black},
+	keywordstyle=\color{javapurple}\bfseries,
+	stringstyle=\color{javared},
+	commentstyle=\color{javagreen},
+	morecomment=[s][\color{javadocblue}]{/**}{*/},
+	numbers=left,
+	numberstyle=\tiny\color{black},
+	showstringspaces=false,
+	numbersep=10pt,
+	tabsize=4,
+	showspaces=false,
+	showstringspaces=false,
+	autogobble=true,
+	xleftmargin=2em
+}
+\begin{lstlisting}[label=programScanBle]
     private HashMap<String, BTLEDevice> mBTDevicesHashMap;
     private Ble pojoBle;
 
@@ -248,18 +248,18 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
         }
     }
 	\end{lstlisting}
-	      \captionof{lstlisting}{Potongan Kode Program Membaca Informasi Bluetooth.}
+\captionof{lstlisting}{Potongan Kode Program Membaca Informasi Bluetooth.}
 
 
-	\item Aplikasi Kehadiran Dosen
-	      \\ Aplikasi \textit{mobile} berbasis Android yang dikembangkan menggunakan bahasa pemrograman Java dengan bantuan IDE Android Studio. Media penyimpanan aplikasi ini menggunakan basis data server yaitu MySQL. Basis data server tersebut diakses melalui REST server API yang dibangun menggunakan bahasa pemrograman PHP. Aplikasi ini bertindak sebagai klien. Oleh karena itu, aplikasi ini menggunakan \textit{library} Retrofit untuk melakukan \textit{request} ke server dan menghandle \textit{response} dalam bentuk JavaScript Object Notation (JSON). Proses pengiriman data dari klien ke server dilakukan ketika dosen menekan tombol \textbf{start attendance} pada aplikasi. %Potongan kode program yang dibuat untuk melakukan pengiriman data dapat dilihat pada kode \ref{programStartAbsen} berikut ini. 
-	      Seorang dosen dapat terhitung menghadiri perkuliahan pada aplikasi apabila syarat-syarat di bawah ini terpenuhi:
-	      \begin{enumerate}[1.]
-		      \item Dosen menekan tombol \textbf{start attendance} 50 menit sebelum mata kuliah berakhir.
-		      \item Dosen menekan tombol \textbf{start attendance} sesuai waktu yang telah ditentukan. Penentuan lokasi dilakukan dengan menggunakan metode klasifikasi K-NN yang dapat dilihat pada Program 4.2 berikut ini.
-		            \vspace{0.4cm}
-		            % KODE KNN%
-		            \begin{lstlisting}[label=programKNNDosen]
+\item Aplikasi Kehadiran Dosen
+\\ Aplikasi \textit{mobile} berbasis Android yang dikembangkan menggunakan bahasa pemrograman Java dengan bantuan IDE Android Studio. Media penyimpanan aplikasi ini menggunakan basis data server yaitu MySQL. Basis data server tersebut diakses melalui REST server API yang dibangun menggunakan bahasa pemrograman PHP. Aplikasi ini bertindak sebagai klien. Oleh karena itu, aplikasi ini menggunakan \textit{library} Retrofit untuk melakukan \textit{request} ke server dan menghandle \textit{response} dalam bentuk JavaScript Object Notation (JSON). Proses pengiriman data dari klien ke server dilakukan ketika dosen menekan tombol \textbf{start attendance} pada aplikasi. %Potongan kode program yang dibuat untuk melakukan pengiriman data dapat dilihat pada kode \ref{programStartAbsen} berikut ini. 
+Seorang dosen dapat terhitung menghadiri perkuliahan pada aplikasi apabila syarat-syarat di bawah ini terpenuhi:
+\begin{enumerate}[1.]
+	\item Dosen menekan tombol \textbf{start attendance} 50 menit sebelum mata kuliah berakhir.
+	\item Dosen menekan tombol \textbf{start attendance} sesuai waktu yang telah ditentukan. Penentuan lokasi dilakukan dengan menggunakan metode klasifikasi K-NN yang dapat dilihat pada Program 4.2 berikut ini.
+	      \vspace{0.4cm}
+	      % KODE KNN%
+	      \begin{lstlisting}[label=programKNNDosen]
 	public void stopScan() {
     // ambil semua nilai yang ada di HashMap (Bluetooth yang terdeteksi).
      Set<String> keys = mBTDevicesHashMap.keySet();
@@ -290,99 +290,9 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
     }
     
     \end{lstlisting}
-		            \captionof{lstlisting}{Potongan Kode Program Klasifikasi Metode K-NN Aplikasi Kehadiran Dosen.}
+	      \captionof{lstlisting}{Potongan Kode Program Klasifikasi Metode K-NN Aplikasi Kehadiran Dosen.}
 
-		      \item Setiap mata kuliah memiliki satu sesi proses pencatatan kehadiran setiap 10 menit. Di setiap sesi tersebut, setiap aplikasi kehadiran dosen akan melakukan pencatatan kehadiran dengan pada waktu acak antara menit pertama hingga menit ke-10 setiap sesi. Sebagai contoh, mata kuliah A dimulai pada pukul 14:00 sampai pukul 16:00. Apabila satu sesi dilakukan per-10 menit sekali, maka total sesinya adalah 12 kali untuk proses pencatatan kehadiran. Misalnya sesi pertama dimulai pada pukul 14:02, pada saat itu aplikasi akan memprediksi lokasi dosen dan mengirimnya ke server untuk disesuaikan apakah kelas yang diprediksi saat itu sama dengan kelas sebenarnya. Jika prediksinya sesuai, maka dosen tersebut terhitung hadir. Kemudian, sesi kedua dimulai pada pukul 14:18. Jika prediksi yang dilakukan tidak sesuai, maka dosen tersebut terhitung tidak hadir. Proses tersebut akan berlangsung sampai sesi terakhir. Dari hasil prediksi setiap sesi tersebut, akan dihitung \textit{threshold} minimal 80\% dari jumlah proses pencatatan kehadiran yang dilakukan oleh aplikasi.
-	      \end{enumerate}
-
-	      \vspace{0.5cm}
-	\item Aplikasi Kehadiran Mahasiswa
-	      \\ Aplikasi \textit{mobile} berbasis Android yang dikembangkan menggunakan bahasa pemrograman Java dengan bantuan IDE Android Studio. Media penyimpanan aplikasi ini menggunakan basis data server yaitu MySQL. Basis data server tersebut diakses melalui REST server API yang dibangun menggunakan bahasa pemrograman PHP. Aplikasi ini bertindak sebagai klien. Oleh karena itu, aplikasi ini menggunakan \textit{library} Retrofit untuk melakukan \textit{request} ke server dan menghandle \textit{response} dalam bentuk JavaScript Object Notation (JSON). Proses pengiriman data dari klien ke server dilakukan ketika mahasiswa menekan tombol \textbf{start attendance} pada aplikasi.
-	      \newline
-	      Seorang mahasiswa dapat terhitung menghadiri perkuliahan pada aplikasi apabila syarat-syarat di bawah ini terpenuhi:
-	      \begin{enumerate}[1.]
-		      \item Mahasiswa menekan tombol \textbf{start attendance} ketika perkuliahan sudah dimulai oleh dosen. Penentuan lokasi dilakukan dengan menggunakan metode klasifikasi K-NN yang dapat dilihat pada Program 4.3 berikut ini.
-		            \vspace{0.4cm}
-		            % KODE KNN%
-		            \begin{lstlisting}[label=programKNNMahasiswa]
-	public void stopScan() {
-    // ambil semua nilai yang ada di HashMap (Bluetooth yang terdeteksi).
-     Set<String> keys = mBTDevicesHashMap.keySet();
-     String empty = "";
-     String sinyal = "";
-     for(String key : keys ) {
-         empty += mBTDevicesHashMap.get(key).getAddress()+"\n";
-         sinyal += mBTDevicesHashMap.get(key).getRSSI()+"\n";
-     }
-     //inisialisasi lokasi file data training.
-     String train = "data_training_sequence_point.csv";
-     //untuk mengambil data hasil pemindaian yg tersimpan di Hash.
-     BTLE_Device ble1 = mBTDevicesHashMap.get(Ble.ADDRESS_1);
-     ....  
-     BTLE_Device ble9 = mBTDevicesHashMap.get(Ble.ADDRESS_9);
-     //untuk kasih nilai default apabila sinyal Bluetooth tidak dapat.
-     int rssi1 = ble1 == null ? -110 : ble1.getRSSI();
-     ....
-     int rssi9 = ble9 == null ? -110 : ble9.getRSSI();
-     double[] testData = {rssi1, rssi2, ..., rssi9};
-      try {
-          InputStream streamTrain = getAssets().open(train);
-          label = (int) KNN.knn(streamTrain, testData, 5);
-          boolean masukKelas = (label == idRuang);
-      } catch (IOException e) {
-          e.printStackTrace();
-       	}
-    }
-    \end{lstlisting}
-		            \captionof{lstlisting}{Potongan Kode Program Klasifikasi Metode K-NN Aplikasi Kehadiran Mahasiswa.}
-
-		            \vspace{2cm}
-		      \item Setiap mata kuliah memiliki satu sesi proses pencatatan kehadiran setiap 10 menit. Di setiap sesi tersebut, setiap aplikasi kehadiran mahasiswa akan melakukan pencatatan kehadiran dengan pada waktu acak antara menit pertama hingga menit ke-10 setiap sesi. Sebagai contoh, mata kuliah B dimulai pada pukul 08:30 sampai pukul 10:30. Apabila satu sesi dilakukan per-10 menit sekali, maka total sesinya adalah 12 kali untuk proses pencatatan kehadiran. Misalnya sesi pertama dimulai pada pukul 08:37, pada saat itu aplikasi akan memprediksi lokasi mahasiswa dan mengirimnya ke server untuk disesuaikan apakah kelas yang diprediksi saat itu sama dengan kelas sebenarnya. Jika prediksinya sesuai, maka mahasiswa tersebut terhitung hadir. Kemudian, sesi kedua dimulai pada pukul 08:49. Jika prediksi yang dilakukan tidak sesuai, maka mahasiswa tersebut terhitung tidak hadir. Proses tersebut akan berlangsung sampai sesi terakhir. Dari hasil prediksi setiap sesi tersebut, akan dihitung \textit{threshold} minimal 80\% dari jumlah proses pencatatan kehadiran yang dilakukan oleh aplikasi.
-	      \end{enumerate}
-
-	\item Aplikasi Rekap Kehadiran Dosen dan Mahasiswa Berbasis Web
-	      \\
-	      Aplikasi berbasis web ini dikembangkan dengan menggunakan bahasa pemrograman PHP dengan menggunakan prinsip MVC (Model-View-Controller). Dimana \textit{model} sebagai struktur data dan basis datanya, \textit{view} untuk menampilkan isi halaman web yang dibangun dan \textit{controller} merupakan alur bisnis sebagai jembatan \textit{model} dan \textit{view} yang menanggapi HTTP \textit{request} yang datang dari pengguna melalui \textit{browser}. Tampilan halaman \textit{log in} pada aplikasi ini dapat dilihat pada Gambar \ref{web-login}, tampilan halaman daftar kehadiran dosen dapat dilihat pada Gambar \ref{web-daftar-dosen}, tampilan halaman daftar kehadiran mahasiswa dapat dilihat pada Gambar \ref{web-daftar-mahasiswa}. Fitur utama pada aplikasi ini adalah dapat mengunduh daftar kehadiran dosen dan mahasiswa dengan format CSV untuk keperluan merekap data yang dapat dilihat pada Gambar \ref{web-csv-dosen} dan Gambar \ref{web-csv-mahasiswa}.
-	      \vspace{-0.2cm}
-	      \begin{figure}[H]
-		      \center
-		      \includegraphics [width = 13cm, height= 6cm]{gambar/web/login}
-		      \caption{Halaman \textit{Log In}}
-		      \label{web-login}
-	      \end{figure}
-
-	      \vspace{-0.2cm}
-	      \begin{figure}[H]
-		      \center
-		      \includegraphics [width = 13cm, height= 6cm]{gambar/web/dashboard-dosen}
-		      \caption{Halaman Daftar Kehadiran Dosen}
-		      \label{web-daftar-dosen}
-	      \end{figure}
-
-	      \vspace{-0.2cm}
-	      \begin{figure}[H]
-		      \center
-		      \includegraphics [width = 13cm, height= 6cm]{gambar/web/dashboard-mahasiswa}
-		      \caption{Halaman Daftar Kehadiran Mahasiswa}
-		      \label{web-daftar-mahasiswa}
-	      \end{figure}
-
-	      \vspace{-0.2cm}
-	      \begin{figure}[H]
-		      \center
-		      \includegraphics [width = 11cm, height= 6.3cm]{gambar/web/rekap-dosen}
-		      \caption{File Unduhan CSV Rekap Kehadiran Dosen}
-		      \label{web-csv-dosen}
-	      \end{figure}
-
-	      \vspace{-0.2cm}
-	      \begin{figure}[H]
-		      \center
-		      \includegraphics [width = 11cm, height= 6.3cm]{gambar/web/rekap-mahasiswa}
-		      \caption{File Unduhan CSV Rekap Kehadiran Mahasiswa}
-		      \label{web-csv-mahasiswa}
-	      \end{figure}
-
+	\item Setiap mata kuliah memiliki satu sesi proses pencatatan kehadiran setiap 10 menit. Di setiap sesi tersebut, setiap aplikasi kehadiran dosen akan melakukan pencatatan kehadiran dengan pada waktu acak antara menit pertama hingga menit ke-10 setiap sesi. Sebagai contoh, mata kuliah A dimulai pada pukul 14:00 sampai pukul 16:00. Apabila satu sesi dilakukan per-10 menit sekali, maka total sesinya adalah 12 kali untuk proses pencatatan kehadiran. Misalnya sesi pertama dimulai pada pukul 14:02, pada saat itu aplikasi akan memprediksi lokasi dosen dan mengirimnya ke server untuk disesuaikan apakah kelas yang diprediksi saat itu sama dengan kelas sebenarnya. Jika prediksinya sesuai, maka dosen tersebut terhitung hadir. Kemudian, sesi kedua dimulai pada pukul 14:18. Jika prediksi yang dilakukan tidak sesuai, maka dosen tersebut terhitung tidak hadir. Proses tersebut akan berlangsung sampai sesi terakhir. Dari hasil prediksi setiap sesi tersebut, akan dihitung \textit{threshold} minimal 80\% dari jumlah proses pencatatan kehadiran yang dilakukan oleh aplikasi.
 \end{enumerate}
 
 \section{\uppercase{PENGUJIAN SISTEM}}
