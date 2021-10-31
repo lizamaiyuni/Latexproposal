@@ -43,67 +43,12 @@ Kelompok pengguna dari aplikasi ini telah dapat diidentifikasikan pada tahap ana
 
 \par Gambar \ref{usecasedosen} menjelaskan aktivitas yang dapat dilakukan oleh setiap orang yang memasuki gedung Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala. Aktivitas pertama yang dapat dilakukan adalah membuka aplikasi LokaLization, pengguna dapat menikmati fitur-fitur yang tersedia seperti melihat estimasi atau jumlah orang yang sedang berada didalam gedung, memulai proses pengecekan lokasi diri sendiri saat berada didalam gedung FMIPA USK dengan syarat keadaan \textit{Bluetooth} pada perangkat dalam keadaan hidup dan melihat kecepatan prediksi berapa detik. Jika pengguna berada diluar gedung FMIPA USK, maka perangkat akan memprediksi pengguna sedang berada diluar jangkauan.
 
-\begin{figure}[H]
-	\center
-	\shadowbox
-	{\includegraphics [width=10cm, height=9.5cm]{gambar/model/use-case-mahasiswa}}
-	\caption{\textit{Use Case Diagram} Aplikasi Kehadiran Mahasiswa.}
-	\label{usecasemahasiswa}
-\end{figure}
-
-\par Gambar \ref{usecasemahasiswa} diatas menjelaskan aktivitas yang dapat dilakukan oleh mahasiswa saat menggunakan aplikasi. Aktivitas pertama yang dilakukan adalah melakukan \textit{log in} ke aplikasi dengan memasukkan Nomor Pokok Mahasiswa (NPM) dan kata sandi. Setelah melakukan \textit{log in}, mahasiswa dapat menikmati fitur-fitur yang tersedia seperti melihat jadwal perkuliahan, memulai proses kehadiran dengan syarat keadaan Bluetooth pada perangkat dalam keadaan hidup dan melihat profil data diri. Aktivitas yang terakhir adalah \textit{log out}, yaitu aktivitas yang berfungsi untuk keluar dari aplikasi. Apabila mahasiswa telah melakukan \textit{log out}, maka mahasiswa harus melakukan \textit{log in} kembali ke aplikasi.
-
-\begin{figure}[H]
-	\center
-	\shadowbox
-	{\includegraphics [width=9cm, height=8cm]{gambar/model/use-case-admin}}
-	\caption{\textit{Use Case Diagram} Aplikasi Rekap Kehadiran Dosen dan Mahasiswa (Web-Based).}
-	\label{usecaseadmin}
-\end{figure}
-
-\par Gambar \ref{usecaseadmin} diatas menjelaskan aktivitas yang dapat dilakukan oleh admin saat menggunakan aplikasi. Aktivitas pertama yang dilakukan adalah melakukan \textit{log in} ke aplikasi dengan memasukkan \textit{username} dan kata sandi. Setelah melakukan \textit{log in}, admin dapat melihat daftar kehadiran dosen dan mahasiswa pada mata kuliah tertentu. Selain itu, admin juga dapat mengunduh data-data kehadiran tersebut.
-
-
 
 \section{\uppercase{PERANCANGAN DAN PEMBUATAN SISTEM}}
 
 \subsection{Perancangan Sistem}
 \par Perancangan sistem merupakan tahapan proses desain dari sistem perangkat lunak yang dibuat. Proses ini terdiri dari dua tahap yaitu perancangan konfigurasi eksekusi sistem dalam bentuk \textit{deployment diagram} dan perancangan tampilan antar muka (\textit{interface}).
 
-%Tahap pertama adalah merancang \textit{class diagram} yang bertujuan untuk menggambarkan struktur sistem dari segi pendefinisian dari kelas-kelas yang dibuat untuk membangun sistem. Kelas-kelas yang ada pada struktur sistem harus dapat melakukan fungsi-fungsi sesuai dengan kebutuhan sistem. %Berikut rancangan \textit{class diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar:
-%\begin{enumerate}
-%\item \textit{Class Diagram} Aplikasi Mapping
-%\vspace{-0.2cm}
-%\begin{figure}[H]
-%\center
-%\includegraphics [width = 14cm]{gambar/model/class-diagram}
-%\caption{Diagram Kelas Model Basis Data }
-%\label{class}
-%\end{figure}
-
-%\item \textit{Class Diagram} Aplikasi Kehadiran Dosen
-%\item \textit{Class Diagram} Aplikasi Kehadiran Mahasiswa
-%\end{enumerate}
-%Tahap kedua adalah merancang \textit{component diagram}, dimana \textit{component diagram} dibuat untuk menunjukkan organisasi dan ketergantungan diantara kumpulan komponen dalam sebuah sistem, serta pemodelan bagaimana sistem beradaptasi dengan sistem lain. Berikut rancangan \textit{component diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{componentmapping} dan Gambar \ref{componentabsensi}.
-%\begin{enumerate}
-%\item \textit{Component Diagram} Aplikasi Mapping
-%\vspace{-0.2cm}
-%\begin{figure}[H]
-%\center
-%\includegraphics [width = 13cm, height= 5cm]{gambar/model/component-diagram-mapping}
-%\caption{Diagram Component Aplikasi Mapping}
-%\label{componentmapping}
-%\end{figure}
-
-%\item \textit{Component Diagram} Aplikasi Kehadiran Dosen dan Aplikasi Kehadiran Mahasiswa
-%\vspace{-0.2cm}
-%\begin{figure}[H]
-%\center
-%\includegraphics [width = 13.5cm, height= 9cm]{gambar/model/component-diagram-absensi}
-%\caption{Diagram Component Aplikasi Kehadiran Dosen dan Mahasiswa}
-%\label{componentabsensi}
-%\end{figure}
-%\end{enumerate}
 Tahap pertama adalah merancang \textit{deployment diagram}, dimana \textit{deployment diagram} adalah diagram yang menjelaskan bagaimana sistem bekerja dan digunakan oleh pengguna. Berikut rancangan \textit{deployment diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{deployment-diagram}.
 
 %\begin{enumerate}
