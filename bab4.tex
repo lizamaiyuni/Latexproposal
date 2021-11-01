@@ -12,36 +12,36 @@ Hasil dari analisis kebutuhan yang telah dilakukan adalah mendapatkan kelompok p
 Kelompok pengguna dari aplikasi ini telah dapat diidentifikasikan pada tahap analisis kebutuhan pada sistem. terdapat 2 kelompok pengguna yang menggunakan aplikasi ini:
 \begin{enumerate}[1.]
 	\item Peneliti
-	      \newline Pengguna yang menggunakan Aplikasi Mapping berbasis Android untuk mempermudah pemetaan kekuatan sinyal atau nilai RSSI dari alat yang disebut Beacon.
-	\item Penguji Aplikasi
-	      \newline Pengguna yang menggunakan Aplikasi SpecifyLocation berbasis Android untuk mengetahui posisi dimana pengguna berada saat ini di gedung A FMIPA USK.
+	      \newline Pengguna yang menggunakan Aplikasi Mapping berbasis Android untuk melakukan pemetaan kekuatan sinyal atau nilai RSSI dari Beacon.
+	\item Pengguna gedung FMIPA USK
+	      \newline Pengguna yang menggunakan Aplikasi Penentuan Lokasi dan Estimasi Orang di gedung Fakultas Matematika dan Ilmu Pengetahuan Alam Univesitas Syiah Kuala berbasis Android.
 \end{enumerate}
 
 \subsection{Use Case Diagram}
-\textit{Use case diagram} digunakan untuk mewakili beberapa korelasi atau beberapa daftar tindakan antara elemen dari sebuah sistem dengan aktor. \textit{Use case diagram} digunakan untuk merepresentasikan hubungan dan ketergantungan dalam sebuah sistem. Aktor bisa berupa manusia atau fitur dari sistem itu sendiri, berguna untuk menentukan peran yang dimiliki oleh pengguna atau sistem lain yang saling berinteraksi \citep{Syed2018}.
-\textit{Use Case Diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{usecasemapping} dan Gambar \ref{usecasepenguji}.
+\textit{Use case} diagram adalah diagram yang mendeskripsilam hubungan antara aktor dan sistem. \textit{Use case} diagram bisa mendeskripsikan sebuah interaksi antara satu atau lebih aktor dengan sistem yang akan dibuat. \textit{Use case} diagram juga bisa digunakan untuk mengetahui fungsi apa saja yang ada di dalam sebuah sistem dan  bisa juga mempresentasikan sebuah interaksi aktor dengan sistem. Komponen tersebut kemudian menjelaskan komunikasi antara aktor,  dengan sistem yang ada. Dengan demikian, \textit{use case} dapat dipresentasikan dengan urutan yang sederhana, dan akan mudah dipahami oleh para konsumen \citep{Yu2009}. \textit{Use Case Diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{usecasemapping} dan Gambar \ref{usecasedosen}
 
 \begin{figure}[H]
 	\center
 	\shadowbox
-	{\includegraphics [width=10cm, height=9cm]{gambar/mapping}}
+	{\includegraphics [width=8.5cm, height=8cm]{gambar/mapping}}
 	\caption{\textit{Use Case Diagram} Aplikasi Mapping.}
 	\label{usecasemapping}
 \end{figure}
 
-\par Gambar \ref{usecasemapping} diatas menjelaskan aktivitas-aktivitas yang dapat dilakukan oleh peneliti saat sedang menggunakan aplikasi \textit{mapping}. Ketika peneliti membuka aplikasi, akan terlihat halaman utama dari aplikasi \textit{Mapping}. Selanjutnya, ketika peneliti memindai sinyal bluetooth, peneliti diminta untuk mengizinkan aplikasi untuk mengakses bluetooth pada perangkat yang digunakan. kemudian, peneliti bisa memindai kekuataan sinyal atau RSSI dari beacon. Setelah itu, hasil dari pemindaian kekuataan sinyal atau RSSI tersebut dapat disimpan dan peneliti dapat melihat jumlah data yang sudah disimpan di server.
-
+\par Gambar \ref{usecasemapping} diatas menjelaskan aktivitas yang dapat dilakukan oleh peneliti saat menggunakan aplikasi mapping. Ketika peneliti membuka aplikasi mapping, maka akan muncul halaman beranda. Kemudian, peneliti diminta untuk mengizinkan aplikasi mengakses lokasi pada perangkat. Selanjutnya, peneliti dapat melakukan pemindaian kekuatan sinyal setelah menghidupkan Bluetooth pada perangkat \textit{smartphone}. Setelah itu, hasil dari pemindaian kekuatan sinyal tersebut disimpan didalam server dan dapat ditampilkan jumlah data kekuatan sinyal.
 \fancyhf{}
 \fancyfoot[R]{\thepage}
 \begin{figure}[H]
 	\center
 	\shadowbox
 	{\includegraphics [width=10cm, height=9cm]{gambar/penentuanlokasi}}
-	\caption{\textit{Use Case Diagram} Aplikasi SpecifyLocation.}
-	\label{usecasepenguji}
+	\caption{\textit{Use Case Diagram} Aplikasi Penentuan Lokasi dan Estimasi Orang}
+	\label{usecasedosen}
 \end{figure}
 
-\par Gambar \ref*{usecasepenguji} menjelaskan aktivitas-aktivitas yang dapat dilakukan oleh penguji aplikasi saat sedang menggunakan apabila SpecifyLocation. Sama halnya dengan aplikasi \textit{mapping}, ketika penguji aplikasi membuka aplikasi, akan terlihat halaman utama dari aplikasi SpecifyLocation. Selanjutnya ketika penguji memprediksi lokasi, penguji diminta untuk mengizinkan aplikasi untuk mengakses bluetooth pada perangkat yang sedang digunakan. Setelah itu, dari hasil memprediksi lokasi akan ditampilkan prediksi lokasi pengguji saat ini di dalam gedung FMIPA USK, serta penguji dapat melihat estimasi jumlah orang yang sedang berada di dalam gedung FMIPA USK dengan syarat semua orang yang berada di dalam gedung menggunakan aplikasi SpecifyLocation.
+\par Gambar \ref{usecasedosen} menjelaskan aktivitas yang dapat dilakukan oleh setiap orang yang memasuki gedung Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala. Aktivitas pertama yang dapat dilakukan adalah membuka aplikasi LocaLization, pengguna dapat menikmati fitur-fitur yang tersedia seperti melihat estimasi atau jumlah orang yang sedang berada didalam gedung, memulai proses pengecekan lokasi diri sendiri saat berada didalam gedung FMIPA USK dengan syarat keadaan \textit{Bluetooth} pada perangkat dalam keadaan hidup dan melihat kecepatan prediksi berapa detik. Jika pengguna berada diluar gedung FMIPA USK, maka perangkat akan memprediksi pengguna sedang berada diluar jangkauan.
+
+
 % //TODO:Selanjutnya Buat diagram Deployment
 \section{PERANCANGAN DAN PEMBUATAN SISTEM}
 
@@ -117,7 +117,7 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/Lantai1.png}
+			      \includegraphics[width=.5\linewidth]{gambar/applantai1.png}
 			      \caption{Hasil Prediksi Lantai 1}
 		      \end{subfigure}
 		      \vspace{1cm}
@@ -126,7 +126,7 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
 			      \begin{subfigure}{.5\textwidth}
 				      \centering
 				      % include third image
-				      \includegraphics[width=.5\linewidth]{gambar/Lantai2.png}
+				      \includegraphics[width=.5\linewidth]{gambar/applantai3}
 				      \caption{Hasil Prediksi Koridor Lab Data Base}
 			      \end{subfigure}
 		      \end{center}
@@ -144,7 +144,7 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
 
 \begin{enumerate}[a.]
 	\item Aplikasi \textit{Mapping}
-	      \\ Aplikasi ini adalah sebuah aplikasi \textit{mobile} berbasis Android yang dibuat menggunakan bahasa pemrograman JavaScript dan \textit{framework} React Native. Media untuk penyimpanan data pada aplikasi \textit{mapping} ini menggunakan \textit{database} MongoDb Compass yang datanya akan dikirim melalui API [Isi nanti]. Potongan kode program yang terdapat dalam aplikasi \textit{mapping} ini dapat dilihat pada Progran 4.1 berikut ini.
+	      \\ Aplikasi \textit{mapping} merupakan  aplikasi \textit{mobile} berbasis Android yang dibuat menggunakan bahasa pemrograman JavaScript dengan \textit{framework} React Native. Media untuk penyimpanan data pada aplikasi \textit{mapping} ini menggunakan \textit{database} MongoDb Compass yang datanya akan dikirim melalui \textit{Web Service}. Potongan kode program yang terdapat dalam aplikasi \textit{mapping} ini dapat dilihat pada Progran 4.1 berikut ini.
 	      \vspace{0.4cm}
 	      \lstset{language=Java,
 		      basicstyle=\ttfamily\scriptsize\color{black},
