@@ -7,7 +7,26 @@
 \chapter{METODOLOGI PENELITIAN}
 
 \section{\uppercase{WAKTU DAN LOKASI PENELITIAN}}
-\setlength\parindent{30pt} Penelitian ini dilaksanakan di lantai 1 dan 3 di Gedung A FMIPA Universitas Syiah Kuala (USK). Waktu yang dibutuhkan untuk penelitian ini adalah 5 bulan terhitung dari bulan May 2021 hingga Oktober 2021.
+\setlength\parindent{30pt} Penelitian ini dilaksanakan di lantai 1 dan 3 di Gedung A FMIPA Universitas Syiah Kuala (USK). Waktu yang dibutuhkan untuk penelitian ini adalah 5 bulan terhitung dari bulan Juli 2021 hingga Desember 2021.
+
+\par Rincian penelitian dapat dilihat pada tabel \ref{tabelwaktupenelitian}
+\begin{table}[H]
+	\small
+	\fontsize{10pt}{20pt}
+	\selectfont
+	\caption{Jadwal Penelitian}
+	\label{tabelwaktupenelitian}
+	\begin{tabular}{|c|l|l|l|l|l|l|l|}
+		\hline
+		                      &                              & \multicolumn{6}{c|}{Bulan}                                                                                                                                                             \\ \cline{3-8}
+		\multirow{-2}{*}{No.} & \multirow{-2}{*}{Keterangan} & Juli                                            & Agustus                  & September                & Oktober                  & November                 & Desember                 \\ \hline
+		1                     & Studi literatur              & \cellcolor[HTML]{9B9B9B}{\color[HTML]{9B9B9B} } & \cellcolor[HTML]{9B9B9B} &                          &                          &                          &                          \\ \hline
+		2                     & Penulisan Proposal           &                                                 & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} &                          &                          &                          \\ \hline
+		3                     & Pengembangan Aplikasi        &                                                 &                          & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} & \cellcolor[HTML]{9B9B9B} &                          \\ \hline
+		4                     & Evaluasi Sistem              &                                                 &                          &                          &                          & \cellcolor[HTML]{9B9B9B} &                          \\ \hline
+		5                     & Penulisan Laporan Akhir      &                                                 &                          &                          &                          &                          & \cellcolor[HTML]{9B9B9B} \\ \hline
+	\end{tabular}
+\end{table}
 
 \section{\uppercase{ALAT DAN BAHAN}}
 Alat dan bahan yang digunakan pada penelitian ini meliputi perangkat keras, perangkat lunak dan bahan yang mendukung pada penelitian ini adalah data \textit{Received Signal Strength Indicator} (RSSI) dari hasil survei di lokasi penelitian. Adapun perangkat lunak yang digunakan adalah:
@@ -22,7 +41,7 @@ Alat dan bahan yang digunakan pada penelitian ini meliputi perangkat keras, pera
 	\item Postman 8.12.0
 \end{itemize}
 
-\par Sedangkan komponen perangkat keras yang digunakan meliputi 1 unit Laptop Acer dengan RAM 3GB, Intel® Core™ i3-3230M CPU @2.60Ghz (4 CPUs), ~2.6 GHz Processor, \textit{Harddisk} 500GB, \textit{Solid State Drive} (SSD) 120GB, memiliki Sistem Operasi Windows 64-bit, 20 unit \textit{KBeacon}, serta smartphone Samsung A30.
+\par Sedangkan komponen perangkat keras yang digunakan meliputi 1 unit Laptop Acer dengan RAM 3GB, Intel® Core™ i3-3230M CPU @2.60Ghz (4 CPUs), ~2.6 GHz Processor, \textit{Harddisk} 500GB, \textit{Solid State Drive} (SSD) 120GB, memiliki Sistem Operasi Windows 64-bit, 31 unit \textit{Beacon}, serta smartphone Samsung A30.
 
 \section{\uppercase{METODE PENELITIAN}}
 Metode penelitian yang dilakukan terdiri dari beberapa tahapan. Skema dari alur tahapan tersebut dapat dilihat pada Gambar \ref{metpen}.
@@ -79,7 +98,7 @@ Pada tahapan ini, analisa kebutuhan bersumber dari masalah yang telah diidentifi
 \subsection{Studi Literatur}
 Pada proses studi literatur, peneliti mengumpulkan bahan referensi penelitian yang bersumber dari jurnal-jurnal nasional dan internasional yang terkait penelitian ini dan situs \textit{website} serta buku-buku referensi untuk penelitian ini. Studi literatur dikembangkan untuk menyempurnakan penelitian sebelumnya.
 
-\subsection{Perancangan Sistem}
+\subsection{Perancangan Sistem Aplikasi Penentuan Lokasi dan Estimasi Orang}
 Pada tahap ini, peneliti merancang alur kerja  sistem sehingga bisa memastikan sistem yang dirancang dapat digunakan sesuai kebutuhan pengguna. Alur kerja sistem dijelaskan menggunakan diagram alir yang dapat dilihat dari gambar berikut ini.
 \ref{alur-kerja-sistem}.
 
@@ -90,25 +109,9 @@ Pada tahap ini, peneliti merancang alur kerja  sistem sehingga bisa memastikan s
 	\label{alur-kerja-sistem}
 \end{figure}
 
-\subsection{Pembuatan Sistem}
-Metode yang digunakan pada sistem ini adalah metode \textit{Scrum}. Metode \textit{Scrum} merupakan metodologi yang termasuk dalam agile software development. \textit{Scrum} dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai dengan keinginan pengguna, dapat digunakan dalam proyek besar maupun kecil, dan mudah untuk mengadopsi perubahan.Sistem ini memiliki empat aplikasi yang terdiri dari tiga aplikasi utama dan satu aplikasi pendukung. yaitu:
-\begin{enumerate}
-	\item Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang
-	      \newline Aplikasi ini merupakan aplikasi utama yang berfungsi untuk melakukan proses penentuan lokasi dan estimasi jumlah orang yang berada di dalam gedung A Fakultas Matematika dan Ilmu Pengetahuan Alam USK. Aplikasi ini dibangun menggunakan framework \textit{React native}
-
-	\item Aplikasi \textit{Web Service Flask} Untuk Menjalankan Model \textit{Support Vector Machine} (SVM)
-	      \newline Aplikasi \textit{Web Service Flask} merupakan aplikasi utama, yang mana aplikasi \textit{Web Service Flask} ini akan menjalankan model yang telah dihasilkan oleh kode bahasa \textit{python}.
-
-	\item Aplikasi \textit{Mapping}
-	      \newline Aplikasi ini merupakan aplikasi pendukung yang berfungsi untuk melakukan pengumpulan data. Data yang dikumpulkan berupa data kekuatan sinyal RSSI berdasarkan lokasi dimana data tersebut diambil. Setelah pengumpulan data selesai dilakukan, data tersebut akan di kirim ke \textit{Web Service GraphQL} dan kemudian akan di simpan ke \textit{Database MongoDB}.
-
-	\item Aplikasi \textit{Web Service GraphQL} Untuk Menyimpan Data \textit{Mapping}
-	      \newline Aplikasi \textit{Web Service GraphQL} merupakan aplikasi pendukung, yang mana aplikasi \textit{Web Service GraphQL} ini akan menyimpan data \textit{mapping} RSSI yang dikirimkan oleh \textit{device} peneliti.
-
-\end{enumerate}
-
-\subsection{Pengembangan Aplikasi Mapping}
-\par Untuk memperoleh dataset untuk penelitian ini, maka diperlukan aplikasi \textit{mapping} untuk menangkap sinyal \text{bluetooth} dari alat \textit{Beacon}. Nilai RSSI yang diperoleh dari 20 \textit{Beacon} yang dipasang dari setiap sudut ruangan akan disimpan dalam database mongoDB. Pada penelitian sebelumnya, aplikasi \textit{mapping} menyimpan data di local server sehingga  tidak efektif jika digunakan oleh banyak server. Oleh karena itu, penulis merancang \textit{Web Service} agar data yang disimpan saat penelitian atau \textit{mapping} akan disimpan di database \textit{mongoDB}. Adapun fitur yang tersedia pada aplikasi \textit{mapping} ini adalah:
+\subsection{Pengumpulan Data Sinyal dengan Aplikasi \textit{Mapping}}
+\par Untuk memperoleh dataset untuk penelitian ini, maka diperlukan aplikasi \textit{mapping} untuk menangkap sinyal \text{bluetooth} dari alat \textit{Beacon}. Aplikasi \textit{mapping} ini juga sudah memiliki sertifikat Hak Kekayaan Intelektual (HKI) dengan nomor EC00201972853 yang dapat dilihat pada lampiran 1. Nilai RSSI yang diperoleh dari 31 \textit{Beacon} yang dipasang dari setiap sudut ruangan akan disimpan dalam database mongoDB.
+\par Pada penelitian sebelumnya, aplikasi \textit{mapping} menyimpan data di local server sehingga  tidak efektif jika digunakan oleh banyak server. Oleh karena itu, penulis merancang \textit{Web Service} agar data yang disimpan saat penelitian atau \textit{mapping} akan disimpan di database \textit{mongoDB}. Adapun fitur yang tersedia pada aplikasi \textit{mapping} ini adalah:
 
 \begin {itemize}
 \itemsep0em
@@ -117,25 +120,21 @@ Aplikasi ini akan melakukan pemindaian kekuatan sinyal yang ditangkap dari setia
 
 \item Menyimpan Data Kekuatan Sinyal \newline
 Ketika selesai melakukan \textit{mapping}, data kekuatan sinyal disimpan ke database \textit{mongoDB} yang berada di server. Data tersebut akan digunakan pada tahap penelitian selanjutnya.
-
 \end{itemize}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Pengumpulan Data}
+
+\par Adapun proses pengumpulan data sinyal secara detail, dijelaskan tahapannya sebagai berikut:
 \begin{enumerate}[a.]
 	\itemsep0em
-	\item Pembuatan Denah Lokasi Penelitian
-	      \\
-	      Pembuatan Denah Lokasi Penelitian didasarkan pada rancangan gedung FMIPA USK. Denah ini dapat digunakan untuk menentukan posisi \textit{reference point} untuk proses pemetaan nantinya. Proses penentuan letak \textit{reference point} ini dilakukan dengan cara menghitung luas lokasi penelitian.
-	      %%%%%%%%%%%%%%%%%%%%%%next%%%%%%%%%%%%%%%%%%%%%
-
 	\item Pengukuran Jarak Lokasi Penelitian
 	      \\
 	      Pengukuran ini bertujuan untuk mengukur jarak dari denah lokasi penelitian yang telah dibuat. Hal ini agar bertujuan untuk membuat bobot pada algoritma \textit{Support Vector Machine} (SVM).
-
+	\item Pembuatan Denah Lokasi Penelitian
+	      \\
+	      Pembuatan Denah Lokasi Penelitian didasarkan pada rancangan gedung FMIPA USK. Denah ini bertujuan untuk menentukan posisi \textit{reference point} untuk proses pemetaan nantinya.
 	\item Penentuan Letak \textit{Reference Point}
 	      \\
-	      Pada tahap ini, letak \textit{reference point} berada di gedung Blok A FMIPA USK, diantaranya adalah di lantai 1, tangga lantai 1 menuju lantai 2, tangga lantai 2 menuju lantai 3, koridor depan Laboratorium Jaringan Komputer, Laboratorium Database, dan Laboratorium Sistem Informasi Geografis.Penentuan letak \textit{reference point} ini dilakukan di setiap sudut ruangan kecuali di dalam ruangan laboratorium. Penentuan \textit{reference point} dilakukan secara urut dengan masing-masing jarak antara satu \textit{reference point} ke \textit{reference point} yang lain sejauh 2 ubin lantai atau 120 centimeter untuk meminimalisir \textit{position error}. \citep{Lee2019} \citep{Bahl2000}. Tujuan penentuan posisi \textit{reference point} ini bertujuan untuk menentukan lokasi pengumpulan data kekuatan sinyal yang dipancarkan setiap \textit{Beacon} di setiap sudut ruangan. Penentuan \textit{reference point} yang saling berdekatan mempengaruhi hasil tahap \textit{positioning}. Denah lokasi penelitian ini dapat dilihat pada Gambar \ref{gedungA}.
+	      Pada tahap ini, letak \textit{reference point} berada di gedung Blok A FMIPA USK, di antaranya adalah di lantai 1, tangga lantai 1 menuju lantai 2, tangga lantai 2 menuju lantai 3, koridor depan Laboratorium Jaringan Komputer, Laboratorium Database, dan Laboratorium Sistem Informasi Geografis.Penentuan letak \textit{reference point} ini dilakukan di setiap sudut ruangan kecuali di dalam ruangan laboratorium. Penentuan \textit{reference point} dilakukan secara urut dengan masing-masing jarak antara satu \textit{reference point} ke \textit{reference point} yang lain sejauh 2 ubin lantai atau 120 centimeter untuk meminimalisir \textit{position error}. \citep{Lee2019} \citep{Bahl2000}. Tujuan penentuan posisi \textit{reference point} ini bertujuan untuk menentukan lokasi pengumpulan data kekuatan sinyal yang dipancarkan setiap \textit{Beacon} di setiap sudut ruangan. Penentuan \textit{reference point} yang saling berdekatan mempengaruhi hasil tahap \textit{positioning}. Denah lokasi penelitian ini dapat dilihat pada Gambar \ref{gedungA}.
 
 	      %\vspace{2cm}
 	      \begin{figure}[H]
@@ -146,11 +145,11 @@ Ketika selesai melakukan \textit{mapping}, data kekuatan sinyal disimpan ke data
 
 		      \centering
 		      \subfloat[Denah Lantai 3]{{\includegraphics[width=12cm, height=6cm]{gambar/lantai3} }}
-		      \caption{Ilustrasi Denah Lokasi Letak \textit{Reference Point} Penelitian Gedung Blok A FMIPA}%
+		      \caption{Ilustrasi Denah Lokasi Letak \textit{Reference Point} Penelitian Gedung Blok A FMIPA USK}%
 		      \label{gedungA}%
 	      \end{figure}
 
-	      \par Pada proses ini, masing-masing \textit{reference point} saat mengambil kekuatan sinyal akan menghadap 4 arah oriental yaitu depan, belakang, kiri dan kanan.Kekuatan sinyal pada lokasi tertentu memiliki nilai yang bervariasi hingga -5 dBm tergantung orientasi yang dihadapi pengguna \cite{Bahl2000}. Tiap arah orientasi, antena \textit{host} yang dimiliki oleh \textit{smartphone} memiliki konektivitas \textit{line-of-sight} (LoS) ke sebuah antena \textit{Beacon} selama orientasinya berlawanan. Arah orientasi dari tubuh pengguna juga dapat menimbulkan halangan dan kekuatan sinyal yang ditangkap juga berbeda. Oleh karena itu, perlu dilakukan pencatatan \textit{direction} (d), dengan menghadap ke depan, ke kanan, ke belakang dan ke kiri tergantung pada pengambilan kekuatan sinyal yang dilakukan \citep{christ1993}. Metode pengambilan kekuatan sinyal setiap \textit{Beacon} berdasarkan proses survei pemetaan \textit{reference point} disebut dengan metode \textit{Fingerprinting}. Metode \textit{Fingerprinting} dilakukan dengan mengumpulkan  data-data kekuatan sinyal tersebut ke dalam basis data \textit{mongoDB} untuk dijadikan sebagai data \textit{training} nantinya.
+	      \par Pada proses ini, masing-masing \textit{reference point} saat mengambil kekuatan sinyal akan menghadap 4 arah oriental yaitu depan, belakang, kiri dan kanan. Tiap arah orientasi, antena \textit{host} yang dimiliki oleh \textit{smartphone} memiliki konektivitas \textit{line-of-sight} (LoS) ke sebuah antena \textit{Beacon} selama orientasinya berlawanan. Arah orientasi dari tubuh pengguna juga dapat menimbulkan halangan dan kekuatan sinyal yang ditangkap juga berbeda. Oleh karena itu, perlu dilakukan pencatatan \textit{direction} (d), dengan menghadap ke depan, ke kanan, ke belakang dan ke kiri tergantung pada pengambilan kekuatan sinyal yang dilakukan \citep{christ1993}. Metode pengambilan kekuatan sinyal setiap \textit{Beacon} berdasarkan proses survei pemetaan \textit{reference point} disebut dengan metode \textit{Fingerprinting}. Metode \textit{Fingerprinting} dilakukan dengan mengumpulkan  data-data kekuatan sinyal tersebut ke dalam basis data \textit{mongoDB} untuk dijadikan sebagai data \textit{training} nantinya.
 
 	      %%%%%%%%%%%%%%%%%%%%%%next%%%%%%%%%%%%%%%%%%%%%
 	\item Pengumpulan Data \textit{Training}
@@ -177,100 +176,70 @@ Ketika selesai melakukan \textit{mapping}, data kekuatan sinyal disimpan ke data
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %TESTING svm%
-\subsection{Pengujian Akurasi dengan Metode Klasifikasi SVM}
+\subsection{Pengujian Akurasi dengan Algoritma SVM}
 
-\par Pengujian ini dilakukan dengan tujuan untuk mengetahui tingkat keberhasilan prediksi dengan menggunakan algoritma \textit{Support Vector Machine} (SVM) terhadap lokasi pengguna berdasarkan \textit{reference point} yang digunakan. Algoritma klasifikasi SVM pada penelitian ini dibuat dengan menggunakan kode python dengan tahapan sebagai berikut :
+\par Pengujian ini dilakukan dengan tujuan untuk mengetahui tingkat keberhasilan prediksi dengan menggunakan algoritma \textit{Support Vector Machine} (SVM) terhadap lokasi pengguna berdasarkan \textit{reference point} yang digunakan. Algoritma klasifikasi SVM pada penelitian ini dibuat dengan menggunakan kode python. Algoritma SVM pada penelitian ini bersifat sekali training dikarenakan menggunakan library python scikit learn dan menghasilkan pickle bukan model. Pickle tidak bersifat real time dan jika ingin memperbarui file harus melakukan proses \textit{training} ulang. Adapun denah untuk kelas pada algoritma SVM dapat di gambarkan sebagai berikut :
 
-\begin{enumerate}[1.]
-	\itemsep0em
-	\item \textit{Import} library yang diperlukan
-	      %   \begin{figure}[H]
-	      %       \centering
-	      %       \includegraphics[width=14cm, height=3.5cm]{gambar/uji1}
-	      %       \caption{\textit{Import} library yang diperlukan}
-	      %       \label{uji1}
-	      %   \end{figure}
+\par Peran algoritma SVM pada penelitian ini sangat penting, diantaranya yang pertama adalah pada saat proses klasifikasi. Klasifikasi menggunakan algoritma SVM sangat penting pada proses \textit{training} dan \textit{testing} sehingga menghasilkan nilai akurasi dan \textit{pickle}. Kemudian peran SVM ini juga digunakan pada proses prediksi lokasi pengguna yang sedang berada di dalam gedung dan juga memiliki peran dalam menentukan estimasi jumlah orang di dalam gedung, dimana pickle SVM di simpan pada \textit{web service flask}.
+
+\par Proses prediksi menggunakan algoritma SVM ini adalah pertama sinyal yang di transmisikan tiap beacon akan di tangkap oleh perangkat android si pengguna lalu data sinyal RSSI tersebut dikirim ke \textit{web service flask} agar di klasifikasi dan di prediksi oleh algoritma SVM. Kemudian hasil prediksi tersebut dikirim ke database server, jika hasil prediksi tersebut adalah di dalam gedung FMIPA maka akan masuk ke dalam estimasi jumlah orang di dalam gedung dan sebaliknya jika hasil prediksinya adalah di luar FMIPA maka tidak di masukkan ke dalam estimasi jumlah orang di dalam gedung. Sehingga hasil prediksi lokasi pengguna dan estimasi jumlah orang di dalam gedung akan di tampilkan di output aplikasi.
 
 
-
-	\item Memproses data atau membaca dataset dari hasil mapping
-	      %   \begin{figure}[H]
-	      %       \centering
-	      %       \includegraphics[width=14cm, height=6cm]{gambar/uji2}
-	      %       \caption{Pemprosesan data atau membaca dataset dari hasil mapping}
-	      %       \label{uji2}
-	      %   \end{figure}
-
-	\item Membagi data menjadi atribut dan label
-	      %   \begin{figure}[H]
-	      %       \centering
-	      %       \includegraphics[width=14cm, height=4cm]{gambar/uji3}
-	      %       \caption{Pembagian data menjadi atribut dan label}
-	      %       \label{uji3}
-	      %   \end{figure}
-
-	\item Melatih Algoritma
-	      %   \begin{figure}[H]
-	      %       \centering
-	      %       \includegraphics[width=13cm, height=4cm]{gambar/uji4}
-	      %       \caption{Melatih Algoritme}
-	      %       \label{uji4}
-	      %   \end{figure}
-
-	\item Menghasilkan model dan visualisasi hasil algoritma SVM.
-	      \par Hasil tersebut adalah hasil akurasi dari klasifikasi algoritma SVM. Model dari algoritma SVM juga nantinya akan digunakan untuk memprediksi lokasi pengguna dalam penerapan aplikasi nantinya.
-
-	\item Memprediksi
-	      \par Proses ini akan memprediksi dengan memasukkan data \textit{testing} yang didapat dari proses pengambilan data uji menggunakan kode \textit{python}.
-\end{enumerate}
-
-\subsection{Pembuatan Model SVM}
-Pada proses pembuatan model ini, dilakukan setelah proses pengujian akurasi dengan menggunakan algoritma klasifikasi \textit{Support Vector Machine} (SVM) dirasa sudah lebih akurat dengan dapat memprediksi semua klasifikasi yang diharapkan. Model dibuat dengan menggunakan bahasa kode python yang memanfaatkan library dari python yaitu \textit{pandas}, \textit{numpy}, dan \textit{matplotlib}. Setelah model berhasil dibuat maka model akan dimasukkan ke dalam \textit{web service flask}, dari \textit{web service flask} ini akan menghasilkan prediksi dari model dan akan dikirim ke aplikasi utama.
+%\vspace{2cm}
+\begin{figure}[H]
+	\centering
+	\subfloat[Denah kelas SVM Lantai 1]{{\includegraphics[width=16cm, height=8cm]{gambar/class1.png} }}%
+	\qquad
+	\subfloat[Denah kelas SVM Lantai 2]{{\includegraphics[width=18cm, height=9cm]{gambar/class2.png} }}
+	\centering
+	\subfloat[Denah kelas SVM Lantai 3]{{\includegraphics[width=18cm, height=9cm]{gambar/class3.png} }}
+	\caption{Ilustrasi Denah Menggambarkan Kelas SVM}%
+	\label{gedungA}%
+\end{figure}
 
 
-\subsection{Pembuatan Aplikasi Penentuan Lokasi dan Estimasi Orang dalam Gedung}
+
+
+\subsection{Pembuatan Aplikasi Penentuan Lokasi dan Estimasi Orang di dalam Gedung}
+\par Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang di dalam Gedung dibangun menggunakan \textit{react native} ini adalah aplikasi berbasis Android yang berguna untuk mempermudah pengguna dan rekan tim penelitian untuk melakukan proses pencarian lokasi dan estimasi jumlah orang yang berada di dalam gedung Blok A Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala, yang dikembangkan dengan konsep \textit{Indoor Localization System} dan \textit{Crowdsourcing}. Aplikasi ini bekerja apabila perangkat smartphone sudah mendukung Bluetooth 4.0, dikarenakan aplikasi ini menangkap kekuatan sinyal atau nilai RSSI dari \textit{Beacon} yang terintegrasi BLE di dalamnya. Kekuatan sinyal yang ditangkap akan dilakukan perhitungan menggunakan metode klasifikasi \textit{Support Vector Machine} (SVM), output dari perhitungan tersebut adalah prediksi lokasi pengguna yang akan dikirim ke web services flask secara background process. Adapun fitur-fitur yang tersedia adalah sebagai berikut:.
+
+\begin {itemize}
+\itemsep0em
+\item Memprediksi Lokasi Pengguna saat berada di dalam gedung
+\item Menampilkan Estimasi Jumlah Orang yang Berada di dalam Gedung Blok A Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala
+\end{itemize}
+
+\par Proses penentuan lokasi pada penelitian ini adalah bagaimana sistem melacak keberadaan pengguna yang menggunakan aplikasi ini saat berada di dalam gedung.
+Pengguna awalnya akan menekan tombol "cek lokasi" di aplikasi dengan syarat perangkat yang digunakan terhubung dengan bluetooth dan internet, lalu dalam 10 detik
+device pengguna akan memindai kekuatan sinyal dari 31 beacon yang dipasang disetiap sudut ruangan. Kemudian sinyal RSSI tadi akan dikirim web service flask agar diproses
+oleh model SVM dan menghasilkan hasil prediksi lokasi. Di saat yang bersamaan, hasilnya akan dikirim ke database server untuk melihat apakah hasil pediksi lokasi berada
+di dalam gedung atau di luar gedung. Jika hasilnya adalah di dalam gedung, maka akan di hitung sebagai estimasi jumlah orang di dalam gedung dan sebaliknya jika diluar gedung maka tidak akan
+di hitung sebagai estimasi jumlah orang di dalam gedung. Sehingga hasil akhirnya berupa hasil prediksi lokasi dan estimasi jumlah orang di dalam gedung akan ditampilkan pada output aplikasi.
+
+
+Metode yang digunakan pada sistem ini adalah metode \textit{Scrum}. Metode \textit{Scrum} merupakan metodologi yang termasuk dalam agile software development. \textit{Scrum} dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai dengan keinginan pengguna, dapat digunakan dalam proyek besar maupun kecil, dan mudah untuk mengadopsi perubahan. Sistem ini juga memiliki empat aplikasi yang terdiri dari dua aplikasi utama dan dua aplikasi pendukung. yaitu:
 \begin{enumerate}
+	\item Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang
+	      \newline Aplikasi ini merupakan aplikasi utama berbasis android yang berfungsi untuk melakukan proses penentuan lokasi dan estimasi jumlah orang yang berada di dalam gedung A Fakultas Matematika dan Ilmu Pengetahuan Alam USK. Aplikasi ini dibangun menggunakan framework \textit{React native} dan di kerjakan oleh diri sendiri.
 
+	\item Aplikasi \textit{Web Service Flask} Untuk Menjalankan Model \textit{Support Vector Machine} (SVM)
+	      \newline Aplikasi \textit{Web Service Flask} merupakan aplikasi utama, yang mana aplikasi \textit{Web Service Flask} ini akan menjalankan model yang telah dihasilkan oleh kode bahasa python. Aplikasi
 
-	\item Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang di dalam Gedung
-	      \newline
-	      Aplikasi yang dibangun menggunakan \textit{react native} ini adalah aplikasi berbasis Android yang berguna untuk mempermudah pengguna dan rekan tim penelitian untuk melakukan proses
-	      pencarian lokasi dan estimasi jumlah orang yang berada di dalam gedung Blok A Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala, yang dikembangkan dengan konsep \textit{Indoor Localization System} dan \textit{Crowdsourcing}. Aplikasi ini bekerja apabila perangkat smartphone sudah mendukung Bluetooth 4.0, dikarenakan aplikasi ini menangkap kekuatan sinyal atau nilai RSSI dari \textit{Beacon} yang terintegrasi BLE di dalamnya. Kekuatan sinyal yang ditangkap akan dilakukan perhitungan menggunakan metode klasifikasi \textit{Support Vector Machine} (SVM), output dari perhitungan tersebut adalah prediksi lokasi pengguna yang akan dikirim ke web services flask secara background process. Adapun fitur-fitur yang tersedia adalah sebagai berikut:.
+	\item Aplikasi \textit{Mapping}
+	      \newline Aplikasi ini merupakan aplikasi pendukung yang berfungsi untuk melakukan pengumpulan data. Data yang dikumpulkan berupa data kekuatan sinyal RSSI berdasarkan lokasi dimana data tersebut diambil. Setelah pengumpulan data selesai dilakukan, data tersebut akan di kirim ke \textit{Web Service GraphQL} dan kemudian akan di simpan ke \textit{Database MongoDB}.
 
-	      \begin {itemize}
-	      \itemsep0em
-	\item Memprediksi Lokasi Pengguna saat berada di dalam gedung\newline
+	\item Aplikasi \textit{Web Service GraphQL} Untuk Menyimpan Data \textit{Mapping}
+	      \newline Aplikasi \textit{Web Service GraphQL} merupakan aplikasi pendukung, yang mana aplikasi \textit{Web Service GraphQL} ini akan menyimpan data \textit{mapping} RSSI yang dikirimkan oleh \textit{device} peneliti.
 
-	\item Menampilkan Estimasi Jumlah Orang yang Berada di dalam Gedung Blok A Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala
-
-	      \end{itemize}
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Pengujian Fungsionalitas dengan Metode Black Box}
 \par Pengujian \textit{Black Box} berfokus pada spesifikasi fungsionalitas dari sistem yang telah dibuat dengan mengeksekusi dan menjalankan sistem tersebut apakah sesuai dengan alur bisnis yang diinginkan. Pengujian ini melihat fungsi yang tidak sesuai pada sistem, kesalahan-kesalahan sistem dalam mengerjakan suatu perintah, dan kesalahan-kesalahan pada struktur data dan akses basis data.
 
-\subsection{Pengujian \textit{Usabilitas} dengan Metode UMUX}
+\subsection{Pengujian \textit{Usability} dengan Metode UMUX}
 \par \textit{Usability Testing} dilakukan untuk melihat dan mengevaluasi suatu produk atau jasa yang dihasilkan dengan cara menguji kepada calon pengguna dengan menggunakan metode UMUX. UMUX terdiri dari 4 pertanyaan dengan menggunakan skala likert 1-7.
-\par Skala likert adalah sebuah metode skala yang bersifat bipolar yang akan mengukur tanggapan positif dan negatif terhadap sebuah pertanyaan.
-Berikut daftar pertanyaan-pertanyaan metode UMUX dapat dilihat pada Tabel \ref{tabel-pertanyaan-umux}.
-%TABEL PERTANYAAN SUS%
-\begin{table}[H]
-	\center
-	\caption{Daftar Pertanyaan Metode UMUX \citep{Finstad2010}}
-	\label{tabel-pertanyaan-umux}
-	\begin{tabular}{|l|l|l|}
-		\hline
-		\rowcolor[HTML]{656565}
-		{\color[HTML]{343434} No.} & Pertanyaan                                                                                                                 & Skor \\ \hline
-		1                          & Aplikasi ini sesuai dengan kebutuhan saya                                                                                  & 1-7  \\
-		\hline
-		2                          & Saya memiliki pengalaman buruk dalam menggunakan aplikasi ini                                                              & 1-7  \\
-		\hline
-		3                          & Aplikasi ini mudah digunakan                                                                                               & 1-7  \\
-		\hline
-		4                          & \begin{tabular}[c]{@{}l@{}}Saya harus mengabiskan banyak waktu \\ untuk menggunakan aplikasi ini dengan benar\end{tabular} & 1-7  \\ \hline
-	\end{tabular}
-\end{table}
+\par Skala likert adalah sebuah metode skala yang bersifat bipolar yang akan mengukur tanggapan positif dan negatif terhadap sebuah pertanyaan. \textit{Usability testing} fokus dilakukan tanpa menggunakan \textit{test plan}. Serta survey ini dilakukan secara luring sebanyak lebih dari 10 orang dan dilakukan oleh mahasiswa FMIPA USK serta staf yang bekerja di FMIPA USK.
+
 
 % \par Rumus untuk menghitung skor akhir metode SUS \citep{Brooke1996}, dapat dilihat dari persamaan berikut.
 % \begin{equation}

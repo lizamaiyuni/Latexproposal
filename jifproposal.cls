@@ -224,7 +224,7 @@
 %------------------------------------------------------------
 \gdef\@university{Universitas Syiah Kuala}
 \gdef\@faculty{Fakultas Matematika dan Ilmu Pengetahuan Alam}
-\gdef\@city{Darussalam, Banda Aceh}
+\gdef\@city{Banda Aceh}
 \newcommand{\judul}[1]{\gdef\@judul{#1}}
 \newcommand{\@judul}{}
 \newcommand{\fullname}[1]{\gdef\@fullname{#1}}
@@ -345,7 +345,7 @@
 	\begin{doublespace}	
 		Mengetahui:\\
 		\begin{singlespace}
-		Ketua Jurusan Informatika FMIPA\\ Universitas Syiah Kuala,\\
+		Ketua Program Studi Informatika FMIPA\\ Universitas Syiah Kuala,\\
 		\vspace{2.0cm}
 		 \underline{\@kajur}\\
 	      NIP. \@kajurnip 

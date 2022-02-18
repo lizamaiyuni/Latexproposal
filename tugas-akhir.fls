@@ -1065,30 +1065,6 @@ INPUT .\bab2.tex
 INPUT bab2.tex
 INPUT .\bab2.tex
 INPUT bab2.tex
-INPUT .\gambar\fingerprinting.png
-INPUT gambar\fingerprinting.png
-INPUT .\gambar\fingerprinting.png
-INPUT .\gambar\fingerprinting.png
-INPUT .\gambar\fingerprinting.png
-INPUT .\gambar\fingerprinting.png
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn.jpg
-INPUT gambar\implementing-svm-kernel-svm-python-scikit-learn.jpg
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn.jpg
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn.jpg
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn.jpg
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn.jpg
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn-2.jpg
-INPUT gambar\implementing-svm-kernel-svm-python-scikit-learn-2.jpg
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn-2.jpg
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn-2.jpg
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn-2.jpg
-INPUT .\gambar\implementing-svm-kernel-svm-python-scikit-learn-2.jpg
 INPUT .\gambar\index3_souoaz.png
 INPUT gambar\index3_souoaz.png
 INPUT .\gambar\index3_souoaz.png
@@ -1101,6 +1077,18 @@ INPUT .\gambar\index2_ub1uzd.png
 INPUT .\gambar\index2_ub1uzd.png
 INPUT .\gambar\index2_ub1uzd.png
 INPUT .\gambar\index2_ub1uzd.png
+INPUT .\gambar\fingerprinting.png
+INPUT gambar\fingerprinting.png
+INPUT .\gambar\fingerprinting.png
+INPUT .\gambar\fingerprinting.png
+INPUT .\gambar\fingerprinting.png
+INPUT .\gambar\fingerprinting.png
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT .\gambar\restful.jpg
 INPUT .\gambar\restful.jpg
 INPUT gambar\restful.jpg
@@ -1130,6 +1118,15 @@ INPUT .\bab3.tex
 INPUT bab3.tex
 INPUT .\bab3.tex
 INPUT bab3.tex
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy7.tfm
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy5.tfm
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT .\gambar\metodepenelitian.drawio.png
 INPUT gambar\metodepenelitian.drawio.png
 INPUT .\gambar\metodepenelitian.drawio.png
@@ -1149,7 +1146,6 @@ INPUT .\gambar\Lantai1.png
 INPUT .\gambar\Lantai1.png
 INPUT .\gambar\Lantai1.png
 INPUT .\gambar\Lantai1.png
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT .\gambar\lantai2.png
 INPUT gambar\lantai2.png
@@ -1173,6 +1169,27 @@ INPUT .\gambar\tes.png
 INPUT .\gambar\tes.png
 INPUT .\gambar\tes.png
 INPUT .\gambar\tes.png
+INPUT .\gambar\class1.png
+INPUT .\gambar\class1.png
+INPUT gambar\class1.png
+INPUT .\gambar\class1.png
+INPUT .\gambar\class1.png
+INPUT .\gambar\class1.png
+INPUT .\gambar\class1.png
+INPUT .\gambar\class2.png
+INPUT .\gambar\class2.png
+INPUT gambar\class2.png
+INPUT .\gambar\class2.png
+INPUT .\gambar\class2.png
+INPUT .\gambar\class2.png
+INPUT .\gambar\class2.png
+INPUT .\gambar\class3.png
+INPUT .\gambar\class3.png
+INPUT gambar\class3.png
+INPUT .\gambar\class3.png
+INPUT .\gambar\class3.png
+INPUT .\gambar\class3.png
+INPUT .\gambar\class3.png
 INPUT .\bab4.tex
 INPUT .\bab4.tex
 INPUT .\bab4.tex
@@ -1195,90 +1212,86 @@ INPUT .\gambar\penentuanlokasi.jpeg
 INPUT .\gambar\penentuanlokasi.jpeg
 INPUT .\gambar\penentuanlokasi.jpeg
 INPUT .\gambar\penentuanlokasi.jpeg
-INPUT .\gambar\model\deployment-diagram.jpg
-INPUT gambar\model\deployment-diagram.jpg
-INPUT .\gambar\model\deployment-diagram.jpg
-INPUT .\gambar\model\deployment-diagram.jpg
-INPUT .\gambar\model\deployment-diagram.jpg
-INPUT .\gambar\model\deployment-diagram.jpg
-INPUT .\gambar\mapping1.png
-INPUT .\gambar\mapping1.png
-INPUT gambar\mapping1.png
-INPUT .\gambar\mapping1.png
-INPUT .\gambar\mapping1.png
-INPUT .\gambar\mapping1.png
-INPUT .\gambar\mapping1.png
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
-INPUT .\gambar\mapping2.png
-INPUT .\gambar\mapping2.png
-INPUT gambar\mapping2.png
-INPUT .\gambar\mapping2.png
-INPUT .\gambar\mapping2.png
-INPUT .\gambar\mapping2.png
-INPUT .\gambar\mapping2.png
-INPUT .\gambar\mapping3.png
-INPUT .\gambar\mapping3.png
-INPUT gambar\mapping3.png
-INPUT .\gambar\mapping3.png
-INPUT .\gambar\mapping3.png
-INPUT .\gambar\mapping3.png
-INPUT .\gambar\mapping3.png
-INPUT .\gambar\mapping4.png
-INPUT .\gambar\mapping4.png
-INPUT gambar\mapping4.png
-INPUT .\gambar\mapping4.png
-INPUT .\gambar\mapping4.png
-INPUT .\gambar\mapping4.png
-INPUT .\gambar\mapping4.png
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT .\gambar\diluarjangkauan.png
-INPUT .\gambar\diluarjangkauan.png
-INPUT gambar\diluarjangkauan.png
-INPUT .\gambar\diluarjangkauan.png
-INPUT .\gambar\diluarjangkauan.png
-INPUT .\gambar\diluarjangkauan.png
-INPUT .\gambar\diluarjangkauan.png
-INPUT .\gambar\applantai1.png
-INPUT .\gambar\applantai1.png
-INPUT gambar\applantai1.png
-INPUT .\gambar\applantai1.png
-INPUT .\gambar\applantai1.png
-INPUT .\gambar\applantai1.png
-INPUT .\gambar\applantai1.png
-INPUT .\gambar\applantai3.png
-INPUT gambar\applantai3.png
-INPUT .\gambar\applantai3.png
-INPUT .\gambar\applantai3.png
-INPUT .\gambar\applantai3.png
-INPUT .\gambar\applantai3.png
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrb8t.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrb8t.vf
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrb8r.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT .\gambar\model\diagramdeployment.png
+INPUT .\gambar\model\diagramdeployment.png
+INPUT gambar\model\diagramdeployment.png
+INPUT .\gambar\model\diagramdeployment.png
+INPUT .\gambar\model\diagramdeployment.png
+INPUT .\gambar\model\diagramdeployment.png
+INPUT .\gambar\model\diagramdeployment.png
+INPUT .\gambar\splashscreen.png
+INPUT .\gambar\splashscreen.png
+INPUT gambar\splashscreen.png
+INPUT .\gambar\splashscreen.png
+INPUT .\gambar\splashscreen.png
+INPUT .\gambar\splashscreen.png
+INPUT .\gambar\splashscreen.png
+INPUT .\gambar\mulai.png
+INPUT .\gambar\mulai.png
+INPUT gambar\mulai.png
+INPUT .\gambar\mulai.png
+INPUT .\gambar\mulai.png
+INPUT .\gambar\mulai.png
+INPUT .\gambar\mulai.png
+INPUT .\gambar\mulai (1).png
+INPUT .\gambar\mulai (1).png
+INPUT gambar\mulai (1).png
+INPUT .\gambar\mulai (1).png
+INPUT .\gambar\mulai (1).png
+INPUT .\gambar\mulai (1).png
+INPUT .\gambar\mulai (1).png
+INPUT .\gambar\lantai 9 (1).png
+INPUT .\gambar\lantai 9 (1).png
+INPUT gambar\lantai 9 (1).png
+INPUT .\gambar\lantai 9 (1).png
+INPUT .\gambar\lantai 9 (1).png
+INPUT .\gambar\lantai 9 (1).png
+INPUT .\gambar\lantai 9 (1).png
+INPUT .\gambar\lantai 4 (1).png
+INPUT .\gambar\lantai 4 (1).png
+INPUT gambar\lantai 4 (1).png
+INPUT .\gambar\lantai 4 (1).png
+INPUT .\gambar\lantai 4 (1).png
+INPUT .\gambar\lantai 4 (1).png
+INPUT .\gambar\lantai 4 (1).png
+INPUT .\gambar\lantai 8 (1).png
+INPUT .\gambar\lantai 8 (1).png
+INPUT gambar\lantai 8 (1).png
+INPUT .\gambar\lantai 8 (1).png
+INPUT .\gambar\lantai 8 (1).png
+INPUT .\gambar\lantai 8 (1).png
+INPUT .\gambar\lantai 8 (1).png
+INPUT .\gambar\MacBook Pro 14_ - 1.png
+INPUT .\gambar\MacBook Pro 14_ - 1.png
+INPUT gambar\MacBook Pro 14_ - 1.png
+INPUT .\gambar\MacBook Pro 14_ - 1.png
+INPUT .\gambar\MacBook Pro 14_ - 1.png
+INPUT .\gambar\MacBook Pro 14_ - 1.png
+INPUT .\gambar\MacBook Pro 14_ - 1.png
+INPUT .\gambar\MacBook Pro 14_ - 3.png
+INPUT .\gambar\MacBook Pro 14_ - 3.png
+INPUT gambar\MacBook Pro 14_ - 3.png
+INPUT .\gambar\MacBook Pro 14_ - 3.png
+INPUT .\gambar\MacBook Pro 14_ - 3.png
+INPUT .\gambar\MacBook Pro 14_ - 3.png
+INPUT .\gambar\MacBook Pro 14_ - 3.png
+INPUT .\gambar\MacBook Pro 14_ - 5.png
+INPUT .\gambar\MacBook Pro 14_ - 5.png
+INPUT gambar\MacBook Pro 14_ - 5.png
+INPUT .\gambar\MacBook Pro 14_ - 5.png
+INPUT .\gambar\MacBook Pro 14_ - 5.png
+INPUT .\gambar\MacBook Pro 14_ - 5.png
+INPUT .\gambar\MacBook Pro 14_ - 5.png
+INPUT .\gambar\MacBook Pro 14_ - 5.png
+INPUT .\gambar\MacBook Pro 14_ - 5.png
+INPUT gambar\MacBook Pro 14_ - 5.png
+INPUT .\gambar\MacBook Pro 14_ - 5.png
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy9.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy5.tfm
 INPUT .\gambar\pengujian\grafik-akurasi-klasifikasi.jpg
 INPUT gambar\pengujian\grafik-akurasi-klasifikasi.jpg
 INPUT .\gambar\pengujian\grafik-akurasi-klasifikasi.jpg
@@ -1299,18 +1312,12 @@ INPUT .\gambar\denah\E0207-Uji.jpg
 INPUT .\gambar\denah\E0207-Uji.jpg
 INPUT .\gambar\denah\E0207-Uji.jpg
 INPUT .\gambar\denah\E0207-Uji.jpg
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy10.tfm
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\public\latex-fonts\lasy7.tfm
 INPUT .\gambar\pengujian\grafik-akurasi-klasifikasi-kelas-b0302.jpg
 INPUT gambar\pengujian\grafik-akurasi-klasifikasi-kelas-b0302.jpg
 INPUT .\gambar\pengujian\grafik-akurasi-klasifikasi-kelas-b0302.jpg
 INPUT .\gambar\pengujian\grafik-akurasi-klasifikasi-kelas-b0302.jpg
 INPUT .\gambar\pengujian\grafik-akurasi-klasifikasi-kelas-b0302.jpg
 INPUT .\gambar\pengujian\grafik-akurasi-klasifikasi-kelas-b0302.jpg
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT .\gambar\pengujian\grafik-titik-salah-prediksi.jpg
 INPUT gambar\pengujian\grafik-titik-salah-prediksi.jpg
 INPUT .\gambar\pengujian\grafik-titik-salah-prediksi.jpg
@@ -1391,22 +1398,14 @@ INPUT lampiran.aux
 INPUT .\tugas-akhir.out
 INPUT .\tugas-akhir.out
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\base\8r.enc
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmex10.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi12.pfb
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr8.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrb8a.pfb
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrb8a.pfb
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
-INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\fonts\type1\urw\times\utmbi8a.pfb

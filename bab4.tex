@@ -56,7 +56,7 @@ Tahap pertama adalah merancang \textit{deployment diagram}, dimana \textit{deplo
 \begin{landscape}
 	\begin{figure}[H]
 		\center
-		\includegraphics [width = 22.5cm, height=12cm]{gambar/model/deployment-diagram}
+		\includegraphics [width = 22.5cm, height=12cm]{gambar/model/diagramdeployment.png}
 		\caption{Diagram \textit{Deployment}}
 		\label{deployment-diagram}
 	\end{figure}
@@ -65,60 +65,61 @@ Tahap pertama adalah merancang \textit{deployment diagram}, dimana \textit{deplo
 Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interface}) sebagai mekanisme komunikasi dengan sistem. Antar muka dari sistem yang telah dibangun adalah sebagai berikut:
 \begin{enumerate}[a.]
 
-	\item Antar Muka Aplikasi Mapping
-	      \par Gambar \ref{aplikasimappingbagian1} menampilkan halaman awal ketika aplikasi pertama dibuka, pada halaman ini terdapat fitur untuk memasukkan nama tempat, serta fitur untuk menampilkan informasi   nama \textit{device} Bluetooth, RSSI, dan \textit{MAC address} Bluetooth, Serta pada bagian bawah terdapat empat fitur  yang masing-masing memiliki  fungsi untuk memindai , menampilkan waktu tunggu, menyimpan data dan menampilkan jumlah data yang telah disimpan. Apabila pengguna melakukan pemindaian maka akan muncul notifikasi untuk mengaktifkan Bluetooth. Apabila Bluetooth sudah hidup, maka aplikasi akan mencari nama \textit{device} Bluetooth, RSSI dan dan \textit{MAC address} Bluetooth yang ada di sekitar, pada bagian bawah fitur pemindai akan berubah menjadi stop dan fitur waktu akan menampilkan waktu tunggu  selama 10 detik, waktu ini digunakan  untuk menyamaratakan waktu pemindaian untuk setiap data. Kemudian setelah data disimpan, pada fitur yang menampilkan jumlah data yang telah disimpan yang awalnya 0 sekarang menjadi 1 yang berarti 1 data sudah dimasukkan ke dalam \textit{database server}.
+	% \item Antar Muka Aplikasi Mapping
+	%       \par Gambar \ref{aplikasimappingbagian1} menampilkan halaman awal ketika aplikasi pertama dibuka, pada halaman ini terdapat fitur untuk memasukkan nama tempat, serta fitur untuk menampilkan informasi   nama \textit{device} Bluetooth, RSSI, dan \textit{MAC address} Bluetooth, Serta pada bagian bawah terdapat empat fitur  yang masing-masing memiliki  fungsi untuk memindai , menampilkan waktu tunggu, menyimpan data dan menampilkan jumlah data yang telah disimpan. Apabila pengguna melakukan pemindaian maka akan muncul notifikasi untuk mengaktifkan Bluetooth. Apabila Bluetooth sudah hidup, maka aplikasi akan mencari nama \textit{device} Bluetooth, RSSI dan dan \textit{MAC address} Bluetooth yang ada di sekitar, pada bagian bawah fitur pemindai akan berubah menjadi stop dan fitur waktu akan menampilkan waktu tunggu  selama 10 detik, waktu ini digunakan  untuk menyamaratakan waktu pemindaian untuk setiap data. Kemudian setelah data disimpan, pada fitur yang menampilkan jumlah data yang telah disimpan yang awalnya 0 sekarang menjadi 1 yang berarti 1 data sudah dimasukkan ke dalam \textit{database server}.
+
+	%   \vspace{-0cm}
+	%   \begin{figure} [H]
+	%       \begin{subfigure}{.5\textwidth}
+	% 	      \centering
+	% 	      % include first image
+	% 	      \includegraphics[width=.5\linewidth]{gambar/mapping1.png}
+	% 	      \caption{Halaman awal aplikasi \textit{mapping}}
+	%       \end{subfigure}
+	%       \begin{subfigure}{.5\textwidth}
+	% 	      \centering
+	% 	      % include second image
+	% 	      \includegraphics[width=.5\linewidth]{gambar/mapping2.png}
+	% 	      \caption{Izin mengakses Bluetooth}
+	%       \end{subfigure}
+	%       \vspace{1cm}
+	%       \newline
+	%       \begin{subfigure}{.5\textwidth}
+	% 	      \centering
+	% 	      % include third image
+	% 	      \includegraphics[width=.5\linewidth]{gambar/mapping3.png}
+	% 	      \caption{Proses pemindaian kekuatan sinyal}
+	%       \end{subfigure}
+	%       \begin{subfigure}{.5\textwidth}
+	% 	      \centering
+	% 	      % include fourth image
+	% 	      \includegraphics[width=.5\linewidth]{gambar/mapping4.png}
+	% 	      \caption{Selesai proses pemindaian}
+	%       \end{subfigure}
+	%       \vspace{0.5cm}
+	%       \caption{Tampilan Halaman Aplikasi Mapping}
+	%       \label{aplikasimappingbagian1}
+	%   \end{figure}
+
+	% \vspace{1cm}
+	\item Antar Muka Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang
+
+	      \par Gambar \ref*{aplikasiPenentuanLokasi} memperlihatkan halaman awal saat memulai menggunakan aplikasi ini. Di halaman awal setelah splash screen, pengguna akan diajak untuk menggunakan aplikasi ini agar mengetahui informasi estimasi orang dan posisi pengguna di dalam gedung. Setelah itu, akan digiring ke halaman untuk cek lokasi. Pada halaman ini, pengguna akan di minta izin untuk mengambil datanya oleh sistem agar bisa melacak keberadaanya secara anonim dan rahasia. Dengan menekan tombol Cek Lokasi, pengguna akan di anggap memberi izin jika datanya diambil untuk proses \textit{Indoor Localization System}.
+
 
 	      \vspace{-0cm}
 	      \begin{figure} [H]
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/mapping1.png}
-			      \caption{Halaman awal aplikasi \textit{mapping}}
+			      \includegraphics[width=.5\linewidth]{gambar/splashscreen.png}
+			      \caption{Halaman Pertama Pembuka Aplikasi}
 		      \end{subfigure}
 		      \begin{subfigure}{.5\textwidth}
 			      \centering
 			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/mapping2.png}
-			      \caption{Izin mengakses Bluetooth}
-		      \end{subfigure}
-		      \vspace{1cm}
-		      \newline
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include third image
-			      \includegraphics[width=.5\linewidth]{gambar/mapping3.png}
-			      \caption{Proses pemindaian kekuatan sinyal}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include fourth image
-			      \includegraphics[width=.5\linewidth]{gambar/mapping4.png}
-			      \caption{Selesai proses pemindaian}
-		      \end{subfigure}
-		      \vspace{0.5cm}
-		      \caption{Tampilan Halaman Aplikasi Mapping}
-		      \label{aplikasimappingbagian1}
-	      \end{figure}
-
-	      \vspace{1cm}
-	\item Antar Muka Aplikasi SpecifyLocation
-
-	      \par Gambar \ref*{aplikasiPenentuanLokasi} memperlihatkan ketika pengguna berada di halaman utama dari aplikasi SpecifyLocation, dimana akan terlihat beberapa informasi dan fitur yang dimiliki oleh aplikasi SpecifyLocation seperti estimasi jumlah orang yang berada di dalam gedung FMIPA USK, kecepatan prediksi, lokasi hasil prediksi dan algoritma yang digunakan serta satu tombol cek lokasi untuk melakukan pencarian lokasi pengguna. Ketika pengguna menekan tombol cek lokasi, maka aplikasi akan menampilkan notifikasi untuk menghidupkan Bluetooth jika Bluetooth pada perangkat yang digunakan belum hidup. Jika Bluetooth sudah hidup di perangkat yang digunakan maka aplikasi akan memprediksi lokasi pengguna saat ini, jika pengguna sedang berada di luar gedung A FMIPA USK, maka akan tampilan aplikasi tidak akan beruah, namun jika pengguna berada di dalam gedung A FMIPA USK maka aplikasi akan memeprediksi lokasi pengguna yang dapat dilihat dengan adanya denah gedung A FMIPA USK serta lokasi hasil prediksi akan berubah warna.
-
-	      \vspace{-0cm}
-	      \begin{figure} [H]
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/diluarjangkauan.png}
-			      \caption{Halaman Awal dan Luar Gedung A FMIPA}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/applantai1.png}
-			      \caption{Hasil Prediksi Lantai 1}
+			      \includegraphics[width=.5\linewidth]{gambar/mulai.png}
+			      \caption{Halaman Kedua Pembuka Aplikasi}
 		      \end{subfigure}
 		      \vspace{1cm}
 		      \newline
@@ -126,271 +127,200 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
 			      \begin{subfigure}{.5\textwidth}
 				      \centering
 				      % include third image
-				      \includegraphics[width=.5\linewidth]{gambar/applantai3}
-				      \caption{Hasil Prediksi Koridor Lab Data Base}
+				      \includegraphics[width=.5\linewidth]{gambar/mulai (1).png}
+				      \caption{Halaman Mulai Cek Lokasi}
 			      \end{subfigure}
 		      \end{center}
 		      \vspace{0.5cm}
-		      \caption{Tampilan Halaman Aplikasi Penentuan Lokasi}
+		      \caption{Tampilan Awal Saat Memulai Menggunakan Aplikasi}
 		      \label{aplikasiPenentuanLokasi}
 	      \end{figure}
 
 	      \vspace{0.5cm}
 
+	      \par Proses cek lokasi memerlukan sinyal \textit{bluetooth} dan internet. Waktu yang dibutuhkan dalam \textit{scanning} adalah 10 detik. Hasil prediksi akan keluar seperti pada gambar \ref*{aplikasiPenentuanLokasi2}
+
+	      \vspace{-0cm}
+	      \begin{figure} [H]
+		      \begin{subfigure}{.5\textwidth}
+			      \centering
+			      % include first image
+			      \includegraphics[width=.5\linewidth]{gambar/lantai 9 (1).png}
+			      \caption{Halaman Pertama Pembuka Aplikasi}
+		      \end{subfigure}
+		      \begin{subfigure}{.5\textwidth}
+			      \centering
+			      % include second image
+			      \includegraphics[width=.5\linewidth]{gambar/lantai 4 (1).png}
+			      \caption{Halaman Kedua Pembuka Aplikasi}
+		      \end{subfigure}
+		      \vspace{1cm}
+		      \newline
+		      \begin{center}
+			      \begin{subfigure}{.5\textwidth}
+				      \centering
+				      % include third image
+				      \includegraphics[width=.5\linewidth]{gambar/lantai 8 (1).png}
+				      \caption{Halaman Mulai Cek Lokasi}
+			      \end{subfigure}
+		      \end{center}
+		      \vspace{0.5cm}
+		      \caption{Tampilan Hasil Prediksi}
+		      \label{aplikasiPenentuanLokasi2}
+	      \end{figure}
+
+	      \vspace{0.5cm}
+
+	\item Antar Muka Aplikasi Web Monitoring
+
+	      \par Gambar \ref*{aplikasiPenentuanLokasi} memperlihatkan halaman awal saat memulai menggunakan aplikasi ini. Di halaman awal setelah splash screen, pengguna akan diajak untuk menggunakan aplikasi ini agar mengetahui informasi estimasi orang dan posisi pengguna di dalam gedung. Setelah itu, akan digiring ke halaman untuk cek lokasi. Pada halaman ini, pengguna akan di minta izin untuk mengambil datanya oleh sistem agar bisa melacak keberadaanya secara anonim dan rahasia. Dengan menekan tombol Cek Lokasi, pengguna akan di anggap memberi izin jika datanya diambil untuk proses \textit{Indoor Localization System}.
+
+
+	      \vspace{-0cm}
+	      \begin{figure} [H]
+		      \begin{subfigure}{.5\textwidth}
+			      \centering
+			      % include first image
+			      \includegraphics[width = 13cm, height= 7cm]{gambar/MacBook Pro 14_ - 1.png}
+			      \caption{Halaman Login Web Monitoring}
+		      \end{subfigure}
+	      \end{figure}
+
+	      \vspace{-0cm}
+	      \begin{figure} [H]
+		      \begin{subfigure}{.5\textwidth}
+			      \centering
+			      % include first image
+			      \includegraphics[width = 13cm, height= 7cm]{gambar/MacBook Pro 14_ - 3.png}
+			      \caption{Halaman Dasbor}
+		      \end{subfigure}
+	      \end{figure}
+
+	      \vspace{-0cm}
+	      \begin{figure} [H]
+		      \begin{subfigure}{.5\textwidth}
+			      \centering
+			      % include first image
+			      \includegraphics[width = 13cm, height= 7cm]{gambar/MacBook Pro 14_ - 5.png}
+			      \caption{Halaman Detail Estimasi Tiap Posisi}
+		      \end{subfigure}
+	      \end{figure}
+
+	      \vspace{-0cm}
+	      \begin{figure} [H]
+		      \begin{subfigure}{.5\textwidth}
+			      \centering
+			      % include first image
+			      \includegraphics[width = 13cm, height= 7cm]{gambar/MacBook Pro 14_ - 5.png}
+			      \caption{Halaman Detail Estimasi Tiap Posisi}
+		      \end{subfigure}
+	      \end{figure}
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%akhir perancangan aplikasi mapping%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Pembuatan Sistem}
 
 \begin{enumerate}[a.]
-	\item Aplikasi \textit{Mapping}
-	      \\ Aplikasi \textit{mapping} merupakan  aplikasi \textit{mobile} berbasis Android yang dibuat menggunakan bahasa pemrograman JavaScript dengan \textit{framework} React Native. Media untuk penyimpanan data pada aplikasi \textit{mapping} ini menggunakan \textit{database} MongoDb Compass yang datanya akan dikirim melalui \textit{Web Service}. Potongan kode program yang terdapat dalam aplikasi \textit{mapping} ini dapat dilihat pada Progran 4.1 berikut ini.
-	      \vspace{0.4cm}
-	      \lstset{language=Java,
-		      basicstyle=\ttfamily\scriptsize\color{black},
-		      keywordstyle=\color{javapurple}\bfseries,
-		      stringstyle=\color{javared},
-		      commentstyle=\color{javagreen},
-		      morecomment=[s][\color{javadocblue}]{/**}{*/},
-		      numbers=left,
-		      numberstyle=\tiny\color{black},
-		      showstringspaces=false,
-		      numbersep=10pt,
-		      tabsize=4,
-		      showspaces=false,
-		      showstringspaces=false,
-		      autogobble=true,
-		      xleftmargin=2em
-	      }
-	      \begin{lstlisting}[label=programScanBle]
-			import React, { useState } from 'react';
-			import {
-				Image,StyleSheet,Text,FlatList,View,TouchableOpacity,Alert,
-			} from 'react-native';
-			import { ScrollView, TextInput } from 'react-native-gesture-handler';
-			import { manager } from '../Ble';
-			import AkunSvg from './../svg/AkunSvg';
-			import { colors, sizes } from '../constants';
-			import Card from '../components/Card';
-			import Table from './../components/Table';
-			import BottomNav from '../components/BottomNav';
-			
-			const HomeScreen = () => {
-			  const [showData, setShowData] = useState<any[]>([]);
-			  const [label, setLabel] = useState<string>('');
-			  const handleDevices = (devices: any) => {
-				setShowData(devices);
-			  };
-			  const renderItem = ({ item, index }: any) => (
-				<View style={styles.dataTable} key={index}>
-				  <Text style={[{ width: '40%' }]}>{item.name}</Text>
-				  <Text style={[{ width: '20%' }]}>{item.rssi}</Text>
-				  <Text style={[{ width: '40%' }]}>{item.macAddress}</Text>
-				</View>
-			  );
-			  return (
-				<View style={styles.container}>
-				  <View style={styles.header}>
-					<Text></Text>
-				  </View>
-			
-				  <Card />
-			
-				  <View>
-					<TextInput
-					  style={styles.formInput}
-					  placeholder={'Room Name'}
-					  onChangeText={(value) => setLabel(value)}
-					  value={label}
-					/>
-				  </View>
-			
-				  <View style={styles.tableContainer}>
-					<View style={styles.headerTable}>
-					  <Text style={[{ width: '40%' }]}>Devices</Text>
-					  <Text style={[{ width: '20%' }]}>RSSI</Text>
-					  <Text style={[{ width: '40%' }]}>Mac Address</Text>
-					</View>
-			
-					{showData.length === 0 ? (
-					  <ScrollView style={styles.listContainer}></ScrollView>
-					) : (
-					  <ScrollView style={styles.listContainer}>
-						{showData.map((item, index) => {
-						  return renderItem({ item, index });
-						})}
-					  </ScrollView>
-					)}
-				  </View>
-			
-				  <BottomNav onSetData={handleDevices} label={label} />
-				</View>
-			  );
-			};
-			
-			export default HomeScreen;
-	\end{lstlisting}
-	      \captionof{lstlisting}{Potongan Kode Program dalam aplikasi \textit{mapping}.}
+	% \item Aplikasi \textit{Mapping}
+	%       \\ Aplikasi \textit{mapping} merupakan  aplikasi \textit{mobile} berbasis Android yang dibuat menggunakan bahasa pemrograman JavaScript dengan \textit{framework} React Native. Media untuk penyimpanan data pada aplikasi \textit{mapping} ini menggunakan \textit{database} MongoDb Compass yang datanya akan dikirim melalui \textit{Web Service}. Potongan kode program yang terdapat dalam aplikasi \textit{mapping} ini dapat dilihat pada Progran 4.1 berikut ini.
+	%       \vspace{0.4cm}
+	%       \lstset{language=Java,
+	% 	      basicstyle=\ttfamily\scriptsize\color{black},
+	% 	      keywordstyle=\color{javapurple}\bfseries,
+	% 	      stringstyle=\color{javared},
+	% 	      commentstyle=\color{javagreen},
+	% 	      morecomment=[s][\color{javadocblue}]{/**}{*/},
+	% 	      numbers=left,
+	% 	      numberstyle=\tiny\color{black},
+	% 	      showstringspaces=false,
+	% 	      numbersep=10pt,
+	% 	      tabsize=4,
+	% 	      showspaces=false,
+	% 	      showstringspaces=false,
+	% 	      autogobble=true,
+	% 	      xleftmargin=2em
+	%       }
+	%       \begin{lstlisting}[label=programScanBle]
+	% 		import React, { useState } from 'react';
+	% 		import {
+	% 			Image,StyleSheet,Text,FlatList,View,TouchableOpacity,Alert,
+	% 		} from 'react-native';
+	% 		import { ScrollView, TextInput } from 'react-native-gesture-handler';
+	% 		import { manager } from '../Ble';
+	% 		import AkunSvg from './../svg/AkunSvg';
+	% 		import { colors, sizes } from '../constants';
+	% 		import Card from '../components/Card';
+	% 		import Table from './../components/Table';
+	% 		import BottomNav from '../components/BottomNav';
+
+	% 		const HomeScreen = () => {
+	% 		  const [showData, setShowData] = useState<any[]>([]);
+	% 		  const [label, setLabel] = useState<string>('');
+	% 		  const handleDevices = (devices: any) => {
+	% 			setShowData(devices);
+	% 		  };
+	% 		  const renderItem = ({ item, index }: any) => (
+	% 			<View style={styles.dataTable} key={index}>
+	% 			  <Text style={[{ width: '40%' }]}>{item.name}</Text>
+	% 			  <Text style={[{ width: '20%' }]}>{item.rssi}</Text>
+	% 			  <Text style={[{ width: '40%' }]}>{item.macAddress}</Text>
+	% 			</View>
+	% 		  );
+	% 		  return (
+	% 			<View style={styles.container}>
+	% 			  <View style={styles.header}>
+	% 				<Text></Text>
+	% 			  </View>
+
+	% 			  <Card />
+
+	% 			  <View>
+	% 				<TextInput
+	% 				  style={styles.formInput}
+	% 				  placeholder={'Room Name'}
+	% 				  onChangeText={(value) => setLabel(value)}
+	% 				  value={label}
+	% 				/>
+	% 			  </View>
+
+	% 			  <View style={styles.tableContainer}>
+	% 				<View style={styles.headerTable}>
+	% 				  <Text style={[{ width: '40%' }]}>Devices</Text>
+	% 				  <Text style={[{ width: '20%' }]}>RSSI</Text>
+	% 				  <Text style={[{ width: '40%' }]}>Mac Address</Text>
+	% 				</View>
+
+	% 				{showData.length === 0 ? (
+	% 				  <ScrollView style={styles.listContainer}></ScrollView>
+	% 				) : (
+	% 				  <ScrollView style={styles.listContainer}>
+	% 					{showData.map((item, index) => {
+	% 					  return renderItem({ item, index });
+	% 					})}
+	% 				  </ScrollView>
+	% 				)}
+	% 			  </View>
+
+	% 			  <BottomNav onSetData={handleDevices} label={label} />
+	% 			</View>
+	% 		  );
+	% 		};
+
+	% 		export default HomeScreen;
+	% \end{lstlisting}
+	%       \captionof{lstlisting}{Potongan Kode Program dalam aplikasi \textit{mapping}.}
 
 
-	\item Aplikasi SpecifyLocation
-	      \\ Aplikasi SpecifyLocation adalah aplikasi \textit{mobile} berbasis Android yang dibuat menggunakan bahasa pemrograman JavaScript dan \textit{framework} React Native. Aplikasi ini akan memindai sinyal RSSI yang ada di dekat pengguna berada selama 10 detik, kemudian data sinyal RSSI tersebut akan di kirim ke API [Isi nanti] yang di dalamnya terdapat model yang sudah dibuat sebelumnya dengan menggunakan algoritma \textit{KMeans}. Kemudian API akan mengirimkan hasil prediksi lokasi saat ini dari model ke aplikasi SpecifyLocation, setelah itu aplikasi akan menampilkan hasil prediksinya serta beberapa informasi lainnya seperti kecepatan prediksi dan algoritma yang digunakan, jika pengguna berada di luar gedung A FMIPA USK fitur estimasi jumlah orang tidak akan bertambah, namun jika pengguna berada di dalam gedung A FMIPA USK maka fitur estimasi jumlah orang akan bertambah 1 dan jika pengguna menekan tombol cek lokasi kembali dan hasil prediksinya tetap di dalam gedung A FMIPA USK fitur estimasi jumlah orang tidak akan bertambah lagi, namun jika kemudian pengguna menekan tombol cek lokasi kembali setelahnya dan aplikasi memprediksi pengguna berada di luar gedung A FMIPA USK maka fitur estimasi jumlah orang akan berkurang 1. Potongan kode program yang terdapat dalam aplikasi ini dapat dilihat
-	      pada Progran 4.2 berikut ini.
+	\item Aplikasi Penentuan Lokasi dan Estimasi Orang Berbasis Android
+	      \\ Aplikasi ini adalah aplikasi utama yang berbasis Android dan dibuat menggunakan bahasa pemrograman JavaScript dengan \textit{framework} React Native. Aplikasi ini akan memindai sinyal RSSI yang di pancar dari tiap BLE yang dipasang di setiap sudut ruangan. Waktu yang dibutuhkan untuk memindai sinyal RSSI adalah 10 detik, kemudian data sinyal RSSI tersebut akan dikirim ke API [isi nanti]. Di dalam API tersebut, terdapat model yang sudah dibuat sebelumnya menggunakan algoritma \textit{Support Vector Machine} (SVM). Setelah itu, API akan mengirimkan hasil prediksi lokasi saat ini dari model ke aplikasi utama yaitu aplikasi berbasis Android tadi. Aplikasi penentuan lokasi dan estimasi orang berbasis Android ini akan menampilkan hasil prediksi total estimasi jumlah orang dan detail estimasi orang di tiap posisi di dalam gedung A FMIPA USK.
 
-	      \vspace{0.4cm}
-	      \begin{lstlisting}[label=programKNNDosen]
-						import axios from "axios";
-						import React, { useEffect, useState } from "react";
-						import {
-						  ScrollView,StyleSheet,Text,TouchableOpacity,View,Image
-						} from "react-native";
-						import Card from "../components/Card";
-						import { colors, SCAN_PERIOD, sizes } from "../constants";
-						import { blePermission, initBleScanner, startScan } from "../permission/Ble";
-						import {
-						  selectStatus,setEstimasiStatus,
-						} from "../redux/features/location/locationSlice";
-						import { useAppDispatch, useAppSelector } from "../redux/hooks";
-						import GambarOrang from "../svg/GambarOrang";
-						import GelombangAtas from "../svg/GelombangAtas";
-						import GelombangBawah from "../svg/GelombangBawah";
-						import HalamanAwal from "../svg/GelombangBawah";
-						import GambarJumlahOrang from "../svg/JumlahOrang";
-						import Lantai1 from "../svg/Lantai1";
-						import Lantai3 from "../svg/Lantai3";
-						import speed from "../svg/Kecepatan";
-						import Kecepatan from "../svg/Kecepatan";
-						import IconLokasi from "../svg/IconLokasi";
-						import Algo from "../svg/Algo";
-						interface BleDevice {
-						  macAddress: string;
-						  rssi: number;
-						  name: string;
-						}
-						const HomeScreen = () => {
-						  const [intervals, setIntervals] = React.useState(2);
-						  const [cinterval, setcInterval] = React.useState(1);
-						  const [width, setWidth] = React.useState(0);
-						  const init = (width: number) => {
-							// initialise width
-							setWidth(width);
-							// initialise total intervals
-							const totalItems = 2;
-							setIntervals(Math.ceil(totalItems / 1));
-						  }
-						  let bullets = [];
-						  for (let i = 1; i <= intervals; i++) {
-							bullets.push(
-							  <Text
-								key={i}
-								style={{
-								  ...styles.bullet,
-								  opacity: cinterval=== i ? 1 : 0.5,
-								}}
-							  >
-							  </Text>
-							);
-						  }
-						  const getcInterval = (offset: any) => {
-							for (let i = 1; i <= intervals; i++) {
-							  if (offset < (width / intervals) * i) {
-								return i;
-							  }
-							  if (i == intervals) {
-								return i;
-							  }
-							}
-						  }
-						
-						  const statusNow: string = useAppSelector(selectStatus);
-						  const [lokasi, setLokasi] = useState<string>("");
-						  const [waktu, setWaktu] = useState<number>(0);
-						  const [estimasi, setEstimasi] = useState<number>(0);
-						  const [deviceDefaults, setDeviceDefaults] = useState<BleDevice[]>([]);
-						  const [textBtn, setTextBtn] = useState<string>("Cek Lokasi");
-						  const [loading, setLoading] = useState<boolean>(false);
-						  const [deviceTestings, setDeviceTestings] = useState<BleDevice[]>([]);
-						  const dispatch = useAppDispatch();
-						  // Interval Waktu
-						  const setIntervalX = (
-							callback: () => void,
-							delay: number,
-							repetitions: number
-						  ) => {
-							let x = 0;
-							let intervalID = setInterval(function () {
-							  callback();
-						
-							  if (++x === repetitions) {
-								clearInterval(intervalID);
-								setTextBtn("Cek Lokasi");
-							  }
-							}, delay);
-						  };
-						
-						  // Prediksi
-						  useEffect(() => {
-							// prediksiData();
-							let formdata = new FormData();
-							formdata.append("algoritma", "kmeans");
-							setInterval(() => {
-							  axios
-								.post(`https://api-model-flasks.herokuapp.com/api/estimasi`, formdata)
-								.then((response) => {
-								  setEstimasi(response.data.estimasi);
-								})
-								.catch((err) => console.log(err));
-							}, 1000);
-						
-							initBleScanner().then((data: BleDevice[] | undefined) => {
-							  if (data) {
-								setDeviceDefaults(data);
-								setDeviceTestings(data);
-							  }
-							});
-						  }, []);
-						
-						  // Tombol
-						  const handlePressBtn = () => {
-							blePermission();
-							setLoading(true);
-							let detik = SCAN_PERIOD / 1000;
-						
-							setTextBtn(`Tunggu ${detik--} detik`);
-							setIntervalX(
-							  () => {
-								setTextBtn(`Tunggu ${detik--} detik`);
-							  },
-							  1000,
-							  detik
-							);
-							setDeviceTestings(deviceDefaults);
-							// Scan
-							startScan(deviceDefaults, deviceTestings, "kmeans", SCAN_PERIOD)
-							  .then((data: any) => {
-								setLoading(false);
-								console.log(data);
-								setLokasi(data.label);
-								setWaktu(data.runtime);
-								console.log(data.label);
-								if (data.label === "Luar Gedung MIPA") {
-								  return dispatch(setEstimasiStatus("keluar"));
-								}
-								return dispatch(setEstimasiStatus("masuk"));
-							  })
-							  .catch((err) => {
-								setLoading(false);
-								console.log(err);
-							  });
-						  };
-    
-    \end{lstlisting}
-	      \captionof{lstlisting}{Potongan Kode Program dalam aplikasi SpecifyLocation.}
+	\item Aplikasi Web Monitoring
+	      \\ Aplikasi ini akan memonitoring ....
 
 \end{enumerate}
 
 \section{PENGUJIAN SISTEM}
-\par Pengujian sistem dilakukan untuk melihat apakah sistem dapat berjalan dengan tepat sesuai dengan rancangan. Beberapa pengujian yang dilakukan pada penelitian ini adalah pengujian keakuratan prediksi dengan menggunakan algoritma \textit{kmeans}, pengujian usabilitas dengan metode UMUX dan pengujian fungsionalitas menggunakan \textit{Blackbox}.
+\par Pengujian sistem dilakukan untuk melihat seberapa baik dan sesuai sistem yang dibangun dan apakah dapat berjalan dengan tepat sesuai dengan rancangan. Beberapa pengujian yang dilakukan pada penelitian ini adalah pengujian keakuratan prediksi dengan menggunakan algoritma \textit{kmeans}, pengujian usabilitas dengan metode UMUX dan pengujian fungsionalitas menggunakan \textit{Blackbox}.
 
 \subsection{Pengujian Keakuratan Prediksi Menggunakan Algoritma \textit{Kmeans}}
 \begin{enumerate}
