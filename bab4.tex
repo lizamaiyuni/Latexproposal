@@ -14,7 +14,7 @@ Kelompok pengguna dari aplikasi ini telah dapat diidentifikasikan pada tahap ana
 	\item Peneliti
 	      \newline Pengguna yang menggunakan Aplikasi Mapping berbasis Android untuk melakukan pemetaan kekuatan sinyal atau nilai RSSI dari Beacon.
 	\item Pengguna gedung FMIPA USK
-	      \newline Pengguna yang menggunakan Aplikasi Penentuan Lokasi dan Estimasi Orang di gedung Fakultas Matematika dan Ilmu Pengetahuan Alam Univesitas Syiah Kuala berbasis Android.
+	      \newline Pengguna yang menggunakan aplikasi LocaLization di gedung Fakultas Matematika dan Ilmu Pengetahuan Alam Univesitas Syiah Kuala berbasis Android.
 \end{enumerate}
 
 \subsection{Use Case Diagram}
@@ -35,20 +35,31 @@ Kelompok pengguna dari aplikasi ini telah dapat diidentifikasikan pada tahap ana
 	\center
 	\shadowbox
 	{\includegraphics [width=10cm, height=9cm]{gambar/penentuanlokasi}}
-	\caption{\textit{Use Case Diagram} Aplikasi Penentuan Lokasi dan Estimasi Orang}
+	\caption{\textit{Use Case Diagram} Aplikasi LocaLization}
 	\label{usecasedosen}
 \end{figure}
 
 \par Gambar \ref{usecasedosen} menjelaskan aktivitas yang dapat dilakukan oleh setiap orang yang memasuki gedung Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala. Aktivitas pertama yang dapat dilakukan adalah membuka aplikasi LocaLization, pengguna dapat menikmati fitur-fitur yang tersedia seperti melihat estimasi atau jumlah orang yang sedang berada didalam gedung, memulai proses pengecekan lokasi diri sendiri saat berada didalam gedung FMIPA USK dengan syarat keadaan \textit{Bluetooth} pada perangkat dalam keadaan hidup dan melihat kecepatan prediksi berapa detik. Jika pengguna berada diluar gedung FMIPA USK, maka perangkat akan memprediksi pengguna sedang berada diluar jangkauan.
+
+\begin{figure}[H]
+	\center
+	\shadowbox
+	{\includegraphics [width=10cm, height=9cm]{gambar/model/usecaseWebMonitoring}}
+	\caption{\textit{Use Case Diagram Website Monitoring}.}
+	\label{usecasewebmonitoring}
+\end{figure}
+
+Gambar \ref{usecasewebmonitoring} menerangkan tentang aktivitas yang dilakukan oleh admin atau peneliti saat  menggunakan website monitoring. Saat peneliti atau admin membuka website monitoring, harus login terlebih dahulu. Setelah itu, akan langsung masuk ke halaman dasbor yang menyajikan data tentang total jumlah orang yang sedang berada di dalam gedung. Di bagian ini, akan menampilkan 2 kolom, untuk kolom pertama menampilan data yang menggunakan algoritma SVM dan kolom kedua menampilkan data yang menggunakan algoritma K-Means. Kemudian di halaman lain, menampilkan data total estimasi orang yang menggunakan aplikasi ini pada tiap posisi di dalam gedung dalam bentuk tabel dan grafik.
 
 
 % //TODO:Selanjutnya Buat diagram Deployment
 \section{PERANCANGAN DAN PEMBUATAN SISTEM}
 
 \subsection{Perancangan Sistem}
-\par Perancangan sistem merupakan tahapan proses desain dari sistem perangkat lunak yang dibuat. Proses ini terdiri dari dua tahap yaitu perancangan konfigurasi eksekusi sistem dalam bentuk \textit{deployment diagram} dan perancangan tampilan antar muka (\textit{interface}).
 
-Tahap pertama adalah merancang \textit{deployment diagram}, dimana \textit{deployment diagram} adalah diagram yang menjelaskan bagaimana sistem bekerja dan digunakan oleh pengguna. Berikut rancangan \textit{deployment diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{deployment-diagram}.
+\par Perancangan sistem adalah sekumpulan aktivitas yang mendeskripsikan secara rinci bagaimana sistem akan berjalan. Hal itu bertujuan untuk menghasilkan produk perangkat lunak yang sesuai dengan kebutuhan user. Perancangan sistem yaitu rancangan atau susunan sistem yang akan dibangun. Proses ini terdiri dari dua tahap yaitu perancangan konfigurasi eksekusi sistem dalam bentuk \textit{deployment diagram} dan perancangan tampilan antar muka (\textit{interface}).
+
+Tahap pertama adalah merancang \textit{deployment diagram}. \textit{Deployment diagram} adalah diagram yang menjelaskan bagaimana sistem bekerja dan digunakan oleh pengguna. Berikut rancangan \textit{deployment diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{deployment-diagram}.
 
 %\begin{enumerate}
 %\item \textit{Deployment Diagram} Aplikasi Mapping
@@ -102,119 +113,105 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
 	%   \end{figure}
 
 	% \vspace{1cm}
-	\item Antar Muka Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang
+	\item Antar Muka Aplikasi LocaLization
 
-	      \par Gambar \ref*{aplikasiPenentuanLokasi} memperlihatkan halaman awal saat memulai menggunakan aplikasi ini. Di halaman awal setelah splash screen, pengguna akan diajak untuk menggunakan aplikasi ini agar mengetahui informasi estimasi orang dan posisi pengguna di dalam gedung. Setelah itu, akan digiring ke halaman untuk cek lokasi. Pada halaman ini, pengguna akan di minta izin untuk mengambil datanya oleh sistem agar bisa melacak keberadaanya secara anonim dan rahasia. Dengan menekan tombol Cek Lokasi, pengguna akan di anggap memberi izin jika datanya diambil untuk proses \textit{Indoor Localization System}.
+	      \par Nama LocaLization adalah nama yang diberikan untuk aplikasi utama yang berbasis android pada penelitian ini. Gambar disini ... memperlihatkan halaman awal saat memulai menggunakan aplikasi ini. Di halaman awal setelah splash screen, pengguna akan diajak untuk menggunakan aplikasi ini agar mengetahui informasi estimasi orang dan posisi pengguna di dalam gedung. Setelah itu, akan digiring ke halaman untuk cek lokasi. Pada halaman ini, pengguna akan di minta izin untuk mengambil datanya oleh sistem agar bisa melacak keberadaanya secara anonim dan rahasia. Dengan menekan tombol Cek Lokasi, pengguna akan di anggap memberi izin jika datanya diambil untuk proses \textit{Indoor Localization System}.
 
 
-	      \vspace{-0cm}
-	      \begin{figure} [H]
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/splashscreen.png}
-			      \caption{Halaman Pertama Pembuka Aplikasi}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/mulai.png}
-			      \caption{Halaman Kedua Pembuka Aplikasi}
-		      \end{subfigure}
-		      \vspace{1cm}
-		      \newline
-		      \begin{center}
-			      \begin{subfigure}{.5\textwidth}
-				      \centering
-				      % include third image
-				      \includegraphics[width=.5\linewidth]{gambar/mulai (1).png}
-				      \caption{Halaman Mulai Cek Lokasi}
-			      \end{subfigure}
-		      \end{center}
-		      \vspace{0.5cm}
-		      \caption{Tampilan Awal Saat Memulai Menggunakan Aplikasi}
-		      \label{aplikasiPenentuanLokasi}
-	      \end{figure}
+	      %   \vspace{-0cm}
+	      %   \begin{figure} [H]
+	      %       \begin{subfigure}{.5\textwidth}
+	      % 	      \centering
+	      % 	      % include first image
+	      % 	      \includegraphics[width=.5\linewidth]{gambar/splashscreen.png}
+	      % 	      \caption{Halaman Pertama Pembuka Aplikasi}
+	      %       \end{subfigure}
+	      %       \begin{subfigure}{.5\textwidth}
+	      % 	      \centering
+	      % 	      % include second image
+	      % 	      \includegraphics[width=.5\linewidth]{gambar/mulai.png}
+	      % 	      \caption{Halaman Ajakan Menggunakan Aplikasi}
+	      %       \end{subfigure}
+	      %       \vspace{1cm}
+	      %       \newline
+	      %       \begin{center}
+	      % 	      \begin{subfigure}{.5\textwidth}
+	      % 		      \centering
+	      % 		      % include third image
+	      % 		      \includegraphics[width=.5\linewidth]{gambar/mulai (1).png}
+	      % 		      \caption{Halaman untuk Mulai Cek Lokasi}
+	      % 	      \end{subfigure}
+	      %       \end{center}
+	      %       \vspace{0.5cm}
+	      %       \caption{Tampilan Awal Saat Memulai Menggunakan Aplikasi}
+	      %       \label{aplikasiPenentuanLokasi}
+	      %   \end{figure}
 
-	      \vspace{0.5cm}
+	      %   \vspace{0.5cm}
 
-	      \par Proses cek lokasi memerlukan sinyal \textit{bluetooth} dan internet. Waktu yang dibutuhkan dalam \textit{scanning} adalah 10 detik. Hasil prediksi akan keluar seperti pada gambar \ref*{aplikasiPenentuanLokasi2}
+	      \par Proses cek lokasi memerlukan sinyal \textit{bluetooth} dan internet. Waktu yang dibutuhkan dalam \textit{scanning} adalah 10 detik. Hasil prediksi akan keluar seperti pada gambar ...
 
-	      \vspace{-0cm}
-	      \begin{figure} [H]
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include first image
-			      \includegraphics[width=.5\linewidth]{gambar/lantai 9 (1).png}
-			      \caption{Halaman Pertama Pembuka Aplikasi}
-		      \end{subfigure}
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include second image
-			      \includegraphics[width=.5\linewidth]{gambar/lantai 4 (1).png}
-			      \caption{Halaman Kedua Pembuka Aplikasi}
-		      \end{subfigure}
-		      \vspace{1cm}
-		      \newline
-		      \begin{center}
-			      \begin{subfigure}{.5\textwidth}
-				      \centering
-				      % include third image
-				      \includegraphics[width=.5\linewidth]{gambar/lantai 8 (1).png}
-				      \caption{Halaman Mulai Cek Lokasi}
-			      \end{subfigure}
-		      \end{center}
-		      \vspace{0.5cm}
-		      \caption{Tampilan Hasil Prediksi}
-		      \label{aplikasiPenentuanLokasi2}
-	      \end{figure}
+	      %   \vspace{-0cm}
+	      %   \begin{figure} [H]
+	      %       \begin{subfigure}{.5\textwidth}
+	      % 	      \centering
+	      % 	      % include first image
+	      % 	      \includegraphics[width=.5\linewidth]{gambar/lantai 9 (1).png}
+	      % 	      \caption{Halaman Hasil Prediksi untuk Lantai 3}
+	      %       \end{subfigure}
+	      %       \begin{subfigure}{.5\textwidth}
+	      % 	      \centering
+	      % 	      % include second image
+	      % 	      \includegraphics[width=.5\linewidth]{gambar/lantai 4 (1).png}
+	      % 	      \caption{{Halaman Hasil Prediksi untuk Lantai 1}
+	      %       \end{subfigure}
+	      %       \vspace{1cm}
+	      %       \newline
+	      %       \begin{center}
+	      % 	      \begin{subfigure}{.5\textwidth}
+	      % 		      \centering
+	      % 		      % include third image
+	      % 		      \includegraphics[width=.5\linewidth]{gambar/lantai 8 (1).png}
+	      % 		      \caption{Halaman Detail Estimasi Tiap Lokasi di dalam Gedung}
+	      % 	      \end{subfigure}
+	      %       \end{center}
+	      %       \vspace{0.5cm}
+	      %       \caption{Tampilan Hasil Prediksi}
+	      %       \label{aplikasiPenentuanLokasi2}
+	      %   \end{figure}
 
-	      \vspace{0.5cm}
+	      %   \vspace{0.5cm}
 
 	\item Antar Muka Aplikasi Web Monitoring
 
-	      \par Gambar \ref*{aplikasiPenentuanLokasi} memperlihatkan halaman awal saat memulai menggunakan aplikasi ini. Di halaman awal setelah splash screen, pengguna akan diajak untuk menggunakan aplikasi ini agar mengetahui informasi estimasi orang dan posisi pengguna di dalam gedung. Setelah itu, akan digiring ke halaman untuk cek lokasi. Pada halaman ini, pengguna akan di minta izin untuk mengambil datanya oleh sistem agar bisa melacak keberadaanya secara anonim dan rahasia. Dengan menekan tombol Cek Lokasi, pengguna akan di anggap memberi izin jika datanya diambil untuk proses \textit{Indoor Localization System}.
+	      \par Gambar memperlihatkan halaman awal saat memulai menggunakan aplikasi ini. Di halaman awal setelah splash screen, pengguna akan diajak untuk menggunakan aplikasi ini agar mengetahui informasi estimasi orang dan posisi pengguna di dalam gedung. Setelah itu, akan digiring ke halaman untuk cek lokasi. Pada halaman ini, pengguna akan di minta izin untuk mengambil datanya oleh sistem agar bisa melacak keberadaanya secara anonim dan rahasia. Dengan menekan tombol Cek Lokasi, pengguna akan di anggap memberi izin jika datanya diambil untuk proses \textit{Indoor Localization System}.
 
 
-	      \vspace{-0cm}
-	      \begin{figure} [H]
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include first image
-			      \includegraphics[width = 13cm, height= 7cm]{gambar/MacBook Pro 14_ - 1.png}
-			      \caption{Halaman Login Web Monitoring}
-		      \end{subfigure}
-	      \end{figure}
-
-	      \vspace{-0cm}
-	      \begin{figure} [H]
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include first image
-			      \includegraphics[width = 13cm, height= 7cm]{gambar/MacBook Pro 14_ - 3.png}
-			      \caption{Halaman Dasbor}
-		      \end{subfigure}
-	      \end{figure}
-
-	      \vspace{-0cm}
-	      \begin{figure} [H]
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include first image
-			      \includegraphics[width = 13cm, height= 7cm]{gambar/MacBook Pro 14_ - 5.png}
-			      \caption{Halaman Detail Estimasi Tiap Posisi}
-		      \end{subfigure}
-	      \end{figure}
-
-	      \vspace{-0cm}
-	      \begin{figure} [H]
-		      \begin{subfigure}{.5\textwidth}
-			      \centering
-			      % include first image
-			      \includegraphics[width = 13cm, height= 7cm]{gambar/MacBook Pro 14_ - 5.png}
-			      \caption{Halaman Detail Estimasi Tiap Posisi}
-		      \end{subfigure}
-	      \end{figure}
+	      %   \vspace{-0cm}
+	      %   \begin{figure}[H]
+	      %       \center
+	      %       \includegraphics [width = 9 cm, height= 4.5 cm]{gambar/web/Login}
+	      %       \caption{Halaman \textit{login}Web Monitoring}
+	      %       \label{LoginWeb}
+	      %   \end{figure}
+	      %   \begin{figure}[H]
+	      %       \center
+	      %       \includegraphics [width = 9 cm, height= 4.5 cm]{gambar/web/Dashbord}
+	      %       \caption{Halaman \textit{dashbord}}
+	      %       \label{Dashbord}
+	      %   \end{figure}
+	      %   \begin{figure}[H]
+	      %       \center
+	      %       \includegraphics [width = 9 cm, height= 4.5 cm]{gambar/web/Estimasi_Grafik}
+	      %       \caption{Halaman Estimasi Orang Tiap Posisi dalam Bentuk Grafik}
+	      %       \label{Estimasi_Grafik}
+	      %   \end{figure}
+	      %   \begin{figure}[H]
+	      %       \center
+	      %       \includegraphics [width = 9 cm, height= 4.5 cm]{gambar/web/Estimasi_Tabel}
+	      %       \caption{Halaman Estimasi Orang Tiap Posisi dalam Bentuk Tabel}
+	      %       \label{Estimasi_Tabel}
+	      %   \end{figure}
 \end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%akhir perancangan aplikasi mapping%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -311,8 +308,9 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
 	%       \captionof{lstlisting}{Potongan Kode Program dalam aplikasi \textit{mapping}.}
 
 
-	\item Aplikasi Penentuan Lokasi dan Estimasi Orang Berbasis Android
-	      \\ Aplikasi ini adalah aplikasi utama yang berbasis Android dan dibuat menggunakan bahasa pemrograman JavaScript dengan \textit{framework} React Native. Aplikasi ini akan memindai sinyal RSSI yang di pancar dari tiap BLE yang dipasang di setiap sudut ruangan. Waktu yang dibutuhkan untuk memindai sinyal RSSI adalah 10 detik, kemudian data sinyal RSSI tersebut akan dikirim ke API [isi nanti]. Di dalam API tersebut, terdapat model yang sudah dibuat sebelumnya menggunakan algoritma \textit{Support Vector Machine} (SVM). Setelah itu, API akan mengirimkan hasil prediksi lokasi saat ini dari model ke aplikasi utama yaitu aplikasi berbasis Android tadi. Aplikasi penentuan lokasi dan estimasi orang berbasis Android ini akan menampilkan hasil prediksi total estimasi jumlah orang dan detail estimasi orang di tiap posisi di dalam gedung A FMIPA USK.
+	\item Aplikasi LocaLization Berbasis Android
+	      \\
+	      Aplikasi ini adalah aplikasi utama yang berbasis Android dan dibuat menggunakan bahasa pemrograman JavaScript dengan \textit{framework} React Native. Aplikasi ini akan memindai sinyal RSSI yang di pancar dari tiap BLE yang dipasang di setiap sudut ruangan. Waktu yang dibutuhkan untuk memindai sinyal RSSI adalah 10 detik, kemudian data sinyal RSSI tersebut akan dikirim ke API [isi nanti]. Di dalam API tersebut, terdapat model yang sudah dibuat sebelumnya menggunakan algoritma \textit{Support Vector Machine} (SVM). Setelah itu, API akan mengirimkan hasil prediksi lokasi saat ini dari model ke aplikasi utama yaitu aplikasi berbasis Android tadi. Aplikasi LocaLization berbasis Android ini akan menampilkan hasil prediksi total estimasi jumlah orang dan detail estimasi orang di tiap posisi di dalam gedung A FMIPA USK.
 
 	\item Aplikasi Web Monitoring
 	      \\ Aplikasi ini akan memonitoring ....
