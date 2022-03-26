@@ -12,7 +12,7 @@ Hasil dari analisis kebutuhan yang telah dilakukan adalah mendapatkan kelompok p
 Kelompok pengguna dari aplikasi ini telah dapat diidentifikasikan pada tahap analisis kebutuhan pada sistem. terdapat 2 kelompok pengguna yang menggunakan aplikasi ini:
 \begin{enumerate}[1.]
 	\item Peneliti
-	      \newline Pengguna yang menggunakan Aplikasi Mapping berbasis Android untuk melakukan pemetaan kekuatan sinyal atau nilai RSSI dari Beacon.
+	      \newline Pengguna yang menggunakan Aplikasi Mapping berbasis Android untuk melakukan pemetaan kekuatan sinyal atau nilai RSSI dari Beacon. Aplikasi \textit{mapping} ini juga sudah memiliki sertifikat Hak Kekayaan Intelektual (HKI) dengan nomor EC00201972853.
 	\item Pengguna gedung FMIPA USK
 	      \newline Pengguna yang menggunakan aplikasi LocaLization di gedung Fakultas Matematika dan Ilmu Pengetahuan Alam Univesitas Syiah Kuala berbasis Android.
 \end{enumerate}
@@ -20,13 +20,13 @@ Kelompok pengguna dari aplikasi ini telah dapat diidentifikasikan pada tahap ana
 \subsection{Use Case Diagram}
 \textit{Use case} diagram adalah diagram yang mendeskripsilam hubungan antara aktor dan sistem. \textit{Use case} diagram bisa mendeskripsikan sebuah interaksi antara satu atau lebih aktor dengan sistem yang akan dibuat. \textit{Use case} diagram juga bisa digunakan untuk mengetahui fungsi apa saja yang ada di dalam sebuah sistem dan  bisa juga mempresentasikan sebuah interaksi aktor dengan sistem. Komponen tersebut kemudian menjelaskan komunikasi antara aktor,  dengan sistem yang ada. Dengan demikian, \textit{use case} dapat dipresentasikan dengan urutan yang sederhana, dan akan mudah dipahami oleh para konsumen \citep{Yu2009}. \textit{Use Case Diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{usecasemapping} dan Gambar \ref{usecasedosen}
 
-\begin{figure}[H]
-	\center
-	\shadowbox
-	{\includegraphics [width=8.5cm, height=8cm]{gambar/mapping}}
-	\caption{\textit{Use Case Diagram} Aplikasi Mapping.}
-	\label{usecasemapping}
-\end{figure}
+% \begin{figure}[H]
+% 	\center
+% 	\shadowbox
+% 	{\includegraphics [width=8.5cm, height=8cm]{gambar/mapping}}
+% 	\caption{\textit{Use Case Diagram} Aplikasi Mapping.}
+% 	\label{usecasemapping}
+% \end{figure}
 
 \par Gambar \ref{usecasemapping} diatas menjelaskan aktivitas yang dapat dilakukan oleh peneliti saat menggunakan aplikasi mapping. Ketika peneliti membuka aplikasi mapping, maka akan muncul halaman beranda. Kemudian, peneliti diminta untuk mengizinkan aplikasi mengakses lokasi pada perangkat. Selanjutnya, peneliti dapat melakukan pemindaian kekuatan sinyal setelah menghidupkan Bluetooth pada perangkat \textit{smartphone}. Setelah itu, hasil dari pemindaian kekuatan sinyal tersebut disimpan didalam server dan dapat ditampilkan jumlah data kekuatan sinyal.
 \fancyhf{}
@@ -57,7 +57,7 @@ Gambar \ref{usecasewebmonitoring} menerangkan tentang aktivitas yang dilakukan o
 
 % \subsection{Perancangan Sistem}
 
-\par Nama LocaLization diberikan untuk nama aplikasi utama berbasis android pada penelitian ini. Perancangan sistem adalah sekumpulan aktivitas yang mendeskripsikan secara rinci bagaimana sistem akan berjalan. Hal itu bertujuan untuk menghasilkan produk perangkat lunak yang sesuai dengan kebutuhan user. Perancangan sistem yaitu rancangan atau susunan sistem yang akan dibangun. Proses ini terdiri dari dua tahap yaitu perancangan konfigurasi eksekusi sistem dalam bentuk \textit{deployment diagram} dan perancangan tampilan antar muka (\textit{interface}).
+\par Nama LocaLization diberikan untuk nama aplikasi utama berbasis android pada penelitian ini. Perancangan sistem adalah sekumpulan aktivitas yang mendeskripsikan secara rinci bagaimana sistem akan berjalan. Hal itu bertujuan untuk menghasilkan produk perangkat lunak yang sesuai dengan kebutuhan user. Proses ini terdiri dari dua tahap yaitu perancangan konfigurasi eksekusi sistem dalam bentuk \textit{deployment diagram} dan perancangan tampilan antar muka (\textit{interface}).
 
 Tahap pertama adalah merancang \textit{deployment diagram}. \textit{Deployment diagram} adalah diagram yang menjelaskan bagaimana sistem bekerja dan digunakan oleh pengguna. Berikut rancangan \textit{deployment diagram} dari sistem yang telah dibangun dapat dilihat pada Gambar \ref{deployment-diagram}.
 
@@ -67,7 +67,7 @@ Tahap pertama adalah merancang \textit{deployment diagram}. \textit{Deployment d
 \begin{landscape}
 	\begin{figure}[H]
 		\center
-		\includegraphics [width = 22.5cm, height=12cm]{gambar/model/diagramdeployment.png}
+		\includegraphics [width = 22.5cm, height=12cm]{gambar/diagramdeployment.png}
 		\caption{Diagram \textit{Deployment}}
 		\label{deployment-diagram}
 	\end{figure}
@@ -396,8 +396,8 @@ svclassifier = pickle.load(open( "model_svm_9", 'rb'))
 	      \begin{figure}[H]
 		      \center
 		      \shadowbox
-		      {\includegraphics [width=.4\textwidth]{gambar/mapping}}
-		      \caption{\textit{Use Case Diagram} Aplikasi Mapping.}
+		      {\includegraphics [width=.4\textwidth]{gambar/strukturcodemodel.png}}
+		      \caption{Struktur aplikasi \textit{web service}}
 		      \label{usecasemapping}
 	      \end{figure}
 
@@ -695,7 +695,7 @@ def getEstimasi():
 	\label{testplan-aplikasi-utama}
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
-		\multicolumn{5}{|c|}{\textbf{Test Plan Aplikasi SpecifyLocation}}                                                                                                                                                                                                                                                                                                                                                              \\ \hline
+		\multicolumn{5}{|c|}{\textbf{Test Plan Aplikasi LocaLization}}                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
 		\multicolumn{5}{|l|}{\begin{tabular}[c]{@{}l@{}}Lokasi:\\ Lantai 1 Gedung A FMIPA USK \\Lantai 3 Gedung A FMIPA USK\end{tabular}}                                                                                                                                                                                                                                                                                              \\ \hline
 		\multicolumn{5}{|l|}{\begin{tabular}[c]{@{}l@{}}Skenario:\\ 1. Pengguna membuka aplikasi.\\ 2. Pengguna memahami tampilan halaman awal. \\ 3. Pengguna menekan cek lokasi di lantai 1 gedung a FMIPA USK. \\ 4. Pengguna menekan cek lokasi di lantai 3 gedung a FMIPA USK.\\ 5. Pengguna melihat hasil prediksi lokasi yang dilakukan oleh aplikasi.\\6. Pengguna melihat estimasi jumlah orang di dalam gedung\end{tabular}} \\ \hline
 		\multicolumn{5}{|l|}{\begin{tabular}[c]{@{}l@{}}Alat:\\ 1. Smartphone Android\\ 2. Beacon\end{tabular}}                                                                                                                                                                                                                                                                                                                        \\ \hline

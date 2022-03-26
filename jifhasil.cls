@@ -327,7 +327,7 @@
 				\item[]{\makebox[2cm]{Jurusan\hfill} : \@dept}
 			\end{compactitem}
 		\end{singlespace}
-		\vspace{2.0cm}
+		\vspace{1.0cm}
 		%Telah disetujui dan disahkan\\
 		%pada tanggal \@approvaldate
 		%\vspace{1.0cm}

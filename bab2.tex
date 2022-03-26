@@ -17,7 +17,27 @@ Teknologi \textit{machine learning} (ML) adalah mesin yang belajar atau dilatih 
 \par \textit{Supervised Learning} dibedakan menjadi dua jenis masalah yaitu klasifikasi dan regresi. Masalah klasifikasi menggunakan algoritma untuk secara akurat menentukan data uji ke dalam kategori tertentu, seperti memisahkan delima dari alpukat. Atau, di dunia nyata, algoritma pembelajaran yang diawasi dapat digunakan untuk mengklasifikasikan spam dalam folder terpisah dari kotak masuk Anda.
 
 \subsection{\textit{Support Vector Machine} (SVM)}
-\textit{Support vector machine} (SVM) adalah jenis algoritma klasifikasi \textit{supervised machine learning}. SVM pertama kali diperkenalkan pada 1960-an dan kemudian disempurnakan pada 1990-an. Sekarang menjadi sangat populer, karena kemampuan algoritmanya dalam mencapai hasil yang cemerlang. SVM diimplementasikan dengan cara yang unik jika dibandingkan dengan algoritma pembelajaran mesin lainnya \citep{Braun2011}.
+Pada awalnya SVM dikembangkan untuk persoalan klasifikasi dua kelas, kemudian dikembangkan kembali untuk klasifikasi multikelas. Dalam klasifikasi kasus multikelas, hyperplane yang terbentuk adalah lebih dari satu. Salah satu metode pendekatan yang digunakan adalah satu lawan semua (SLA). Metode SLA untuk kasus klasifikasi k-kelas, menemukan k hyperplane \citep{Braun2011}.
+
+Data pada suatu dataset diberikan variabel xi, sedangkan untuk kelas pada dataset diberikan variabel yi. Metode SVM membagi dataset menjadi 2 kelas. Kelas pertama yang dipisah
+oleh hyperplane bernilai 1, sedangkan kelas lainnya bernilai -1 \citep{Santos2021}.
+
+\begin{equation}
+	X_i.W + b \ge 1 \> untuk \> Y_i\>=1
+\end{equation}
+
+\begin{equation}
+	X_i.W + b \le  -1 \> untuk \> Y_i\>=-1
+\end{equation}
+
+\par Keterangan:
+\par Xi = data ke-i
+\par W = niai bobot support vector yang tegak lurus dengan \par hyperplane
+\par b = niai bias
+\par Yi = kelas data ke-i
+
+\par Bobot vector (w) adalah garis vektor yang tegak lurus antara titik pusat kordinat dengan garis hyperplane. Bias (b) merupakan kordinat garis relative terhadap titik kordinat.
+
 
 \begin{figure}[H]
 	\centering
@@ -28,26 +48,26 @@ Teknologi \textit{machine learning} (ML) adalah mesin yang belajar atau dilatih 
 
 \par Support vector adalah titik data yang paling dekat dengan hyperplane. Titik-titik ini akan menentukan garis pemisah lebih baik dengan menghitung margin. Poin-poin ini lebih relevan dengan konstruksi classifier. Hyperplane adalah bidang keputusan yang memisahkan antara satu set objek yang memiliki keanggotaan kelas yang berbeda. Margin adalah jarak antara dua garis pada titik kelas terdekat. Ini dihitung sebagai jarak tegak lurus dari garis untuk mendukung vektor atau titik terdekat. Jika margin lebih besar di antara kelas, maka itu dianggap margin yang baik, margin yang lebih kecil adalah margin yang buruk \citep{Zhibin2008}.
 
-Cara memaksimalkan margin adalah :
-\begin{equation}
-	Margin = \frac{2}{|w|^2} = \frac{1-(-1)}{\sqrt{w{1}^2+w{2}}} = \frac{2}{|w|}
-\end{equation}
+% Cara memaksimalkan margin adalah :
+% \begin{equation}
+% 	Margin = \frac{2}{|w|^2} = \frac{1-(-1)}{\sqrt{w{1}^2+w{2}}} = \frac{2}{|w|}
+% \end{equation}
 
-Artinya meminimalkan:
-\begin{equation}
-	L(w)=\frac{|w|^2}{2}
-\end{equation}
-
-
-\par Tujuan utamanya adalah untuk memisahkan dataset yang diberikan dengan cara terbaik. Caranya adalah untuk memilih hyperplane dengan margin maksimum yang mungkin antara support vector dalam dataset yang diberikan \citep{Syahputra2020}.
+% Artinya meminimalkan:
+% \begin{equation}
+% 	L(w)=\frac{|w|^2}{2}
+% \end{equation}
 
 
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=14cm, height=6cm]{gambar/index2_ub1uzd}
-	\caption{Support Vectors (Sumber : www.datacamp.com)}
-	\label{index3_souoaz}
-\end{figure}
+% \par Tujuan utamanya adalah untuk memisahkan dataset yang diberikan dengan cara terbaik. Caranya adalah untuk memilih hyperplane dengan margin maksimum yang mungkin antara support vector dalam dataset yang diberikan \citep{Syahputra2020}.
+
+
+% \begin{figure}[H]
+% 	\centering
+% 	\includegraphics[width=14cm, height=6cm]{gambar/index2_ub1uzd}
+% 	\caption{Support Vectors (Sumber : www.datacamp.com)}
+% 	\label{index3_souoaz}
+% \end{figure}
 
 
 \section{\uppercase{\textit{INDOOR LOCALIZATION SYSTEM} (ILS)}}
