@@ -339,7 +339,7 @@ Tahap kedua adalah merancang tampilan antar muka pengguna (\textit{user interfac
 \end{table}
 
 \par Proses pengumpulan data ini menggunakan aplikasi \textit{mapping} dan wajib mengaktifkan internet dan \textit{bluetooth}. Adapun tempat yang digunakan dalam proses ini adalah gedung A FMIPA USK yaitu dari lantai 1 ke lantai 3. Proses ini dilakukan beberapa kali agar data yang didapatkan berkualitas dan jumlahnya banyak.
-\par Data sinyal yang berhasil dikumpulkan adalah sebanyak 2049 data dengan jumlah atribut sebanyak 31 atribut dan jumlah label sebanyak 6 label. Adapun atribut pada data sinyal ini adalah data dari setiap beacon sebanyak 31 beacon dan 6 label dari masing-masing posisi di dalam gedung A FMIPA USK. 6 label pada data ini adalah lantai 1, tangga 1 (tangga yang menghubungkan lantai 1 dan 2), tangga 2 (tangga yang menghubungkan lantai 2 dan 3), koridor lab database, koridor lab GIS, dan koridor lab jaringan.
+\par Data sinyal yang berhasil dikumpulkan adalah sebanyak 2048 data dengan jumlah atribut sebanyak 31 atribut dan jumlah label sebanyak 6 label. Adapun atribut pada data sinyal ini adalah data dari setiap beacon sebanyak 31 beacon dan 6 label dari masing-masing posisi di dalam gedung A FMIPA USK. 6 label pada data ini adalah lantai 1, tangga 1 (tangga yang menghubungkan lantai 1 dan 2), tangga 2 (tangga yang menghubungkan lantai 2 dan 3), koridor lab database, koridor lab GIS, dan koridor lab jaringan.
 
 \section{PENGUJIAN AKURASI DENGAN ALGORITMA SVM}
 
@@ -360,8 +360,28 @@ bankdata.shape
 bankdata.head()
 					\end{lstlisting}
 	      \captionof{lstlisting}{Potongan Kode Program Proses Visualisasi Data Klasifikasi}
+
+	      \par Tampilan isi data sinyal dapat dilihat sebagai berikut:
+
+	      \begin{table}[H]
+		      \center
+		      \fontsize{10}{12}\selectfont
+		      \caption{Tampilan Data Sinyal}
+		      \label{Daftar-Peserta-Pengumpula-Data}
+		      \begin{tabular}{|r|r|r|l|}
+			      \hline
+			      \multicolumn{1}{|l|}{DD:34:02:05:C6:80} & \multicolumn{1}{l|}{DD:34:02:05:C6:91} & \multicolumn{1}{l|}{DD:34:02:05:C6:93} & \multicolumn{1}{c|}{label} \\ \hline
+			      -110                                    & -89                                    & -90                                    & Koridor Lab GIS            \\ \hline
+			      -110                                    & -110                                   & -78                                    & Koridor Lab GIS            \\ \hline
+			      -110                                    & -110                                   & -77                                    & Koridor Lab GIS            \\ \hline
+			      -110                                    & -56                                    & -90                                    & Koridor Lab GIS            \\ \hline
+			      -90                                     & -89                                    & -21                                    & Tangga 2                   \\ \hline
+			      -70                                     & -50                                    & -49                                    & Tangga 2                   \\ \hline
+		      \end{tabular}
+	      \end{table}
+
 	\item Pembuatan File
-	      \\Proses ini akan menghasilkan file \textit{pickle} menggunakan algoritma SVM. Adapun contoh potongan kode Pythonnya seperti berikut:
+	      \\Proses ini akan menghasilkan file yang telah dibuat oleh \textit{library pickle} menggunakan algoritma SVM. Adapun contoh potongan kode Pythonnya seperti berikut:
 
 	      \begin{lstlisting}[label=MinMAxdanPCA,language=Python]
 import pickle
@@ -370,6 +390,16 @@ pickle.dump(svclassifier, open( "model_svm_9", "wb" ))
 svclassifier = pickle.load(open( "model_svm_9", 'rb'))
 		  \end{lstlisting}
 	      \captionof{lstlisting}{Potongan Kode  Proses Pembuatan File Menggunakan SVM}
+
+	      \par Untuk struktur folder dapat dilihat pada gambar
+
+	      \begin{figure}[H]
+		      \center
+		      \shadowbox
+		      {\includegraphics [width=.4\textwidth]{gambar/mapping}}
+		      \caption{\textit{Use Case Diagram} Aplikasi Mapping.}
+		      \label{usecasemapping}
+	      \end{figure}
 
 	\item Pengujian Akurasi
 	      \\Perhitungan akurasi algoritma SVM dilakukan dengan cara membagi jumlah data yang diklasifikasikan secara benar dengan total sampel data yang diuji, dengan rumus sebagai berikut:
@@ -512,8 +542,8 @@ def getEstimasi():
 		      \begin{tabular}{lllll}
 			      \cline{1-2}
 			      \multicolumn{1}{|c|}{\cellcolor[HTML]{CBCEFB}Item}                        & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}Prioritas} &  &  & \\ \cline{1-2}
-			      \multicolumn{1}{|l|}{Buat Tombol Bersedia menjadi Sukarelawan}            & \multicolumn{1}{l|}{Tinggi}                            &  &  & \\ \cline{1-2}
-			      \multicolumn{1}{|l|}{Buat Tampilan Bersedia Menjadi Sukarelawan}          & \multicolumn{1}{l|}{Tinggi}                            &  &  & \\ \cline{1-2}
+			      \multicolumn{1}{|l|}{Buat Tombol "Cek Lokasi"}                            & \multicolumn{1}{l|}{Tinggi}                            &  &  & \\ \cline{1-2}
+			      \multicolumn{1}{|l|}{Buat Tampilan Cek Lokasi}                            & \multicolumn{1}{l|}{Tinggi}                            &  &  & \\ \cline{1-2}
 			      \multicolumn{1}{|l|}{Mencari Lokasi Pengguna dengan API}                  & \multicolumn{1}{l|}{Sedang}                            &  &  & \\ \cline{1-2}
 			      \multicolumn{1}{|l|}{Integrasi dengan React-Native-ble-plx}               & \multicolumn{1}{l|}{Tinggi}                            &  &  & \\ \cline{1-2}
 			      \multicolumn{1}{|l|}{Buat Tampilan Estimasi}                              & \multicolumn{1}{l|}{Sedang}                            &  &  & \\ \cline{1-2}
@@ -585,7 +615,7 @@ def getEstimasi():
 						});
 					}, []);
     \end{lstlisting}
-	      \captionof{lstlisting}{Potongan Kode Program dalam aplikasi SpecifyLocation}
+	      \captionof{lstlisting}{Potongan Kode Program dalam aplikasi LocaLization}
 
 	\item Aplikasi \textit{Web Monitoring}
 	      \par Aplikasi \textit{Web Monitoring} dibangun menggunakan bahasa pemrograman JavaScript dan \textit{framework} Next.Js. Aplikasi ini menampilkan data estimasi orang di dalam gedung A FMIPA USK dalam bentuk kolom, tabel, dan grafik. Untuk informasi data yang menggunakan algoritma SVM dan K-Means ini akan diperbarui secara otomatis tiap beberapa detik sekali. Adapun alamat \textit{Web Monitoring} ini adalah https://web-monitoring-five.vercel.app/admin. Adapun \textit{User Story} dari \textit{Web Monitoring} dapat dilihat pada tabel \ref{user-story-web-monitoring} dan \textit{Sprint} 1 pada tabel \ref{web-monitoring-sprint-1}
@@ -627,116 +657,32 @@ def getEstimasi():
 \subsection{Pengujian Keakuratan Prediksi Menggunakan Algoritma SVM}
 \begin{enumerate}
 
-	\item Pengujian Keakuratan Klasifikasi SVM
+	\item Pengujian Keakuratan  Algoritma SVM Berdasarkan Penggunaan Jumlah Beacon pada setiap lokasi di dalam gedung A FMIPA USK.
 
-	      \par Pengujian ini dianalisis menggunakan metode klasifikasi K-NN. Pengujian ini bertujuan untuk menganalisis jenis penyebaran \textit{reference point} yang terbaik dengan membandingkan \textit{F-Measure} yang didapatkan dari setiap pengujian. Data \textit{training} yang digunakan pada penelitian ini sebanyak 764 data kekuatan sinyal dengan masing-masing 324 data kekuatan sinyal untuk \textit{reference point} acak, 440 data kekuatan sinyal untuk \textit{reference point} urut dan 160 sebagai data uji. Pengumpulan data \textit{training} dilakukan dengan cara melakukan pemetaan kekuataan sinyal yang telah dijelaskan pada \textbf{BAB III}. Hasil dari proses pengujian metode klasifikasi K-NN menunjukkan bahwa dengan K=5 untuk data kekuatan sinyal \textit{reference point} urut, memiliki rata-rata \textit{F-Measure} paling baik dengan nilai 78,60\% dibandingkan dengan parameter pengujian lainnya. Hasil pengujian menggunakan metode K-NN ini  dapat dilihat pada Tabel \ref{tabelfmeasure9}.
-	      Please add the following required packages to your document preamble:
-	      %   \usepackage{multirow}
+	      \par Pengujian ini dilakukan bertujuan untuk menganalisis jenis penyebaran \textit{reference point} yang didapatkan dari setiap pengujian di setiap lokasi di dalam gedung A FMIPA USK. Data \textit{training} yang digunakan adalah sebanyak 1638 dan data \textit{testing} sebanyak 410 data. Pengumpulan data dilakukan dengan cara melakukan pemetaan kekuatan sinyal yang telah dijelaskan pada \textbf{BAB III}. Hasil dari proses pengujian metode klasifikasi SVM menunjukkan bahwa akurasi sebesar 86,67\% pada setiap lokasi yang dicoba disebanyak 10 kali di setiap label. Hasil pengujian menggunakan metode SVM ini dapat dilihat pada Tabel \ref{tabelpercobaansvm}
+
+	      % Please add the following required packages to your document preamble:
+	      % \usepackage{multirow}
+	      % \usepackage[table,xcdraw]{xcolor}
+	      % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 	      \begin{table}[H]
-		      \fontsize{9}{12}\selectfont
 		      \center
-		      \caption{Perbandingan F-Measure}
-		      \label{tabelfmeasure9}
-		      \begin{tabular}{|c|c|l|c|c|c|c|}
+		      \caption{Analisis Keakuratan SVM pada setiap lokasi atau label}
+		      \label{tabelpercobaansvm}
+		      \begin{tabular}{|lccccccccccc|}
 			      \hline
-			      Jenis Titik           & Nilai K            & \multicolumn{1}{c|}{Kelas Label} & Precision & Recall  & F-Measure & Rata-Rata F-Measure      \\ \hline
-			      \multirow{3}{*}{Urut} & \multirow{3}{*}{3} & B0302                            & 90,69\%   & 66,10\% & 76,47\%   & \multirow{3}{*}{78,52\%} \\ \cline{3-6}
-			                            &                    & E0207                            & 82,60\%   & 70,37\% & 76,00\%   &                          \\ \cline{3-6}
-			                            &                    & Luar Kelas                       & 83,09\%   & 83,09\% & 83,09\%   &                          \\ \hline
-			      \multirow{3}{*}{Urut} & \multirow{3}{*}{5} & B0302                            & 90,69\%   & 66,10\% & 76,47\%   & \multirow{3}{*}{78,60\%} \\ \cline{3-6}
-			                            &                    & E0207                            & 81,25\%   & 72,22\% & 76,47\%   &                          \\ \cline{3-6}
-			                            &                    & Luar Kelas                       & 84,05\%   & 81,69\% & 82,85\%   &                          \\ \hline
-			      \multirow{3}{*}{Urut} & \multirow{3}{*}{7} & B0302                            & 90,69\%   & 67,24\% & 72,20\%   & \multirow{3}{*}{77,42\%} \\ \cline{3-6}
-			                            &                    & E0207                            & 81,63\%   & 74,07\% & 76,60\%   &                          \\ \cline{3-6}
-			                            &                    & Luar Kelas                       & 85,29\%   & 81,69\% & 83,45\%   &                          \\ \hline
-			      \multirow{3}{*}{Acak} & \multirow{3}{*}{3} & B0302                            & 97,36\%   & 60,65\% & 74,74\%   & \multirow{3}{*}{77,66\%} \\ \cline{3-6}
-			                            &                    & E0207                            & 78,00\%   & 73,58\% & 75,72\%   &                          \\ \cline{3-6}
-			                            &                    & Luar Kelas                       & 81,94\%   & 83,09\% & 82,51\%   &                          \\ \hline
-			      \multirow{3}{*}{Acak} & \multirow{3}{*}{5} & B0302                            & 97,43\%   & 59,37\% & 73,78\%   & \multirow{3}{*}{76,07\%} \\ \cline{3-6}
-			                            &                    & E0207                            & 75,51\%   & 71,15\% & 73,26\%   &                          \\ \cline{3-6}
-			                            &                    & Luar Kelas                       & 80,55\%   & 81,69\% & 81,18\%   &                          \\ \hline
-			      \multirow{3}{*}{Acak} & \multirow{3}{*}{7} & B0302                            & 97,36\%   & 59,67\% & 74,00\%   & \multirow{3}{*}{76,89\%} \\ \cline{3-6}
-			                            &                    & E0207                            & 76,47\%   & 73,58\% & 74,99\%   &                          \\ \cline{3-6}
-			                            &                    & Luar Kelas                       & 81,69\%   & 81,69\% & 81,69\%   &                          \\ \hline
+			      \multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}}                        & \multicolumn{11}{c|}{\cellcolor[HTML]{EFEFEF}Percobaan}                                                                                                                                                                                                                                                   \\ \cline{2-12}
+			      \multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Label}} & \multicolumn{1}{c|}{1}                                  & \multicolumn{1}{c|}{2}  & \multicolumn{1}{c|}{3}  & \multicolumn{1}{c|}{4}  & \multicolumn{1}{c|}{5}  & \multicolumn{1}{c|}{6}  & \multicolumn{1}{c|}{7}  & \multicolumn{1}{c|}{8}  & \multicolumn{1}{c|}{9}  & \multicolumn{1}{c|}{10} & Hasil \\ \hline
+			      \multicolumn{1}{|l|}{Tangga 1}                                        & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 90\%  \\ \hline
+			      \multicolumn{1}{|l|}{Tangga 2}                                        & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 70\%  \\ \hline
+			      \multicolumn{1}{|l|}{Koridor Lab Jaringan}                            & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 90\%  \\ \hline
+			      \multicolumn{1}{|l|}{Koridor Lab Database}                            & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & 80\%  \\ \hline
+			      \multicolumn{1}{|l|}{Koridor Lab GIS}                                 & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 100\% \\ \hline
+			      \multicolumn{1}{|l|}{Lantai1}                                         & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 90\%  \\ \hline
+			      \multicolumn{11}{|c|}{Rata-rata}                                      & 86,67\%                                                                                                                                                                                                                                                                                                   \\ \hline
 		      \end{tabular}
 	      \end{table}
 
-
-	      \par Ilustrasi dari perbandingan F-Measure setiap parameter pengujian ditampilkan pada Gambar \ref{gambar-grafik-akurasi-klasifikasi-9-beacon}.
-	      \begin{figure}[H]
-		      \center
-		      \shadowbox
-		      {\includegraphics [width = 13cm, height= 7cm]{gambar/pengujian/grafik-akurasi-klasifikasi}}
-		      \caption{Grafik Perbandingan F-Measure dengan Menggunakan Parameter Pengujian yang Berbeda.}
-		      \label{gambar-grafik-akurasi-klasifikasi-9-beacon}
-	      \end{figure}
-
-	      \vspace{2cm}
-	      \par Pengambilan data uji dilakukan untuk menguji tingkat keberhasilan klasifikasi dengan melihat akurasi tertinggi bergantung pada parameter nilai K yang digunakan. Pada pengujian ini terdapat titik yang sering salah diprediksi yaitu sebanyak 6 dari 6 kali pengujian. Lokasi titik yang sering salah diprediksi ditandai dengan lingkaran bewarna biru yang ditampilkan dalam bentuk ilustrasi denah yang dapat dilihat pada Gambar \ref{gambar-denah-titik-uji-b0302} dan Gambar \ref{gambar-denah-titik-uji-e0207}.
-	      \vspace{0.2cm}
-	      \begin{figure}[H]
-		      \center
-		      \includegraphics [width = 11cm, height= 9cm]{gambar/denah/B0302-Uji}
-		      \caption{Lokasi Titik yang Sering Salah Diprediksi di Kelas B.03.02.}
-		      \label{gambar-denah-titik-uji-b0302}
-	      \end{figure}
-
-	      \begin{figure}[H]
-		      \center
-		      \includegraphics [width = 14cm, height= 8cm]{gambar/denah/E0207-Uji}
-		      \caption{Lokasi Titik yang Sering Salah Diprediksi di Kelas E.02.07.}
-		      \label{gambar-denah-titik-uji-e0207}
-	      \end{figure}
-	      %batas batas batas batas batas batas batas batas batas batas batas batas batas
-
-	\item Pengujian Keakuratan Reference Point Berdasarkan Penggunaan Jumlah Beacon pada Ruang Kuliah B.03.02
-
-	      \par Pengujian ini dianalisis menggunakan metode klasifikasi K-NN. Pengujian ini bertujuan untuk menganalisis tingkat keakuratan klasifikasi jenis \textit{reference point} terbaik yang digunakan dengan membandingkan penggunaan jumlah Beacon dengan melihat \textit{F-Measure} yang didapatkan dari setiap pengujian. Jumlah Beacon yang dibandingkan adalah 3 Beacon dan 6 Beacon. Data \textit{training} yang digunakan pada penelitian ini sebanyak 368 data kekuatan sinyal dengan masing-masing 120 data kekuatan sinyal untuk \textit{reference point} acak, 168 data kekuatan sinyal untuk \textit{reference point} urut dan 80 sebagai data uji. Pengumpulan data \textit{training} dilakukan dengan cara melakukan pemetaan kekuataan sinyal yang telah dijelaskan pada \textbf{BAB III}. Hasil dari proses pengujian metode klasifikasi K-NN menunjukkan bahwa dengan K=5 untuk data kekuatan sinyal \textit{reference point} acak menggunakan 6 Beacon, memiliki \textit{F-Measure} paling baik dengan nilai 96,20\% dibandingkan dengan parameter pengujian lainnya. Hasil pengujian menggunakan metode K-NN ini dapat dilihat secara detil pada Tabel \ref{tabelfmeasureee}.
-	      Please add the following required packages to your document preamble:
-	      %   \usepackage{multirow}
-	      %   \begin{table}[H]
-	      %       \fontsize{10}{12}\selectfont
-	      %       \center
-	      %       \caption{Perbandingan F-Measure}
-	      %       \label{tabelfmeasureee}
-	      %       \begin{tabular}{|c|c|l|c|c|c|}
-	      % 	      \hline
-	      % 	      Nilai K            & Jumlah BLE         & \multicolumn{1}{c|}{Jenis Titik} & Precision & Recall  & F-Measure \\ \hline
-	      % 	      \multirow{2}{*}{3} & \multirow{2}{*}{3} & Urut                             & 67,24\%   & 97,50\% & 80,00\%   \\ \cline{3-6}
-	      % 	                         &                    & Acak                             & 82,50\%   & 82,50\% & 82,50\%   \\ \hline
-	      % 	      \multirow{2}{*}{5} & \multirow{2}{*}{3} & Urut                             & 67,24\%   & 97,50\% & 80,00\%   \\ \cline{3-6}
-	      % 	                         &                    & Acak                             & 80,50\%   & 82,50\% & 81,50\%   \\ \hline
-	      % 	      \multirow{2}{*}{7} & \multirow{2}{*}{3} & Urut                             & 67,24\%   & 97,50\% & 80,00\%   \\ \cline{3-6}
-	      % 	                         &                    & Acak                             & 80,50\%   & 82,50\% & 81,50\%   \\ \hline
-	      % 	      \multirow{2}{*}{3} & \multirow{2}{*}{6} & Urut                             & 90,70\%   & 97,50\% & 94,00\%   \\ \cline{3-6}
-	      % 	                         &                    & Acak                             & 97,40\%   & 92,50\% & 95,00\%   \\ \hline
-	      % 	      \multirow{2}{*}{5} & \multirow{2}{*}{6} & Urut                             & 90,70\%   & 97,50\% & 94,00\%   \\ \cline{3-6}
-	      % 	                         &                    & Acak                             & 97,40\%   & 95,00\% & 96,20\%   \\ \hline
-	      % 	      \multirow{2}{*}{7} & \multirow{2}{*}{6} & Urut                             & 90,70\%   & 97,50\% & 94,00\%   \\ \cline{3-6}
-	      % 	                         &                    & Acak                             & 97,40\%   & 92,50\% & 95,00\%   \\ \hline
-	      %       \end{tabular}
-	      %   \end{table}
-
-	      %   \par Ilustrasi dari perbandingan F-Measure setiap parameter pengujian ditampilkan pada Gambar \ref{gambar-grafik-akurasi-klasifikasi-6-beacon}.
-	      %   \begin{figure}[H]
-	      %       \center
-	      %       \shadowbox
-	      %       {\includegraphics [width = 14cm, height= 8.7cm]{gambar/pengujian/grafik-akurasi-klasifikasi-kelas-b0302}}
-	      %       \caption{Grafik Perbandingan F-Measure dengan Menggunakan Parameter Pengujian yang Berbeda.}
-	      %       \label{gambar-grafik-akurasi-klasifikasi-6-beacon}
-	      %   \end{figure}
-
-	      %   \par Berdasarkan hasil pengujian dengan parameter nilai K yang berbeda menggunakan 3 Beacon dan 6 Beacon berdasarkan jenis \textit{reference point} yang digunakan, menunjukkan bahwa penggunaan 6 Beacon mengurangi kesalahan prediksi titik dibandingkan dengan 3 Beacon. Ilustrasi perbandingan tersebut dapat ditampilkan pada Gambar \ref{gambar-grafik-titik-salah-prediksi}.
-	      %   \begin{figure}[H]
-	      %       \center
-	      %       \shadowbox
-	      %       {\includegraphics [width = 9cm, height= 5cm]{gambar/pengujian/grafik-titik-salah-prediksi}}
-	      %       \caption{Grafik Jumlah Titik yang Salah Diprediksi.}
-	      %       \label{gambar-grafik-titik-salah-prediksi}
-	      %   \end{figure}
-
-
-	      %batas batas batas batas batas batas batas batas batas batas batas batas batas	
 \end{enumerate}
 
 \subsection{Pengujian Usabilitas Menggunakan Metode UMUX}
@@ -745,7 +691,7 @@ def getEstimasi():
 \begin{table}[H]
 	\fontsize{10}{12}\selectfont
 	\center
-	\caption{\textit{Test Plan} Aplikasi SpecifyLocation}
+	\caption{\textit{Test Plan} Aplikasi LocaLization}
 	\label{testplan-aplikasi-utama}
 	\begin{tabular}{|l|l|l|l|l|}
 		\hline
@@ -757,45 +703,44 @@ def getEstimasi():
 	\end{tabular}
 \end{table}
 
-\par Pengujian UMUX dilakukan dengan memberikan kuisioner kepada responden. Isi kuisioner tersebut berisi 4 pertanyaan seperti yang sudah dibahas pada \textbf{BAB III}. Pengujian ini memiliki [Jumlah responden......] responden. Hasil skor pengujian metode UMUX yang dilakukan dapat dilihat pada tabel \ref{umux-aplikasi-utama} berikut.
-% \par Pengujian dengan metode SUS dilakukan dengan memberikan kuisioner kepada responden. Kuisioner tersebut berisi 10 pertanyaan seperti yang telah dibahas pada. Pengujian Aplikasi Kehadiran Dosen memiliki responden berjumlah 5 orang sedangkan pengujian Aplikasi Kehadiran Mahasiswa memiliki responden berjumlah 9 orang. Hasil skor pengujian metode SUS yang dilakukan dapat dilihat pada Tabel \ref{sus-aplikasi-dosen} dan Tabel \ref{sus-aplikasi-mahasiswa} berikut.
-%TABEL SUS APLIKASI DOSEN%
+\par Pengujian UMUX dilakukan dengan memberikan kuisioner kepada responden. Isi kuisioner tersebut berisi 4 pertanyaan seperti yang sudah dibahas pada \textbf{BAB III}. Pengujian ini memiliki 23 responden. Hasil skor pengujian metode UMUX yang dilakukan dapat dilihat pada tabel \ref{umux-aplikasi-utama} berikut.
+
 \begin{table}[H]
 	\centering
 	\caption{\textit{Usability Testing} dengan menggunakan metode UMUX}
 	\label{UMUX}
 	\begin{tabular}{|ccccc|c|}
 		\hline
-		\rowcolor[HTML]{EFEFEF}
-		\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}}                            & \multicolumn{4}{c|}{\cellcolor[HTML]{EFEFEF}Kode Pertanyaan} & \cellcolor[HTML]{EFEFEF}                                                                                                                                     \\ \cline{2-5}
-		\rowcolor[HTML]{EFEFEF}
-		\multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Responden}} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}P1}              & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}P2} & \multicolumn{1}{c|}{\cellcolor[HTML]{EFEFEF}P3} & P4 & \multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Skor UMUX} \\ \hline
-		\multicolumn{1}{|c|}{1}                                                   & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{2}                                                   & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{3}                                                   & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{4}                                                   & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{5}                                                   & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{6}                                                   & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{7}                                                   & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{8}                                                   & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{9}                                                   & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{10}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{11}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{12}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{13}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{14}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{15}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{16}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{17}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{18}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{19}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\multicolumn{1}{|c|}{20}                                                  & \multicolumn{1}{c|}{}                                        & \multicolumn{1}{c|}{}                           & \multicolumn{1}{c|}{}                           &    &                                                     \\ \hline
-		\rowcolor[HTML]{EFEFEF}
-		\multicolumn{5}{|c|}{\cellcolor[HTML]{EFEFEF}Rata - Rata}                 &                                                                                                                                                                                                                             \\ \hline
+		\multicolumn{1}{|c|}{Responden} & \multicolumn{4}{c|}{Skor UMUX} & Rata-rata                                                    \\ \hline
+		\multicolumn{1}{|c|}{1}         & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 1 & 100,00 \\ \hline
+		\multicolumn{1}{|c|}{2}         & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 1 & 100,00 \\ \hline
+		\multicolumn{1}{|c|}{3}         & \multicolumn{1}{c|}{5}         & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{7} & 1 & 87,50  \\ \hline
+		\multicolumn{1}{|c|}{4}         & \multicolumn{1}{c|}{6}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 1 & 95,83  \\ \hline
+		\multicolumn{1}{|c|}{5}         & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{6} & 2 & 91,67  \\ \hline
+		\multicolumn{1}{|c|}{6}         & \multicolumn{1}{c|}{6}         & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{6} & 1 & 87,50  \\ \hline
+		\multicolumn{1}{|c|}{7}         & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 1 & 100,00 \\ \hline
+		\multicolumn{1}{|c|}{8}         & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{6} & 2 & 91,67  \\ \hline
+		\multicolumn{1}{|c|}{9}         & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 1 & 100,00 \\ \hline
+		\multicolumn{1}{|c|}{10}        & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{5} & 2 & 83,33  \\ \hline
+		\multicolumn{1}{|c|}{11}        & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{7} & 1 & 83,33  \\ \hline
+		\multicolumn{1}{|c|}{12}        & \multicolumn{1}{c|}{5}         & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{6} & 1 & 83,33  \\ \hline
+		\multicolumn{1}{|c|}{13}        & \multicolumn{1}{c|}{6}         & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{6} & 1 & 87,50  \\ \hline
+		\multicolumn{1}{|c|}{14}        & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 2 & 95,83  \\ \hline
+		\multicolumn{1}{|c|}{15}        & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 1 & 100,00 \\ \hline
+		\multicolumn{1}{|c|}{16}        & \multicolumn{1}{c|}{6}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 2 & 91,67  \\ \hline
+		\multicolumn{1}{|c|}{17}        & \multicolumn{1}{c|}{6}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{6} & 1 & 91,67  \\ \hline
+		\multicolumn{1}{|c|}{18}        & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 1 & 100,00 \\ \hline
+		\multicolumn{1}{|c|}{19}        & \multicolumn{1}{c|}{5}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{6} & 2 & 83,33  \\ \hline
+		\multicolumn{1}{|c|}{20}        & \multicolumn{1}{c|}{6}         & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{6} & 2 & 83,33  \\ \hline
+		\multicolumn{1}{|c|}{21}        & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 1 & 100,00 \\ \hline
+		\multicolumn{1}{|c|}{22}        & \multicolumn{1}{c|}{7}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{7} & 1 & 100,00 \\ \hline
+		\multicolumn{1}{|c|}{23}        & \multicolumn{1}{c|}{6}         & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{6} & 2 & 87,50  \\ \hline
+		\multicolumn{5}{|c|}{Rata-rata} & 92,39                                                                                         \\ \hline
 	\end{tabular}
 \end{table}
 
-\par Berdasarkan hasil pengujian usabilitas menggunakan metode UMUX yang telah dilakukan diatas, hasil rata-rata pengujian Aplikasi LocaLization mendapatkan skor sebesar ....\% . Berdasarkan skor tersebut, maka aplikasi LocaLization ini memiliki skor interpretasi \textbf{"dapat diterima"} berdasarkan Tabel 3.4.
+
+\par Berdasarkan hasil pengujian usabilitas menggunakan metode UMUX yang telah dilakukan diatas, hasil rata-rata pengujian Aplikasi LocaLization mendapatkan skor sebesar 92,39\% . Berdasarkan skor tersebut, maka aplikasi LocaLization ini memiliki skor interpretasi \textbf{"dapat diterima"} berdasarkan Tabel 3.4.
 
 \subsection{Pengujian Fungsionalitas Menggunakan Blackbox}
 \par Tujuan pengujian \textit{blackbox} adalah untuk menguji fungsionalitas dari aplikasi yang telah dibuat dengan cara menjalankan aplikasi tersebut apakah sesuai dengan alur bisnis yang diinginkan atau tidak. Proses ini melihat fungsi yang tidak sesuai pada aplikasi dan kesalahan-kesalahan aplikasi dalam mengerjakan suatu perintah. Pengujian \textit{blackbox} dilakukan pada aplikasi utama berbasis android yaitu aplikasi LocaLization dan aplikasi \textit{web monitoring}. Beberapa fitur aplikasi yang diuji menggunakan metode \textit{blackbox} dapat dilihat pada Tabel \ref{blackbox-aplikasi-utama}, dan Tabel \ref{blackbox-web-monitoring}
