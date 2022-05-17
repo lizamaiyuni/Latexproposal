@@ -15,10 +15,9 @@
 
 \par Pengumpulan data untuk \textit{fingerprinting} dapat dilakukan secara \textit{crowdsourcing}. \textit{Crowdsourcing} adalah solusi yang menjanjikan karena dapat mengurangi biaya survei dan pemeliharaan. Dimungkinkan untuk membuat peta radio dengan menyebarkan tugas pengumpulan data ke beberapa pengguna, dan menggabungkan \textit{fingerprinting} yang dikumpulkan dengan tepat. Meskipun pendekatan \textit{crowdsourcing} sebagian besar telah mengatasi biaya tenaga kerja yang intensif untuk survei lokasi, kelemahannya tetap ada.  Dalam situasi dinamis yang lebih realistis, pengguna bergerak dan sampel terbatas dikumpulkan di setiap lokasi, yang menyebabkan kesalahan signifikan saat mencocokkan dengan pengamatan RSS yang dikumpulkan selama fase survei lokasi \citep{Sun2019}.
 
-
 \par Pada penelitian ini, teknologi ILS yang digunakan akan mengandalkan teknologi  dari \textit{Bluetooth Low Energy} (BLE). Data \textit{fingerprinting} dari \textit{crowdsourcing} akan memanfaatkan BLE karena baterai yang tahan lama serta \textit{resource} yang dipakai pada \textit{smartphone} sedikit \citep{Wan2019}. BLE \textit{Beacon} pada dasarnya adalah sebuah perangkat yang sangat sederhana berupa perangkat wireless kecil yang berbasiskan \textit{Bluetooth Low Energy} yang mentransmisikan sinyal radio secara terus menerus yang berkaitan dengan ID dari \textit{beacon} tersebut. Dengan menggunakan \textit{Smartphone Android} terkini, BLE sangat mudah untuk dibaca dan dideteksi. Beberapa informasi yang diperoleh pada pembacaan ini, seperti data sensor dan estimasi jarak antara \textit{beacon} dengan \textit{Smartphone}. Hanya dengan kedua data tersebut, developer dapat berkreasi untuk mengembangkan banyak aplikasi yang unik, aplikatif, dan dapat bermanfaat untuk optimasi sistem di industri juga manfaat lainnya \citep{Sun2019}.
 
-\par Untuk prediksi penentuan lokasi dan estimasi orang, aplikasi ini juga mengandalkan algoritma \textit{Support Vector Machine} (SVM). \textit{Support vector machine} (SVM) adalah jenis algoritma klasifikasi \textit{supervised learning}. SVM pertama kali diperkenalkan pada 1960-an dan kemudian disempurnakan pada 1990-an. Sekarang algoritma menjadi sangat populer, karena kemampuan dalam mencapai hasil yang bagus. Peran algortima SVM pada penelitian ini adalah untuk proses klasifikasi dan prediksi lokasi pengguna saat berada di dalam gedung \citep{Zhibin2008}.
+\par Untuk prediksi penentuan lokasi dan estimasi orang, aplikasi ini juga mengandalkan algoritma \textit{Support Vector Machine} (SVM). \textit{Support vector machine} (SVM) adalah jenis algoritma klasifikasi \textit{supervised learning}. SVM pertama kali diperkenalkan pada 1960-an dan kemudian disempurnakan pada 1990-an. Sekarang algoritma menjadi sangat populer, karena kemampuan dalam mencapai hasil yang bagus. Peran algoritma SVM pada penelitian ini adalah untuk proses klasifikasi dan prediksi lokasi pengguna saat berada di dalam gedung \citep{Zhibin2008}.
 
 \par Hal di atas kemudian melatar belakangi penelitian ini. Penelitian ini akan membangun sebuah aplikasi yang bertujuan untuk mengetahui posisi suatu individu atau pengguna aplikasi yang berada di dalam gedung untuk melakukan estimasi jumlah orang di dalam gedung berbasis \textit{Crowdsourcing Indoor Localization System}. \textit{Crowdsourcing Indoor Localization System} merupakan   sebuah   teknologi   yang   dapat digunakan  untuk  menentukan  posisi  seseorang  di  dalam  ruangan  atau  bangunan dengan lebih akurat. Serta diharapkan bisa menghitung jumlah orang yang sedang berada di dalam gedung agar terhindar kerumunan guna pencegahan penyebaran virus Covid-19.
 
@@ -31,7 +30,7 @@
 Berdasarkan latar belakang yang telah diuraikan, terdapat beberapa rumusan masalah pada penelitian ini sebagai berikut:
 \begin{enumerate}
 	\item Bagaimana mengimplementasikan \textit{Crowdsourcing Indoor Localization System} berbasis BLE untuk proses penentuan lokasi dan estimasi orang dalam gedung.
-	\item Bagaimana tingkat akurasi prediksi setiap lokasi pengguna saat melakukan proses  penentuan lokasi dalam gedung berbasis \textit{Crowdsourcing Indoor Localization System} berbasis BLE.	      %\item Bagaimana tingkat akurasi prediksi lokasi pengguna yang berada di gedung A FMIPA Unsyiah dengan menggunakan \textit{Indoor Localization System} berbasis BLE.
+	\item Bagaimana tingkat akurasi prediksi setiap lokasi pengguna saat melakukan proses  penentuan lokasi dalam gedung berbasis \textit{Crowdsourcing Indoor Localization System} berbasis BLE.
 	\item Bagaimana tingkat akurasi prediksi setiap lokasi saat melakukan proses estimasi orang dalam gedung berbasis \textit{Crowdsourcing Indoor Localization System} berbasis BLE.
 	\item Bagaimana merancang aplikasi penentuan lokasi dan estimasi orang di dalam gedung berbasis \textit{crowdsourcing indoor localization system}.
 
@@ -43,7 +42,7 @@ Berdasarkan rumusan masalah yang telah disebutkan sebelumnya, maka dapat dipapar
 	\item Mengimplementasikan cara kerja layanan \textit{Crowdsourcing Indoor Localization System} berbasis BLE untuk proses penentuan lokasi dan estimasi orang dalam gedung menggunakan aplikasi berbasis Android.
 	\item Mengimplementasikan algoritma \textit{\textit{Support Vector Machine}} (SVM) untuk klasifikasi penentuan lokasi atau posisi pengguna saat berada  di dalam gedung.
 	\item Menggunakan sistem \textit{indoor localization system} untuk prediksi estimasi orang saat di dalam gedung.
-	\item Menganalisa fungsionalitas aplikasi menggunakan metode \textit{Black Box Testing} dan menganalisa usability aplikasi menggunakan metode \textit{Usability Metric for User Experience} (UMUX).
+	\item Menganalisis fungsionalitas aplikasi menggunakan metode \textit{Black Box Testing} dan menganalisa usability aplikasi menggunakan metode \textit{Usability Metric for User Experience} (UMUX).
 \end{enumerate}
 
 

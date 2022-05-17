@@ -327,7 +327,7 @@
 				\item[]{\makebox[2cm]{Jurusan\hfill} : \@dept}
 			\end{compactitem}
 		\end{singlespace}
-		\vspace{1.0cm}
+		% \vspace{1.0cm}
 		%Telah disetujui dan disahkan\\
 		%pada tanggal \@approvaldate
 		%\vspace{1.0cm}
@@ -351,7 +351,7 @@
 	\begin{doublespace}
 		Mengetahui:\\
 		\begin{singlespace}
-			Ketua Jurusan Informatika FMIPA\\ Universitas Syiah Kuala,\\
+			Koordinator Program Studi Informatika FMIPA\\ Universitas Syiah Kuala,\\
 			\vspace{1.5cm}
 			\underline{\@kajur}\\
 			NIP. \@kajurnip
@@ -396,7 +396,7 @@
   \addcontentsline{toc}{chapter}{\abstractname}
 }
 \def\endabstracteng{\par\vfil\null\end{singlespacing}%
-\selectlanguage{bahasa}\clearpage\pagenumbering{arabic}\setcounter{page}{1}}
+\selectlanguage{bahasa}\clearpage\pagenumbering{roman}\setcounter{page}{5}}
 
 %------------------------------------------------------------
 % Acknowlegment
