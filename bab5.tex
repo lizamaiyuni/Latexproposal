@@ -9,12 +9,10 @@
 \section{\uppercase{KESIMPULAN}}
 Berdasarkan penelitian yang telah dilakukan, dapat diambil kesimpulan bahwa:
 \begin{enumerate}
-	\item \textit{Indoor Localization System} telah berhasil diimplementasikan dengan menggunakan metode klasifikasi SVM untuk memprediksi lokasi pengguna di dalam gedung A FMIPA USK.
-	\item Metode klasifikasi SVM untuk data kekuatan sinyal pada jenis \textit{reference point} urut, memiliki keakuratan sebesar 94\%.
-	\item Berdasarkan hasil pengujian keakuratan algoritma SVM pada setiap lokasi di dalam gedung A FMIPA USK, maka didapatkan  akurasi sebesar 81,67\%.
-	      % \item  Berdasarkan hasil yang didapatkan tingkat akurasi prediksi jumlah orang didalam gedung A FMIPA USK yaitu sebesar .......\% dengan syarat harus menggunakan aplikasi LocaLization dan terhubung dengan \textit{bluetooth} dan internet.
-	\item Berdasarkan hasil pengujian usabilitas menggunakan metode UMUX, Aplikasi LocaLization dapat diterima dan mudah digunakan dilihat dari tingkat pemahaman pengguna.
-	\item Berdasarkan hasil pengujian fungsionalitas menggunakan \textit{Black Box}, Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang telah berjalan sesuai dengan alur bisnis.
+	\item Cara kerja layanan \textit{Crowdsourcing Indoor Localization System} berbasis BLE untuk proses penentuan lokasi dan estimasi orang di dalam gedung menggunakan aplikasi berbasis Android telah berhasil diimplementasikan dengan memanfaatkan algoritma klasifikasi SVM.
+	\item Metode klasifikasi SVM untuk data kekuatan sinyal pada jenis \textit{reference point} urut telah berhasil diimplementasikan dengan memiliki rata-rata \textit{F-Measure} dengan nilai 94\%.
+	\item Hasil analisis keakuratan algoritma SVM di setiap lokasi di dalam gedung A FMIPA USK yang diujicoba sebanyak 10 kali tiap label menunjukkan hasil keakuratan sebesar 86,67\%.
+	\item Berdasarkan hasil pengujian fungsionalitas menggunakan metode \textit{Black Box} dan pengujian \textit{usability} menggunakan metode UMUX, Aplikasi LocaLization dapat diterima dan mudah digunakan dilihat dari tingkat pemahaman pengguna dan mendapat nilai 84,13\% atau \textbf{"A+"} berdasarkan grafik \textit{UMUX-Lite score} sesuai pada gambar \ref{grafikumuxlite}.
 \end{enumerate}
 
 
@@ -23,9 +21,9 @@ Berdasarkan penelitian yang telah dilakukan, dapat diambil kesimpulan bahwa:
 
 Penelitian ini masih banyak kekurangan sehingga perlu dikembangkan agar menjadi lebih baik. Berikut adalah saran untuk penelitian ini:
 \begin{enumerate}
-	\item Tampilan dari aplikasi berbasis Android dibuat lebih \textit{user-friendly}.
-	\item Menambahkan fitur-fitur baru agar penggunaan \textit{Indoor Localization System} lebih luas lagi.
+	\item Aplikasi ini sebaiknya dikembangkan lebih luas lagi untuk seluruh area gedung kampus hingga satu Universitas agar orang-orang baru bisa paham dimana letak posisi suatu lokasi di dalam gedung dan estimasi jumlah di setiap area lokasi.
 	\item Aplikasi LocaLization sebaiknya dibangun juga  versi iOS.
+	\item Mencari metode klasifikasi atau metode penentuan lokasi yang lebih baik lagi untuk memprediksi lokasi pengguna.
 	\item Mencari metode klasifikasi atau metode penentuan lokasi yang lebih baik lagi untuk memprediksi lokasi pengguna.
 	\item Sebaiknya ditambahkan lagi jumlah Beacon di setiap ruangan supaya meningkatkan keakuratan klasifikasi.
 
@@ -33,10 +31,6 @@ Penelitian ini masih banyak kekurangan sehingga perlu dikembangkan agar menjadi 
 
 \fancyhf{}
 \fancyfoot[R]{\thepage}
-% Baris ini digunakan untuk membantu dalam melakukan sitasi
-% Karena diapit dengan comment, maka baris ini akan diabaikan
-% oleh compiler LaTeX.
-
 \begin{comment}
 \bibliography{daftar-pustaka}
 \end{comment}

@@ -21,6 +21,26 @@
   address   = {Jakarta},
 }
 
+@article{Borsci2015,
+  title     = {Assessing user satisfaction in the era of user experience: Comparison of the SUS, UMUX, and UMUX-LITE as a function of product experience},
+  author    = {Borsci, Simone and Federici, Stefano and Bacci, Silvia and Gnaldi, Michela and Bartolucci, Francesco},
+  journal   = {International journal of human-computer interaction},
+  volume    = {31},
+  number    = {8},
+  pages     = {484--495},
+  year      = {2015},
+  publisher = {Taylor \& Francis}
+}
+
+@article{Lewis2018,
+  title   = {Item benchmarks for the system usability scale.},
+  author  = {Lewis, James R and Sauro, Jeff},
+  journal = {Journal of Usability Studies},
+  volume  = {13},
+  number  = {3},
+  year    = {2018}
+}
+
 @Misc{Schwab2013,
   author       = {Ken Schwab},
   title        = {{Scrum Guide {I}{D}}},

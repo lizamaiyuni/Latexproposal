@@ -7,7 +7,7 @@
 \chapter{METODOLOGI PENELITIAN}
 
 \section{\uppercase{WAKTU DAN LOKASI PENELITIAN}}
-\setlength\parindent{30pt} Penelitian ini dilaksanakan di lantai 1 dan 3 di Gedung A FMIPA Universitas Syiah Kuala (USK). Waktu yang dibutuhkan untuk penelitian ini adalah 5 bulan terhitung dari bulan Juli 2021 hingga Desember 2021.
+\setlength\parindent{30pt} Penelitian ini dilaksanakan di lantai 1 dan 3 di Gedung A FMIPA Universitas Syiah Kuala (USK). Waktu yang dibutuhkan untuk penelitian ini terhitung dari bulan September 2021 hingga Mei 2022.
 
 % \par Rincian penelitian dapat dilihat pada tabel \ref{tabelwaktupenelitian}
 % \begin{table}[H]
@@ -178,11 +178,11 @@ Ketika selesai melakukan \textit{mapping}, data kekuatan sinyal disimpan ke data
 %TESTING svm%
 \subsection{Pengujian Akurasi dengan Algoritma SVM}
 
-\par Pengujian ini dilakukan dengan tujuan untuk mengetahui tingkat keberhasilan prediksi dengan menggunakan algoritma \textit{Support Vector Machine} (SVM) terhadap lokasi pengguna berdasarkan \textit{reference point} yang digunakan. Algoritma klasifikasi SVM pada penelitian ini dibuat dengan menggunakan kode python. Algoritma SVM pada penelitian ini bersifat sekali training dikarenakan menggunakan library python scikit learn dan menghasilkan pickle bukan model. Pickle tidak bersifat real time dan jika ingin memperbarui file harus melakukan proses \textit{training} ulang. Adapun denah untuk kelas pada algoritma SVM dapat digambarkan sebagai berikut :
+\par Pengujian ini dilakukan dengan tujuan untuk mengetahui tingkat keberhasilan prediksi dengan menggunakan algoritma \textit{Support Vector Machine} (SVM) terhadap lokasi pengguna berdasarkan \textit{reference point} yang digunakan. Algoritma klasifikasi SVM pada penelitian ini dibuat dengan menggunakan kode Python. Algoritma SVM pada penelitian ini bersifat sekali training dikarenakan menggunakan \textit{library} Python scikit learn dan menghasilkan pickle bukan model. Pickle tidak bersifat real time dan jika ingin memperbarui file harus melakukan proses \textit{training} ulang. Adapun denah untuk kelas pada algoritma SVM dapat digambarkan pada gambar \ref{gedungA}.
 
-\par Peran algoritma SVM pada penelitian ini sangat penting, diantaranya yang pertama adalah pada saat proses klasifikasi. Klasifikasi menggunakan algoritma SVM sangat penting pada proses \textit{training} dan \textit{testing} sehingga menghasilkan nilai akurasi dan \textit{pickle}. Kemudian peran SVM ini juga digunakan pada proses prediksi lokasi pengguna yang sedang berada di dalam gedung dan juga memiliki peran dalam menentukan estimasi jumlah orang di dalam gedung, dimana pickle SVM di simpan pada \textit{web service flask}.
+\par Peran algoritma SVM pada penelitian ini sangat penting, diantaranya yang pertama adalah pada saat proses klasifikasi. Klasifikasi menggunakan algoritma SVM sangat penting pada proses \textit{training} dan \textit{testing} sehingga menghasilkan nilai akurasi dan \textit{pickle}. Kemudian peran SVM ini juga digunakan pada proses prediksi lokasi pengguna yang sedang berada di dalam gedung dan juga memiliki peran dalam menentukan estimasi jumlah orang di dalam gedung, dimana pickle SVM di simpan pada \textit{web service}.
 
-\par Proses prediksi menggunakan algoritma SVM ini adalah pertama sinyal yang ditransmisikan tiap beacon akan ditangkap oleh perangkat android si pengguna lalu data sinyal RSSI tersebut dikirim ke \textit{web service flask} agar di klasifikasi dan diprediksi oleh algoritma SVM. Kemudian hasil prediksi tersebut dikirim ke database server, jika hasil prediksi tersebut adalah di dalam gedung FMIPA maka akan masuk ke dalam estimasi jumlah orang di dalam gedung dan sebaliknya jika hasil prediksinya adalah di luar FMIPA maka tidak dimasukkan ke dalam estimasi jumlah orang di dalam gedung. Sehingga hasil prediksi lokasi pengguna dan estimasi jumlah orang di dalam gedung akan di tampilkan di output aplikasi.
+\par Proses prediksi menggunakan algoritma SVM ini adalah pertama sinyal yang ditransmisikan tiap beacon akan ditangkap oleh perangkat Android si pengguna lalu data sinyal RSSI tersebut dikirim ke \textit{web service flask} agar di klasifikasi dan diprediksi oleh algoritma SVM. Kemudian hasil prediksi tersebut dikirim ke database server, jika hasil prediksi tersebut adalah di dalam gedung FMIPA maka akan masuk ke dalam estimasi jumlah orang di dalam gedung dan sebaliknya jika hasil prediksinya adalah di luar FMIPA maka tidak dimasukkan ke dalam estimasi jumlah orang di dalam gedung. Sehingga hasil prediksi lokasi pengguna dan estimasi jumlah orang di dalam gedung akan di tampilkan di output aplikasi.
 
 
 %\vspace{2cm}
@@ -211,7 +211,7 @@ Ketika selesai melakukan \textit{mapping}, data kekuatan sinyal disimpan ke data
 
 
 \subsection{Pembuatan Aplikasi Penentuan Lokasi dan Estimasi Orang di dalam Gedung}
-\par Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang di dalam Gedung dibangun menggunakan \textit{react native} ini adalah aplikasi berbasis Android yang berguna untuk mempermudah pengguna dan rekan tim penelitian untuk melakukan proses pencarian lokasi dan estimasi jumlah orang yang berada di dalam gedung Blok A Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala, yang dikembangkan dengan konsep \textit{Indoor Localization System} dan \textit{Crowdsourcing}. Aplikasi ini bekerja apabila perangkat smartphone sudah mendukung Bluetooth 4.0, dikarenakan aplikasi ini menangkap kekuatan sinyal atau nilai RSSI dari \textit{Beacon} yang terintegrasi BLE di dalamnya. Kekuatan sinyal yang ditangkap akan dilakukan perhitungan menggunakan metode klasifikasi \textit{Support Vector Machine} (SVM), output dari perhitungan tersebut adalah prediksi lokasi pengguna yang akan dikirim ke web services flask secara background process. Adapun fitur-fitur yang tersedia adalah sebagai berikut:.
+\par Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang di dalam Gedung dibangun menggunakan \textit{react native} ini adalah aplikasi berbasis Android yang berguna untuk mempermudah pengguna dan rekan tim penelitian untuk melakukan proses pencarian lokasi dan estimasi jumlah orang yang berada di dalam gedung Blok A Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Syiah Kuala, yang dikembangkan dengan konsep \textit{Indoor Localization System} dan \textit{Crowdsourcing}. Aplikasi ini bekerja apabila perangkat smartphone sudah mendukung Bluetooth 4.0, dikarenakan aplikasi ini menangkap kekuatan sinyal atau nilai RSSI dari \textit{Beacon} yang terintegrasi BLE di dalamnya. Kekuatan sinyal yang ditangkap akan dilakukan perhitungan menggunakan metode klasifikasi \textit{Support Vector Machine} (SVM), output dari perhitungan tersebut adalah prediksi lokasi pengguna yang akan dikirim ke \textit{web services flask} secara background process. Adapun fitur-fitur yang tersedia adalah sebagai berikut:
 
 \begin {itemize}
 \itemsep0em
@@ -221,7 +221,7 @@ Ketika selesai melakukan \textit{mapping}, data kekuatan sinyal disimpan ke data
 
 \par Proses penentuan lokasi pada penelitian ini adalah bagaimana sistem melacak keberadaan pengguna yang menggunakan aplikasi ini saat berada di dalam gedung.
 Pengguna awalnya akan menekan tombol "cek lokasi" di aplikasi dengan syarat perangkat yang digunakan terhubung dengan bluetooth dan internet, lalu dalam 10 detik
-device pengguna akan memindai kekuatan sinyal dari 31 beacon yang dipasang di setiap sudut ruangan. Kemudian sinyal RSSI tadi akan dikirim web service flask agar diproses
+device pengguna akan memindai kekuatan sinyal dari 31 beacon yang dipasang di setiap sudut ruangan. Kemudian sinyal RSSI tadi akan dikirim \textit{web service flask} agar diproses
 oleh model SVM dan menghasilkan hasil prediksi lokasi. Di saat yang bersamaan, hasilnya akan dikirim ke database server untuk melihat apakah hasil prediksi lokasi berada
 di dalam gedung atau di luar gedung. Jika hasilnya adalah di dalam gedung, maka akan dihitung sebagai estimasi jumlah orang di dalam gedung dan sebaliknya jika diluar gedung maka tidak akan
 dihitung sebagai estimasi jumlah orang di dalam gedung. Sehingga hasil akhirnya berupa hasil prediksi lokasi dan estimasi jumlah orang di dalam gedung akan ditampilkan pada output aplikasi.
@@ -230,10 +230,10 @@ dihitung sebagai estimasi jumlah orang di dalam gedung. Sehingga hasil akhirnya 
 Metode yang digunakan pada sistem ini adalah metode \textit{Scrum}. Metode \textit{Scrum} merupakan metodologi yang termasuk dalam agile software development. \textit{Scrum} dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai dengan keinginan pengguna, dapat digunakan dalam proyek besar maupun kecil, dan mudah untuk mengadopsi perubahan. Sistem ini juga memiliki empat aplikasi yang terdiri dari dua aplikasi utama dan dua aplikasi pendukung. yaitu:
 \begin{enumerate}
 	\item Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang
-	      \newline Aplikasi ini merupakan aplikasi utama berbasis android yang berfungsi untuk melakukan proses penentuan lokasi dan estimasi jumlah orang yang berada di dalam gedung A Fakultas Matematika dan Ilmu Pengetahuan Alam USK. Aplikasi ini dibangun menggunakan framework \textit{React native} dan dikerjakan oleh diri sendiri.
+	      \newline Aplikasi ini merupakan aplikasi utama berbasis Android yang berfungsi untuk melakukan proses penentuan lokasi dan estimasi jumlah orang yang berada di dalam gedung A Fakultas Matematika dan Ilmu Pengetahuan Alam USK. Aplikasi ini dibangun menggunakan framework \textit{React native} dan dikerjakan oleh diri sendiri.
 
 	\item Aplikasi \textit{Web Service Flask} Untuk Menjalankan Model \textit{Support Vector Machine} (SVM)
-	      \newline Aplikasi \textit{Web Service Flask} merupakan aplikasi utama, yang mana aplikasi \textit{Web Service Flask} ini akan menjalankan model yang telah dihasilkan oleh kode bahasa python. Aplikasi
+	      \newline Aplikasi \textit{Web Service Flask} merupakan aplikasi utama, yang mana aplikasi \textit{Web Service Flask} ini akan menjalankan model yang telah dihasilkan oleh kode bahasa Python. Aplikasi
 
 	\item Aplikasi \textit{Mapping}
 	      \newline Aplikasi ini merupakan aplikasi pendukung yang berfungsi untuk melakukan pengumpulan data. Data yang dikumpulkan berupa data kekuatan sinyal RSSI berdasarkan lokasi dimana data tersebut diambil. Setelah pengumpulan data selesai dilakukan, data tersebut akan di kirim ke \textit{Web Service GraphQL} dan kemudian akan di simpan ke \textit{Database MongoDB}.
@@ -248,7 +248,7 @@ Metode yang digunakan pada sistem ini adalah metode \textit{Scrum}. Metode \text
 
 \subsection{Pengujian \textit{Usability} dengan Metode UMUX}
 \par \textit{Usability Testing} dilakukan untuk melihat dan mengevaluasi suatu produk atau jasa yang dihasilkan dengan cara menguji kepada calon pengguna dengan menggunakan metode UMUX. UMUX terdiri dari 4 pertanyaan dengan menggunakan skala likert 1-7.
-\par Skala likert adalah sebuah metode skala yang bersifat bipolar yang akan mengukur tanggapan positif dan negatif terhadap sebuah pertanyaan. \textit{Usability testing} fokus dilakukan tanpa menggunakan \textit{test plan}. Serta survei ini dilakukan secara luring sebanyak lebih dari 10 orang dan dilakukan oleh mahasiswa FMIPA USK serta staf yang bekerja di FMIPA USK.
+\par Skala likert adalah sebuah metode skala yang bersifat bipolar yang akan mengukur tanggapan positif dan negatif terhadap sebuah pertanyaan. Serta survei ini dilakukan secara luring sebanyak lebih dari 20 orang dan dilakukan oleh mahasiswa FMIPA USK serta staf yang bekerja di FMIPA USK.
 
 
 % \par Rumus untuk menghitung skor akhir metode SUS \citep{Brooke1996}, dapat dilihat dari persamaan berikut.

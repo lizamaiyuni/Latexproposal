@@ -17,10 +17,10 @@ Teknologi \textit{machine learning} (ML) adalah mesin yang belajar atau dilatih 
 \par \textit{Supervised Learning} dibedakan menjadi dua jenis masalah yaitu klasifikasi dan regresi. Masalah klasifikasi menggunakan algoritma untuk secara akurat menentukan data uji ke dalam kategori tertentu, seperti memisahkan delima dari alpukat. Atau, di dunia nyata, algoritma pembelajaran yang diawasi dapat digunakan untuk mengklasifikasikan spam dalam folder terpisah dari kotak masuk Anda.
 
 \subsection{\textit{Support Vector Machine} (SVM)}
-Pada awalnya SVM dikembangkan untuk persoalan klasifikasi dua kelas, kemudian dikembangkan kembali untuk klasifikasi multi kelas. Dalam klasifikasi kasus multi kelas, hyperplane yang terbentuk adalah lebih dari satu. Salah satu metode pendekatan yang digunakan adalah satu lawan semua (SLA). Metode SLA untuk kasus klasifikasi k-kelas, menemukan k hyperplane \citep{Braun2011}.
+\textit{Support Vector Machine} (SVM) merupakan salah satu metode dalam \textit{supervised learning} yang biasanya digunakan untuk klasifikasi. SVM digunakan untuk mencari \textit{hyperplane} terbaik dengan memaksimalkan jarak antar kelas. \textit{Hyperplane} adalah sebuah fungsi yang dapat digunakan untuk pemisah antar kelas. Pada awalnya SVM dikembangkan untuk persoalan klasifikasi dua kelas, kemudian dikembangkan kembali untuk klasifikasi multi kelas. Dalam klasifikasi kasus multi kelas, \textit{hyperplane} yang terbentuk adalah lebih dari satu. Salah satu metode pendekatan yang digunakan adalah satu lawan semua (SLA). Metode SLA untuk kasus klasifikasi k-kelas, menemukan k \textit{hyperplane} \citep{Braun2011}.
 
-Data pada suatu dataset diberikan variabel xi, sedangkan untuk kelas pada dataset diberikan variabel yi. Metode SVM membagi dataset menjadi 2 kelas. Kelas pertama yang dipisah
-oleh hyperplane bernilai 1, sedangkan kelas lainnya bernilai -1 \citep{Santos2021}.
+
+\par Prinsip dasar SVM adalah \textit{linear classifier}. Data pada suatu dataset diberikan variabel xi, sedangkan untuk kelas pada dataset diberikan variabel yi. Metode SVM membagi dataset menjadi 2 kelas. Kelas pertama yang dipisah oleh \textit{hyperplane} bernilai 1, sedangkan kelas lainnya bernilai -1 \citep{Santos2021}.
 
 \begin{equation}
 	X_i.W + b \ge 1 \> untuk \> Y_i\>=1
@@ -32,42 +32,77 @@ oleh hyperplane bernilai 1, sedangkan kelas lainnya bernilai -1 \citep{Santos202
 
 \par Keterangan:
 \par Xi = data ke-i
-\par W = nilai bobot \textit{support vector} yang tegak lurus dengan \par hyperplane
+\par W = nilai bobot \textit{support vector} yang tegak lurus dengan \par \textit{hyperplane}
 \par b = nilai bias
 \par Yi = kelas data ke-i
 
-\par Bobot vektor (w) adalah garis vektor yang tegak lurus antara titik pusat koordinat dengan garis hyperplane. Bias (b) merupakan koordinat garis relatif terhadap titik koordinat.
+\par Bobot vektor (w) adalah garis vektor yang tegak lurus antara titik pusat koordinat dengan garis \textit{hyperplane}. Bias (b) merupakan koordinat garis relatif terhadap titik koordinat.
 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=10cm, height=7.3cm]{gambar/index3_souoaz}
-	\caption{Support Vectors (Sumber : www.datacamp.com)}
+	\includegraphics[width=13cm, height=7.3cm]{gambar/index3_souoaz}
+	\caption{Support Vectors (Sumber : www.saedsayad.com)}
 	\label{index3_souoaz}
 \end{figure}
 
-\par Support vector adalah titik data yang paling dekat dengan hyperplane. Titik-titik ini akan menentukan garis pemisah lebih baik dengan menghitung margin. Poin-poin ini lebih relevan dengan konstruksi classifier. Hyperplane adalah bidang keputusan yang memisahkan antara satu set objek yang memiliki keanggotaan kelas yang berbeda. Margin adalah jarak antara dua garis pada titik kelas terdekat. Ini dihitung sebagai jarak tegak lurus dari garis untuk mendukung vektor atau titik terdekat. Jika margin lebih besar di antara kelas, maka itu dianggap margin yang baik, margin yang lebih kecil adalah margin yang buruk \citep{Zhibin2008}.
-
-% Cara memaksimalkan margin adalah :
-% \begin{equation}
-% 	Margin = \frac{2}{|w|^2} = \frac{1-(-1)}{\sqrt{w{1}^2+w{2}}} = \frac{2}{|w|}
-% \end{equation}
-
-% Artinya meminimalkan:
-% \begin{equation}
-% 	L(w)=\frac{|w|^2}{2}
-% \end{equation}
+\par Support vector adalah titik data yang paling dekat dengan \textit{hyperplane}. Titik-titik ini akan menentukan garis pemisah lebih baik dengan menghitung margin. Poin-poin ini lebih relevan dengan konstruksi classifier. \textit{Hyperplane} adalah bidang keputusan yang memisahkan antara satu set objek yang memiliki keanggotaan kelas yang berbeda. Margin adalah jarak antara dua garis pada titik kelas terdekat. Ini dihitung sebagai jarak tegak lurus dari garis untuk mendukung vektor atau titik terdekat. Jika margin lebih besar di antara kelas, maka itu dianggap margin yang baik, margin yang lebih kecil adalah margin yang buruk \citep{Zhibin2008}.
 
 
-% \par Tujuan utamanya adalah untuk memisahkan dataset yang diberikan dengan cara terbaik. Caranya adalah untuk memilih hyperplane dengan margin maksimum yang mungkin antara support vector dalam dataset yang diberikan \citep{Syahputra2020}.
+\subsection{\textit{Accuracy, Precision, dan Recall}}
+\par Klasifikasi adalah proses pembelajaran secara
+terbimbing \textit{(supervised learning)}. Untuk melakukan klasifikasi, dibutuhkan \textit{training set} sebagai data pembelajaran. Setiap sampel dari \textit{training set} memiliki atribut dan kelas label. Namun bagaimana cara mengukur sebuah metode klasifikasi (yang digunakan untuk menentukan kelas label dari sampel baru) memiliki akurasi yang tinggi? \textit{Confusion matrix} merupakan matriks yang menyimpan informasi untuk mengetahui performa dari model yang digunakan dan digunakan sebagai acuan dari performa klasifikasi dari algoritma yang digunakan pada tahap evaluasi \citep{Ariza18}.
 
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
 
-% \begin{figure}[H]
-% 	\centering
-% 	\includegraphics[width=14cm, height=6cm]{gambar/index2_ub1uzd}
-% 	\caption{Support Vectors (Sumber : www.datacamp.com)}
-% 	\label{index3_souoaz}
-% \end{figure}
+\begin{table}[H]
+	\center
+	\fontsize{10}{12}\selectfont
+	\caption{\textit{Confusion Matrix}}
+	\label{Precision-recall}
+	\begin{tabular}{|lc|cc|}
+		\hline
+		\multicolumn{2}{|l|}{\multirow{2}{*}{}}                 & \multicolumn{2}{c|}{Nilai prediksi}                                \\ \cline{3-4}
+		\multicolumn{2}{|l|}{}                                  & \multicolumn{1}{c|}{Positive}       & Negative                     \\ \hline
+		\multicolumn{1}{|l|}{\multirow{2}{*}{Nilai sebenarnya}} & Positive                            & \multicolumn{1}{c|}{TP} & FP \\ \cline{2-4}
+		\multicolumn{1}{|l|}{}                                  & Negative                            & \multicolumn{1}{c|}{FN} & TN \\ \hline
+	\end{tabular}
+\end{table}
+
+\par \textit{Confusion Matrix} adalah sumber informasi apakah model yang digunakan berkinerja baik atau tidak. Hal ini bisa dilihat dari nilai yang dari variabel TP \textit{(True Positive)} dan variabel TN \textit{(True Negative)} menunjukkan total prediksi benar yang dibuat oleh model. Sedangkan nilai variabel FP \textit{(False Positive)} dan variabel FN \textit{(False Negative)} menunjukkan total prediksi salah yang dibuat oleh model. Penghitungan kinerja model dapat dilakukan dengan menghitung nilai \textit{accuracy, precision, recall, dan F1-Score} berdasarkan rumus yang terlihat pada persamaan (rumusakurasi), (rumusprecision), (rumusrecall), dan \ref{rumusf1score} \citep{precisionrecall}.
+
+\begin{equation}
+	\label{rumusakurasi}
+	Akurasi = \frac{TP+TN}{TP+TN+FP+FN}
+\end{equation}
+\vspace{0.1cm}
+
+\par Secara definisi, \textit{precision} adalah perbandingan antara \textit{True Positive} (TP) dengan banyaknya data yang diprediksi positif. Atau bisa juga dituliskan secara matemetis:
+
+\begin{equation}
+	\label{rumusprecision}
+	Precision = \frac{TP}{TP+FP}
+\end{equation}
+\vspace{0.1cm}
+
+Sedangkan untuk \textit{Recall}, secara definisi adalah perbandingan antara \textit{True Positive} (TP) dengan banyaknya data yang sebenarnya positif. Dan dapat dituliskan secara matematis seperti ini:
+
+\begin{equation}
+	\label{rumusrecall}
+	Recall = \frac{TP}{TP+FN}
+\end{equation}
+\vspace{0.1cm}
+
+Secara definisi, \textit{F1-Score} adalah \textit{harmonic mean} dari \textit{precision} dan \textit{recall}. Yang secara matematik dapat ditulis begini:
+
+\begin{equation}
+	\label{rumusf1score}
+	F1-Score = \frac{2 \times Precision \times Recall}{Precision+Recall}
+\end{equation}
+\vspace{0.1cm}
+
+Nilai terbaik \textit{F1-Score} adalah 1.0 dan nilai terburuknya adalah 0. Secara representasi, jika \textit{F1-Score} punya skor yang baik mengindikasikan bahwa model klasifikasi kita punya \textit{precision} dan \textit{recall} yang baik \citep{Ariza18}.
 
 
 \section{\uppercase{\textit{INDOOR LOCALIZATION SYSTEM} (ILS)}}
@@ -180,11 +215,11 @@ React Native adalah framework JavaScript untuk mengembangkan aplikasi mobile sec
 \end{enumerate}
 
 \section{\uppercase{WEB SERVICES}}
-\par Web service merupakan aplikasi yang berisi sekumpulan basis data (database) dan perangkat lunak (software) atau bagian dari program perangkat lunak yang diakses secara remote oleh piranti dengan perantara tertentu. Melalui web service, memungkinkan pengguna untuk mengatasi permasalahan berupa interoperability dan mengintegrasikan sistem berbeda \citep{Chuangwei2011}.
+\par \textit{Web service} merupakan aplikasi yang berisi sekumpulan basis data (database) dan perangkat lunak (software) atau bagian dari program perangkat lunak yang diakses secara remote oleh piranti dengan perantara tertentu. Melalui \textit{web service}, memungkinkan pengguna untuk mengatasi permasalahan berupa \textit{interoperability} dan mengintegrasikan sistem berbeda \citep{Chuangwei2011}.
 
-\par Pada umumnya, web service memiliki ciri khusus berupa URL layaknya web. Yang membuat berbeda adalah interaksi yang diberikan oleh web service itu sendiri. URL pada web service hanya mengandung sekumpulan informasi, perintah, dan konfigurasi (sintaks yang berguna untuk membangun fungsi tertentu dari aplikasi). Web service mampu menukar data tanpa memandang sumber database, bahasa yang digunakan, dan pada platform apa data tersebut dikonsumsi. Kemampuan itulah yang memungkinkan web service menjadi jembatan penghubung untuk berbagai sistem \citep{Chuangwei2011}.
+\par Pada umumnya, \textit{web service} memiliki ciri khusus berupa URL layaknya \textit{web}. Yang membuat berbeda adalah interaksi yang diberikan oleh \textit{web service} itu sendiri. URL pada \textit{web service} hanya mengandung sekumpulan informasi, perintah, dan konfigurasi (sintaks yang berguna untuk membangun fungsi tertentu dari aplikasi). \textit{Web service} mampu menukar data tanpa memandang sumber database, bahasa yang digunakan, dan pada platform apa data tersebut dikonsumsi. Kemampuan itulah yang memungkinkan \textit{web service} menjadi jembatan penghubung untuk berbagai sistem \citep{Chuangwei2011}.
 
-\par \textit{Web services} menggambarkan aplikasi yang mengekspos \textit{business logic} sebagai layanan yang menggunakan internet \citep{Mironela2009}. Layanan tersebut dikirim melalui \textit{interface} yang dapat diprogram, sementara fungsionalitasnya dapat dipakai dan dipanggil melalui alamat \textit{Internet Protocol} (IP \textit{address}) \citep{Wagh2012}. \textit{Web services} sering dikategorikan sebagai komponen sistem perangkat lunak yang dirancang untuk mendukung interaksi antar sistem. \textit{Web services} menyediakan informasi atau data pada sistem lain untuk digunakan sebagai fasilitas yang membuat sistem dapat saling berinteraksi. Biasanya, data yang diberikan oleh \textit{web services} berupa data dalam bentuk format JavaScript Object Notation (JSON) atau eXtensible Markup Language (XML) \citep{Rahman2013}. Situs \textit{web} World Wide Web Consortium (W3C) mendeskripsikan  bahwa \textit{Simple Object Access Protocol} (SOAP), \textit{Representational State Transfer} merupakan protokol yang digunakan \textit{web services} untuk berkomunikasi. Penelitian ini akan menggunakan \textit{web services} dengan layanan protokol REST untuk membantu aplikasi absensi perkuliahan berbasis Android berinteraksi dengan \textit{database} yang terdapat di server.
+\par \textit{Web services} menggambarkan aplikasi yang mengekspos \textit{business logic} sebagai layanan yang menggunakan internet \citep{Mironela2009}. Layanan tersebut dikirim melalui \textit{interface} yang dapat diprogram, sementara fungsionalitasnya dapat dipakai dan dipanggil melalui alamat \textit{Internet Protocol} (IP \textit{address}) \citep{Wagh2012}. \textit{Web services} sering dikategorikan sebagai komponen sistem perangkat lunak yang dirancang untuk mendukung interaksi antar sistem. \textit{Web services} menyediakan informasi atau data pada sistem lain untuk digunakan sebagai fasilitas yang membuat sistem dapat saling berinteraksi. Biasanya, data yang diberikan oleh \textit{web services} berupa data dalam bentuk format JavaScript Object Notation (JSON) atau eXtensible Markup Language (XML) \citep{Rahman2013}. Situs \textit{web} W\textit{orld Wide Web Consortium} (W3C) mendeskripsikan  bahwa \textit{Simple Object Access Protocol} (SOAP), \textit{Representational State Transfer} merupakan protokol yang digunakan \textit{web services} untuk berkomunikasi. Penelitian ini akan menggunakan \textit{web services} dengan layanan protokol REST untuk membantu aplikasi absensi perkuliahan berbasis Android berinteraksi dengan \textit{database} yang terdapat di server.
 
 \subsection{Representational State Transfer (REST)}
 REST merupakan hubungan antara klien dan server dan bagaimana sebuah data disimpan. Arsitektur REST didasarkan pada gaya arsitektur klien atau server yang dapat dilihat pada Gambar \ref{restful}. \textit{Request} dan \textit{response} dibangun berdasarkan sumber daya pada saat proses transfer \citep{HaliliRamadani2018}. Konsep dari REST adalah perpindahan antar \textit{state}, dapat dicontohkan seperti sebuah browser yang melakukan permintaan terhadap sebuah halaman situs, maka server akan mengirimkan \textit{state} dari halaman situs tersebut ke browser \citep{Rahman2013}.
@@ -266,7 +301,7 @@ Pengujian \textit{black-box} adalah metode pengujian perangkat lunak yang memeri
 
 \subsection{\textit{Usability Metric for User Experience }(UMUX)} Metode pengujian dengan \textit{usability testing} yang digunakan pada penelitian ini adalah UMUX. \textit{Usability Metric for User Experience} (UMUX) adalah sebuah skala Likert yang mempunyai 4 (empat) item yang digunakan untuk melakukan sebuah penilaian subjektif dari manfaat sebuah aplikasi. UMUX dibuat untuk menghasilkan hasil yang mirip dengan hasil yang diperoleh dengan skala \textit{system usability} yang memiliki 10 item. Selain itu, \textit{Usability Metric for User Experience} (UMUX) cukup ringkas untuk digunakan sebagai modul kegunaan dalam matriks \textit{user experience}. UMUX ditujukan untuk mencocokkan kinerja dari \textit{system usability scale} (SUS) dan penyesuaian dengan langkah-langkah yang lebih penting, UMUX dapat diberikan secara online sebagai survei atau sebagai tindak lanjut dalam pengujian kegunaan, UMUX juga mudah untuk dikelola, karena tidak memerlukan percabangan atau penataan ulang item \citep{Finstad2010}
 
-Berikut daftar pertanyaan-pertanyaan metode UMUX dapat dilihat pada Tabel \ref{tabel-pertanyaan-umux}.
+Adapun daftar pertanyaan-pertanyaan metode UMUX dapat dilihat pada Tabel \ref{tabel-pertanyaan-umux} berikut.
 %TABEL PERTANYAAN SUS%
 \begin{table}[H]
 	\center
@@ -285,7 +320,52 @@ Berikut daftar pertanyaan-pertanyaan metode UMUX dapat dilihat pada Tabel \ref{t
 		4                          & \begin{tabular}[c]{@{}l@{}}Saya harus menghabiskan banyak waktu \\ untuk menggunakan aplikasi ini dengan benar\end{tabular} & 1-7  \\ \hline
 	\end{tabular}
 \end{table}
-
 \begin{comment}
 \bibliography{daftar-pustaka}
 \end{comment}
+
+\par Adapun hasil dari pengujian UMUX akan dihitung dengan skor pertanyaan ganjil [skor - 1] dan genap [7 - skor]. Total skor kemudian dibagi 24 dan dikali 100 \citep{Finstad2010}. Rumus perhitungan UMUX dapat dilihat pada persamaan \ref{eq:umux}.
+\begin{equation}
+	\label{eq:umux}
+	UMUX = \frac{[P1 - 1] + [7 - P2] + [P3 - 1] + [7 - P4]}{24} x100
+\end{equation}
+Keterangan:\newline
+$P1$ = Pertanyaan satu.\newline
+$P2$ = Pertanyaan dua.\newline
+$P3$ = Pertanyaan tiga.\newline
+$P4$ = Pertanyaan empat.\newline
+
+\par Terkadang hasil dari skor UMUX terlalu positif sehingga perhitungan skor UMUX lebih efektif jika menggunakan UMUX-LITE. UMUX-LITE sendiri memiliki korelasi dalam menghitung skor sehingga untuk menghitung skor UMUX-LITE menjadi SUS dapat menggunakan persamaan \ref{eq:umux-lite} \citep{Borsci2015}.
+\begin{equation}
+	\label{eq:umux-lite}
+	UMUX - LITE = .65(([Item1score] + [Item2score] - 2)100/12) + 22.9
+\end{equation}
+Keterangan:\newline
+$Item1score$ = Pertanyaan satu.\newline
+$Item2score$ = Pertanyaan tiga.\newline
+
+
+\par Hasil skor yang didapat akan dikategorikan menggunakan pedoman SUS. Adapun detail skor skala pada SUS adalah sebagai berikut \citep{Borsci2015} :
+\begin{enumerate}[1.]
+	\item Grade F (0-51.7)
+	\item Grade D (51.8-62.6)
+	\item Grade C- (62.7-64.9)
+	\item Grade C (65.0-71.0)
+	\item Grade C+ (71.1-72.5)
+	\item Grade B- (72.6-74.0)
+	\item Grade B (74.1-77.1)
+	\item Grade B+ (77.2-78.8)
+	\item Grade A- (78.9-80.7)
+	\item Grade A (80.8-84.0)
+	\item Grade A+ (84.1-100)
+\end{enumerate}
+
+Hasil pengujian tersebut dapat diukur menggunakan grafik pada gambar \ref{grafikumuxlite}.
+
+\begin{figure}[H]
+	\center
+	\shadowbox
+	{\includegraphics [width=12cm height=4cm]{gambar/umuxlite.png}}
+	\caption{grafik \textit{UMUX-Lite score}}
+	\label{grafikumuxlite}
+\end{figure}
