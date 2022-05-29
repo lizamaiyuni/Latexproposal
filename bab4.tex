@@ -550,9 +550,9 @@ def getEstimasi():
 \subsection{Pengujian Keakuratan Prediksi Menggunakan Algoritma SVM}
 \begin{enumerate}
 
-	\item Pengujian Keakuratan Klasifikasi Algoritma SVM berdasarkan nilai F-Measure
+	\item Pengujian Keakuratan Data Testing Menggunakan Algoritma SVM berdasarkan nilai F-Measure
 
-	      \par Pengujian ini di analisis menggunakan kode Python. Data \textit{training} yang digunakan adalah sebanyak 1638 dan data \textit{testing} sebanyak 410 data. Pengumpulan data dilakukan dengan cara melakukan pemetaan kekuatan sinyal yang telah dijelaskan pada \textbf{BAB III}. Hasil dari proses pengujian metode klasifikasi SVM menunjukkan bahwa untuk data kekuatan sinyal memiliki rata-rata \textit{F-Measure} dengan nilai 94\% . Hasil pengujian data \textit{testing} menggunakan metode SVM ini dapat dilihat pada Tabel \ref{tabelpercobaansvm1}
+	      \par Pengujian ini di analisis menggunakan kode Python. Data \textit{training} yang digunakan adalah sebanyak 1638 dan data \textit{testing} sebanyak 410 data. Pengumpulan data dilakukan dengan cara melakukan pemetaan kekuatan sinyal yang telah dijelaskan pada \textbf{BAB III}. Hasil dari proses pengujian metode klasifikasi SVM menunjukkan bahwa untuk data kekuatan sinyal memiliki rata-rata \textit{F-Measure} dengan nilai 95\% . Hasil pengujian data \textit{testing} menggunakan metode SVM ini dapat dilihat pada Tabel \ref{tabelpercobaansvm1}
 
 	      % Please add the following required packages to your document preamble:
 	      % \usepackage{multirow}
@@ -563,11 +563,11 @@ def getEstimasi():
 		      \begin{tabular}{|l|c|c|c|c|}
 			      \hline
 			      \multicolumn{1}{|c|}{Kelas Label} & Precision & Recall & F-Measure & Rata-Rata F-Measure   \\ \hline
-			      Koridor Lab Database              & 82\%      & 80\%   & 81\%      & \multirow{6}{*}{94\%} \\ \cline{1-4}
-			      Koridor Lab GIS                   & 79\%      & 87\%   & 83\%      &                       \\ \cline{1-4}
-			      Koridor Lab Jaringan Komputer     & 90\%      & 82\%   & 86\%      &                       \\ \cline{1-4}
+			      Koridor Lab Database              & 78\%      & 92\%   & 85\%      & \multirow{6}{*}{95\%} \\ \cline{1-4}
+			      Koridor Lab GIS                   & 97\%      & 87\%   & 92\%      &                       \\ \cline{1-4}
+			      Koridor Lab Jaringan Komputer     & 92\%      & 86\%   & 89\%      &                       \\ \cline{1-4}
 			      Lantai 1                          & 100\%     & 100\%  & 100\%     &                       \\ \cline{1-4}
-			      Tangga 1                          & 98\%      & 97\%   & 97\%      &                       \\ \cline{1-4}
+			      Tangga 1                          & 99\%      & 97\%   & 98\%      &                       \\ \cline{1-4}
 			      Tangga 2                          & 94\%      & 96\%   & 95\%      &                       \\ \hline
 		      \end{tabular}
 	      \end{table}
