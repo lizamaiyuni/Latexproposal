@@ -17,27 +17,7 @@ Teknologi \textit{machine learning} (ML) adalah mesin yang belajar atau dilatih 
 \par \textit{Supervised Learning} dibedakan menjadi dua jenis masalah yaitu klasifikasi dan regresi. Masalah klasifikasi menggunakan algoritma untuk secara akurat menentukan data uji ke dalam kategori tertentu, seperti memisahkan delima dari alpukat. Atau, di dunia nyata, algoritma pembelajaran yang diawasi dapat digunakan untuk mengklasifikasikan spam dalam folder terpisah dari kotak masuk Anda.
 
 \subsection{\textit{Support Vector Machine} (SVM)}
-\textit{Support Vector Machine} (SVM) merupakan salah satu metode dalam \textit{supervised learning} yang biasanya digunakan untuk klasifikasi. SVM digunakan untuk mencari \textit{hyperplane} terbaik dengan memaksimalkan jarak antar kelas. \textit{Hyperplane} adalah sebuah fungsi yang dapat digunakan untuk pemisah antar kelas. Pada awalnya SVM dikembangkan untuk persoalan klasifikasi dua kelas, kemudian dikembangkan kembali untuk klasifikasi multi kelas. Dalam klasifikasi kasus multi kelas, \textit{hyperplane} yang terbentuk adalah lebih dari satu. Salah satu metode pendekatan yang digunakan adalah satu lawan semua (SLA). Metode SLA untuk kasus klasifikasi k-kelas, menemukan k \textit{hyperplane} \citep{Braun2011}.
-
-
-\par Prinsip dasar SVM adalah \textit{linear classifier}. Data pada suatu dataset diberikan variabel xi, sedangkan untuk kelas pada dataset diberikan variabel yi. Metode SVM membagi dataset menjadi 2 kelas. Kelas pertama yang dipisah oleh \textit{hyperplane} bernilai 1, sedangkan kelas lainnya bernilai -1 \citep{Santos2021}.
-
-\begin{equation}
-	X_i.W + b \ge 1 \> untuk \> Y_i\>=1
-\end{equation}
-
-\begin{equation}
-	X_i.W + b \le  -1 \> untuk \> Y_i\>=-1
-\end{equation}
-
-\par Keterangan:
-\par Xi = data ke-i
-\par W = nilai bobot \textit{support vector} yang tegak lurus dengan \par \textit{hyperplane}
-\par b = nilai bias
-\par Yi = kelas data ke-i
-
-\par Bobot vektor (w) adalah garis vektor yang tegak lurus antara titik pusat koordinat dengan garis \textit{hyperplane}. Bias (b) merupakan koordinat garis relatif terhadap titik koordinat.
-
+\textit{Support Vector Machine} (SVM) merupakan salah satu metode dalam \textit{supervised learning} yang biasanya digunakan untuk klasifikasi. SVM digunakan untuk mencari \textit{hyperplane} terbaik dengan memaksimalkan jarak antar kelas. \textit{Hyperplane} adalah sebuah fungsi yang dapat digunakan untuk pemisah antar kelas. Pada awalnya SVM dikembangkan untuk persoalan klasifikasi dua kelas, kemudian dikembangkan kembali untuk klasifikasi multi kelas \citep{Braun2011}.
 
 \begin{figure}[H]
 	\centering
@@ -46,7 +26,46 @@ Teknologi \textit{machine learning} (ML) adalah mesin yang belajar atau dilatih 
 	\label{index3_souoaz}
 \end{figure}
 
-\par Support vector adalah titik data yang paling dekat dengan \textit{hyperplane}. Titik-titik ini akan menentukan garis pemisah lebih baik dengan menghitung margin. Poin-poin ini lebih relevan dengan konstruksi classifier. \textit{Hyperplane} adalah bidang keputusan yang memisahkan antara satu set objek yang memiliki keanggotaan kelas yang berbeda. Margin adalah jarak antara dua garis pada titik kelas terdekat. Ini dihitung sebagai jarak tegak lurus dari garis untuk mendukung vektor atau titik terdekat. Jika margin lebih besar di antara kelas, maka itu dianggap margin yang baik, margin yang lebih kecil adalah margin yang buruk \citep{Zhibin2008}.
+
+\par Prinsip dasar SVM adalah \textit{linear classifier}. Data pada suatu dataset diberikan variabel xi, sedangkan untuk kelas pada dataset diberikan variabel yi. Metode SVM membagi dataset menjadi 2 kelas. Kelas pertama yang dipisah oleh \textit{hyperplane} bernilai 1, sedangkan kelas lainnya bernilai -1 \citep{Santos2021}. Kedua kelas -1 dan +1 dapat terpisah secara sempurna oleh hyperplane berdimensi d yang didefinisikan:
+
+\begin{equation}
+	x_i.w + b = 0
+\end{equation}
+
+Data yang termasuk kelas -1 (sampel negatif) dapat dirumuskan sebagai \textit{pattern} yang memenuhi pertidaksamaan:
+
+\begin{equation}
+	x_i.w + b = -1
+\end{equation}
+
+sedangkan data yang termasuk kelas +1 (sampel positif):
+
+\begin{equation}
+	x_i.w + b = 1
+\end{equation}
+
+Margin terbesar ditemukan dengan cara memaksimalkan nilai margin antara \textit{hyperplane} dan titik terdekatnya. Hal ini dapat dirumuskan sebagai \textit{Quadratic Programming} (QP) \textit{problem}, yaitu mencari titik minimal persamaan \ref{minimalmargin}, dengan memperhatikan constraint persamaan \ref{constraint}.
+
+\begin{equation}
+	min \tau(w) = 1/2||w||^{2}
+	\label{minimalmargin}
+\end{equation}
+
+
+\begin{equation}
+	y_i(x_i.w + b) - 1 \ge 0
+	\label{constraint}
+\end{equation}
+
+\par Keterangan:
+\par Xi = data ke-i
+\par W = nilai bobot \textit{support vector} yang tegak lurus dengan \textit{hyperplane}
+\par b = nilai bias
+\par Yi = kelas data ke-i
+
+
+\par Usaha untuk menentukan \textit{hyperplane} merupakan inti dari proses pembelajaran SVM. \textit{Support vector} adalah titik data yang paling dekat dengan \textit{hyperplane}. Titik-titik ini akan menentukan garis pemisah lebih baik dengan menghitung margin. \textit{Hyperplane} adalah bidang keputusan yang memisahkan antara satu set objek yang memiliki keanggotaan kelas yang berbeda. Margin adalah jarak antara dua garis pada titik kelas terdekat. \citep{Zhibin2008}.
 
 
 \subsection{\textit{Accuracy, Precision, dan Recall}}

@@ -7,7 +7,7 @@
 \chapter{METODOLOGI PENELITIAN}
 
 \section{\uppercase{WAKTU DAN LOKASI PENELITIAN}}
-\setlength\parindent{30pt} Penelitian ini dilaksanakan di lantai 1 dan 3 di Gedung A FMIPA Universitas Syiah Kuala (USK). Waktu yang dibutuhkan untuk penelitian ini terhitung dari bulan September 2021 hingga Mei 2022.
+\setlength\parindent{30pt} Penelitian ini dilaksanakan di lantai 1 dan 3 di Gedung A FMIPA Universitas Syiah Kuala (USK). Waktu yang dibutuhkan untuk penelitian ini terhitung dari bulan Oktober 2021 hingga Mei 2022.
 
 % \par Rincian penelitian dapat dilihat pada tabel \ref{tabelwaktupenelitian}
 % \begin{table}[H]
@@ -227,19 +227,14 @@ di dalam gedung atau di luar gedung. Jika hasilnya adalah di dalam gedung, maka 
 dihitung sebagai estimasi jumlah orang di dalam gedung. Sehingga hasil akhirnya berupa hasil prediksi lokasi dan estimasi jumlah orang di dalam gedung akan ditampilkan pada output aplikasi.
 
 
-Metode yang digunakan pada sistem ini adalah metode \textit{Scrum}. Metode \textit{Scrum} merupakan metodologi yang termasuk dalam agile software development. \textit{Scrum} dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai dengan keinginan pengguna, dapat digunakan dalam proyek besar maupun kecil, dan mudah untuk mengadopsi perubahan. Sistem ini juga memiliki empat aplikasi yang terdiri dari dua aplikasi utama dan dua aplikasi pendukung. yaitu:
+Metode yang digunakan pada sistem ini adalah metode \textit{Scrum}. Metode \textit{Scrum} merupakan metodologi yang termasuk dalam agile software development. \textit{Scrum} dinilai dapat menghasilkan kualitas perangkat lunak yang baik sesuai dengan keinginan pengguna, dapat digunakan dalam proyek besar maupun kecil, dan mudah untuk mengadopsi perubahan. Sistem ini juga memiliki dua aplikasi yaitu:
 \begin{enumerate}
 	\item Aplikasi Penentuan Lokasi dan Estimasi Jumlah Orang
 	      \newline Aplikasi ini merupakan aplikasi utama berbasis Android yang berfungsi untuk melakukan proses penentuan lokasi dan estimasi jumlah orang yang berada di dalam gedung A Fakultas Matematika dan Ilmu Pengetahuan Alam USK. Aplikasi ini dibangun menggunakan framework \textit{React native} dan dikerjakan oleh diri sendiri.
 
-	\item Aplikasi \textit{Web Service Flask} Untuk Menjalankan Model \textit{Support Vector Machine} (SVM)
-	      \newline Aplikasi \textit{Web Service Flask} merupakan aplikasi utama, yang mana aplikasi \textit{Web Service Flask} ini akan menjalankan model yang telah dihasilkan oleh kode bahasa Python. Aplikasi
+	\item Aplikasi \textit{Web Monitoring}
+	      \newline Aplikasi ini adalah aplikasi utama yang berguna untuk menampilkan data estimasi jumlah orang secara umum atau secara rinci tiap lokasi yang menggunakan algoritma SVM dan \textit{K-Means}. Data hasil algoritma \textit{K-Means} didapatkan dari hasil penelitian rekan peneliti sebab \textit{website monitoring} ini digunakan secara bersama-sama. Data yang disajikan dalam bentuk grafik dan tabel. Aplikasi ini dikerjakan oleh diri sendiri dan rekan penelitian.
 
-	\item Aplikasi \textit{Mapping}
-	      \newline Aplikasi ini merupakan aplikasi pendukung yang berfungsi untuk melakukan pengumpulan data. Data yang dikumpulkan berupa data kekuatan sinyal RSSI berdasarkan lokasi dimana data tersebut diambil. Setelah pengumpulan data selesai dilakukan, data tersebut akan di kirim ke \textit{Web Service GraphQL} dan kemudian akan di simpan ke \textit{Database MongoDB}.
-
-	\item Aplikasi \textit{Web Service GraphQL} Untuk Menyimpan Data \textit{Mapping}
-	      \newline Aplikasi \textit{Web Service GraphQL} merupakan aplikasi pendukung, yang mana aplikasi \textit{Web Service GraphQL} ini akan menyimpan data \textit{mapping} RSSI yang dikirimkan oleh \textit{device} peneliti.
 
 \end{enumerate}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
