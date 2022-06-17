@@ -259,24 +259,14 @@ bankdata.head()
 					\end{lstlisting}
 	      \captionof{lstlisting}{Potongan Kode Program Proses Visualisasi Data Klasifikasi}
 
-	      \par Contoh tampilan isi data sinyal dapat dilihat pada tabel \ref{Contoh-Data-Sinyal}
+	      \par Contoh tampilan visualisasi data sinyal dapat dilihat pada gambar \ref{bankdata}
 
-	      \begin{table}[H]
-		      \center
-		      \fontsize{10}{12}\selectfont
-		      \caption{Tampilan Data Sinyal}
-		      \label{Contoh-Data-Sinyal}
-		      \begin{tabular}{|r|r|r|l|}
-			      \hline
-			      \multicolumn{1}{|l|}{DD:34:02:05:C6:80} & \multicolumn{1}{l|}{DD:34:02:05:C6:91} & \multicolumn{1}{l|}{DD:34:02:05:C6:93} & \multicolumn{1}{c|}{label} \\ \hline
-			      -110                                    & -89                                    & -90                                    & Koridor Lab GIS            \\ \hline
-			      -110                                    & -110                                   & -78                                    & Koridor Lab GIS            \\ \hline
-			      -110                                    & -110                                   & -77                                    & Koridor Lab GIS            \\ \hline
-			      -110                                    & -56                                    & -90                                    & Koridor Lab GIS            \\ \hline
-			      -90                                     & -89                                    & -21                                    & Tangga 2                   \\ \hline
-			      -70                                     & -50                                    & -49                                    & Tangga 2                   \\ \hline
-		      \end{tabular}
-	      \end{table}
+	      \begin{figure}[H]
+		      \centering
+		      \includegraphics[width=14cm, height=9cm]{gambar/bankdata.PNG}
+		      \caption{Visualisasi Data Sinyal}
+		      \label{bankdata}
+	      \end{figure}
 
 	\item Pembuatan File
 	      \\Proses ini akan menghasilkan file yang telah dibuat oleh \textit{library pickle} menggunakan algoritma SVM. Adapun contoh potongan kode Pythonnya seperti berikut:
@@ -419,12 +409,12 @@ def getEstimasi():
 		      \centering
 		      \caption{User Story Aplikasi LocaLization}
 		      \label{user-story-LocaLization}
-		      \begin{tabular}{|c|c|}
+		      \begin{tabular}{|l|l|}
 			      \hline
-			      Sebagai                   & User Story                                                                                                                          \\ \hline
-			      \multirow{3}{*}{Pengguna} & Sebagai pengguna, saya dapat ikut serta sebagai sukarelawan                                                                         \\ \cline{2-2}
-			                                & \begin{tabular}[c]{@{}c@{}}Sebagai pengguna, saya dapat mengetahui estimasi jumlah orang\\ di dalam gedung A FMIPA USK\end{tabular} \\ \cline{2-2}
-			                                & Sebagai pengguna, saya dapat melihat denah gedung A FMIPA USK                                                                       \\ \hline
+			      Sebagai                   & \multicolumn{1}{c|}{User Story}                                                                                                      \\ \hline
+			      \multirow{3}{*}{Pengguna} & Sebagai pengguna, saya dapat ikut serta sebagai sukarelawan                                                                          \\ \cline{2-2}
+			                                & \begin{tabular}[c]{@{}l@{}}Sebagai pengguna, saya dapat mengetahui estimasi jumlah \\ orang di dalam gedung A FMIPA USK\end{tabular} \\ \cline{2-2}
+			                                & \begin{tabular}[c]{@{}l@{}}Sebagai pengguna, saya dapat melihat denah gedung A \\ FMIPA USK\end{tabular}                             \\ \hline
 		      \end{tabular}
 	      \end{table}
 
@@ -434,7 +424,7 @@ def getEstimasi():
 		      \label{LocaLization-sprint-1}
 		      \begin{tabular}{lllll}
 			      \cline{1-2}
-			      \multicolumn{1}{|c|}{\cellcolor[HTML]{CBCEFB}Item}                        & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}Prioritas} &  &  & \\ \cline{1-2}
+			      \multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}Item}                        & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}Prioritas} &  &  & \\ \cline{1-2}
 			      \multicolumn{1}{|l|}{Buat Tombol "Cek Lokasi"}                            & \multicolumn{1}{l|}{Tinggi}                            &  &  & \\ \cline{1-2}
 			      \multicolumn{1}{|l|}{Buat Tampilan Cek Lokasi}                            & \multicolumn{1}{l|}{Tinggi}                            &  &  & \\ \cline{1-2}
 			      \multicolumn{1}{|l|}{Mencari Lokasi Pengguna dengan API}                  & \multicolumn{1}{l|}{Sedang}                            &  &  & \\ \cline{1-2}
@@ -454,8 +444,8 @@ def getEstimasi():
 		      \label{LocaLization-sprint-2}
 		      \begin{tabular}{|l|l|}
 			      \hline
-			      \rowcolor[HTML]{CBCEFB}
-			      \multicolumn{1}{|c|}{\cellcolor[HTML]{CBCEFB}Item}            & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}Prioritas} \\ \hline
+			      \rowcolor[HTML]{FFFFFF}
+			      \multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}Item}            & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}Prioritas} \\ \hline
 			      Add Async Storage                                             & Tinggi                                                 \\ \hline
 			      Ambil data estimasi jumlah orang menggunakan API              & Sedang                                                 \\ \hline
 			      Melakukan integrasi pewarnaan terhadap denah untuk keterangan & Sedang                                                 \\ \hline
@@ -528,17 +518,16 @@ def getEstimasi():
 
 	      \begin{table}[H]
 		      \centering
-		      \caption{Sprint 1 Website Monitoring}
+		      \caption{Sprint 1 \textit{Website Monitoring}}
 		      \label{web-monitoring-sprint-1}
-		      \begin{tabular}{|l|l|}
+		      \begin{tabular}{|l|c|c|}
 			      \hline
-			      \rowcolor[HTML]{CBCEFB}
-			      \multicolumn{1}{|c|}{\cellcolor[HTML]{CBCEFB}Item}                                                                                                       & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}Prioritas} \\ \hline
-			      \begin{tabular}[c]{@{}l@{}}Membuat fitur total estimasi jumlah orang di dalam gedung menggunakan\\ algoritma SVM\end{tabular}                            & Tinggi                                                 \\ \hline
-			      Membuat fitur \textit{login web monitoring}                                                                                                              & Tinggi                                                 \\ \hline
-			      \begin{tabular}[c]{@{}l@{}}Membuat fitur tabel yang menampilkan detail estimasi tiap lokasi\\ di dalam gedung menggunakan algoritma SVM\end{tabular}     & Tinggi                                                 \\ \hline
-			      \begin{tabular}[c]{@{}l@{}}Membuat fitur tabel yang menampilkan detail estimasi tiap lokasi\\ di dalam gedung menggunakan algoritma K means\end{tabular} & Tinggi                                                 \\ \hline
-			      \begin{tabular}[c]{@{}l@{}}Membuat fitur total estimasi jumlah orang di dalam gedung\\ menggunakan algoritma K means\end{tabular}                        & \multicolumn{1}{c|}{Tinggi}                            \\ \hline
+			      \multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}Item}                                                                                                        & Prioritas \\ \hline
+			      \begin{tabular}[c]{@{}l@{}}Membuat fitur total estimasi jumlah orang di dalam gedung\\ menggunakan algoritma SVM\end{tabular}                             & Tinggi    \\ \hline
+			      Membuat fitur login web monitoring                                                                                                                        & Tinggi    \\ \hline
+			      \begin{tabular}[c]{@{}l@{}}Membuat fitur tabel yang menampilkan detail estimasi tiap \\ lokasi di dalam gedung menggunakan algoritma SVM\end{tabular}     & Tinggi    \\ \hline
+			      \begin{tabular}[c]{@{}l@{}}Membuat fitur tabel yang menampilkan detail estimasi tiap \\ lokasi di dalam gedung menggunakan algoritma K-Means\end{tabular} & Tinggi    \\ \hline
+			      \begin{tabular}[c]{@{}l@{}}Membuat fitur total estimasi jumlah orang di dalam gedung\\ menggunakan algoritma SVM dan K-Means\end{tabular}                 & Tinggi    \\ \hline
 		      \end{tabular}
 	      \end{table}
 \end{enumerate}
@@ -550,9 +539,9 @@ def getEstimasi():
 \subsection{Pengujian Keakuratan Prediksi Menggunakan Algoritma SVM}
 \begin{enumerate}
 
-	\item Pengujian Keakuratan Data Testing Menggunakan Algoritma SVM berdasarkan nilai F-Measure
+	\item Pengujian Keakuratan Data Testing Menggunakan Algoritma SVM berdasarkan nilai F1-Score
 
-	      \par Pengujian ini di analisis menggunakan kode Python. Data \textit{training} yang digunakan adalah sebanyak 1638 dan data \textit{testing} sebanyak 410 data. Pengumpulan data dilakukan dengan cara melakukan pemetaan kekuatan sinyal yang telah dijelaskan pada \textbf{BAB III}. Hasil dari proses pengujian metode klasifikasi SVM menunjukkan bahwa untuk data kekuatan sinyal memiliki rata-rata \textit{F-Measure} dengan nilai 95\% . Hasil pengujian data \textit{testing} menggunakan metode SVM ini dapat dilihat pada Tabel \ref{tabelpercobaansvm1}
+	      \par Pengujian ini di analisis menggunakan kode Python. Data \textit{training} yang digunakan adalah sebanyak 1638 dan data \textit{testing} sebanyak 410 data. Pengumpulan data dilakukan dengan cara melakukan pemetaan kekuatan sinyal yang telah dijelaskan pada \textbf{BAB III}. Hasil dari proses pengujian metode klasifikasi SVM menunjukkan bahwa untuk data kekuatan sinyal memiliki rata-rata \textit{F1-Score} dengan nilai 95\%. Hasil pengujian data \textit{testing} menggunakan metode SVM ini dapat dilihat pada Tabel \ref{tabelpercobaansvm1}
 
 	      % Please add the following required packages to your document preamble:
 	      % \usepackage{multirow}
@@ -562,13 +551,13 @@ def getEstimasi():
 		      \label{tabelpercobaansvm1}
 		      \begin{tabular}{|l|c|c|c|c|}
 			      \hline
-			      \multicolumn{1}{|c|}{Kelas Label} & Precision & Recall & F-Measure & Rata-Rata F-Measure   \\ \hline
-			      Koridor Lab Database              & 78\%      & 92\%   & 85\%      & \multirow{6}{*}{95\%} \\ \cline{1-4}
-			      Koridor Lab GIS                   & 97\%      & 87\%   & 92\%      &                       \\ \cline{1-4}
-			      Koridor Lab Jaringan Komputer     & 92\%      & 86\%   & 89\%      &                       \\ \cline{1-4}
-			      Lantai 1                          & 100\%     & 100\%  & 100\%     &                       \\ \cline{1-4}
-			      Tangga 1                          & 99\%      & 97\%   & 98\%      &                       \\ \cline{1-4}
-			      Tangga 2                          & 94\%      & 96\%   & 95\%      &                       \\ \hline
+			      Kelas label          & \multicolumn{1}{l|}{Precision} & \multicolumn{1}{l|}{Recall} & \multicolumn{1}{l|}{F1-Score} & \multicolumn{1}{l|}{Rata-rata F1-Score} \\ \hline
+			      Koridor Lab Database & 78\%                           & 92\%                        & 85\%                          & \multirow{6}{*}{95\%}                   \\ \cline{1-4}
+			      Koridor Lab GIS      & 97\%                           & 87\%                        & 92\%                          &                                         \\ \cline{1-4}
+			      Koridor Lab Jaringan & 92\%                           & 86\%                        & 89\%                          &                                         \\ \cline{1-4}
+			      Lantai 1             & 100\%                          & 100\%                       & 100\%                         &                                         \\ \cline{1-4}
+			      Tangga 1             & 99\%                           & 97\%                        & 98\%                          &                                         \\ \cline{1-4}
+			      Tangga 2             & 94\%                           & 96\%                        & 95\%                          &                                         \\ \hline
 		      \end{tabular}
 	      \end{table}
 
@@ -609,15 +598,15 @@ def getEstimasi():
 	\center
 	\caption{Pengujian \textit{Black box} Aplikasi LocaLization}
 	\label{blackbox-aplikasi-utama}
-	\begin{tabular}{|c|l|l|l|c|}
+	\begin{tabular}{|c|l|l|l|l|}
 		\hline
-		No & \multicolumn{1}{c|}{Nama Pengujian}                                                & \multicolumn{1}{c|}{Skenario}                                                                       & \multicolumn{1}{c|}{Tampilan}                                                                                     & Hasil    \\ \hline
-		1  & \begin{tabular}[c]{@{}l@{}}Menghidupkan \\ bluetooth\end{tabular}                  & \begin{tabular}[c]{@{}l@{}}Tekan "allow" \\ pada notifikasi yang \\ muncul\end{tabular}             & Bluetooth akan aktif                                                                                              & Berhasil \\ \hline
-		2  & \begin{tabular}[c]{@{}l@{}}Lakukan proses \\ pemindaian sinyal \\ BLE\end{tabular} & \begin{tabular}[c]{@{}l@{}}Tekan tombol "cek \\ lokasi" saat berada \\ di dalam gedung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Diarahkan ke halaman \\ denah gedung\end{tabular}                                      & Berhasil \\ \hline
-		3  & \begin{tabular}[c]{@{}l@{}}Lakukan proses \\ pemindaian sinyal\\ BLE\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Tekan tombol "cek \\ lokasi" saat berada \\ di luar gedung\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Diarahkan ke halaman \\ luar gedung\end{tabular}                                       & Berhasil \\ \hline
-		4  & \begin{tabular}[c]{@{}l@{}}Melihat denah dengan \\ keterangan warna\end{tabular}   & \begin{tabular}[c]{@{}l@{}}Menggeser gambar \\ denah\end{tabular}                                   & \begin{tabular}[c]{@{}l@{}}Gambar denah berwarna \\ sesuai dengan keterangan\end{tabular}                         & Berhasil \\ \hline
-		5  & \begin{tabular}[c]{@{}l@{}}Melihat detail jumlah \\ orang\end{tabular}             & \begin{tabular}[c]{@{}l@{}}Tekan tombol "jum-\\ lah orang"\end{tabular}                             & \begin{tabular}[c]{@{}l@{}}Diarahkan ke halaman \\ detail jumlah orang di \\ setiap posisi di gedung\end{tabular} & Berhasil \\ \hline
-	\end{tabular}
+		\multicolumn{1}{|l|}{No} & Nama Pengujian                                                                     & Skenario                                                                                               & Tampilan                                                                                                        & Hasil    \\ \hline
+		1                        & \begin{tabular}[c]{@{}l@{}}Menghidupkan \\ bluetooth\end{tabular}                  & \begin{tabular}[c]{@{}l@{}}Tekan "allow"\\ pada notifikasi\\ yang muncul\end{tabular}                  & Bluetooth akan aktif                                                                                            & Berhasil \\ \hline
+		2                        & \begin{tabular}[c]{@{}l@{}}Lakukan proses\\ pemindaian \\ sinyal BLE\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Tekan tombol \\ "cek lokasi" \\ saat berada di \\ dalam gedung\end{tabular} & \begin{tabular}[c]{@{}l@{}}Diarahkan ke halaman\\ denah gedung\end{tabular}                                     & Berhasil \\ \hline
+		3                        & \begin{tabular}[c]{@{}l@{}}Lakukan proses\\ pemindaian \\ sinyal BLE\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Tekan tombol \\ "cek lokasi" \\ saat berada di \\ luar gedung\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Diarahkan ke halaman\\ luar gedung\end{tabular}                                      & Berhasil \\ \hline
+		4                        & \begin{tabular}[c]{@{}l@{}}Melihat denah \\ dengan keterangan\\ warna\end{tabular} & \begin{tabular}[c]{@{}l@{}}Menggeser\\ gambar denah\end{tabular}                                       & \begin{tabular}[c]{@{}l@{}}Gambar denah berwarna\\ sesuai dengan keterangan\end{tabular}                        & Berhasil \\ \hline
+		5                        & \begin{tabular}[c]{@{}l@{}}Melihat detail\\ jumlah orang\end{tabular}              & \begin{tabular}[c]{@{}l@{}}Tekan tombol\\ "jumlah orang"\end{tabular}                                  & \begin{tabular}[c]{@{}l@{}}Diarahkan ke halaman\\ detail jumlah orang di\\ setiap posisi di gedung\end{tabular} & Berhasil \\ \hline
+	\end{tabular}z
 \end{table}
 
 % BLACKBOX WEB Monitoring%
@@ -625,12 +614,12 @@ def getEstimasi():
 	\centering
 	\caption{Pengujian \textit{Black box} Aplikasi Web Monitoring}
 	\label{blackbox-web-monitoring}
-	\begin{tabular}{|c|l|l|l|c|}
+	\begin{tabular}{|c|l|l|l|l|}
 		\hline
-		\textbf{No} & \multicolumn{1}{c|}{\textbf{Nama Pengujian}}                                 & \multicolumn{1}{c|}{\textbf{Skenario}}                                                                                               & \multicolumn{1}{c|}{\textbf{Tampilan}}                                                                                                     & \textbf{Hasil} \\ \hline
-		1           & \begin{tabular}[c]{@{}l@{}}Melihat halaman\\ \textit{Dashboard}\end{tabular} & \begin{tabular}[c]{@{}l@{}}Masuk ke halaman\\ \textit{web monitoring}\\ https://web-monitoring-\\ five.vercel.app/admin\end{tabular} & \begin{tabular}[c]{@{}l@{}}Muncul Halaman\\ dashboard serta total\\ pengguna yang\\ menggunakan\\ algoritma K Means\\ dan SVM\end{tabular} & Berhasil       \\ \hline
-		2           & \begin{tabular}[c]{@{}l@{}}Melihat detail\\ algoritma SVM\end{tabular}       & \begin{tabular}[c]{@{}l@{}}Tekan pilihan\\ "Algoritma SVM"\end{tabular}                                                              & \begin{tabular}[c]{@{}l@{}}Muncul detail estimasi\\ pengguna algoritma\\ SVM serta\\ keterangannya\end{tabular}                            & Berhasil       \\ \hline
-		3           & \begin{tabular}[c]{@{}l@{}}Melihat detail\\ algoritma K-Means\end{tabular}   & \begin{tabular}[c]{@{}l@{}}Tekan pilihan\\ "Algoritma K-Means"\end{tabular}                                                          & \begin{tabular}[c]{@{}l@{}}Muncul detail estimasi\\ pengguna algoritma\\ K-Means serta\\ keterangannya\end{tabular}                        & Berhasil       \\ \hline
+		\multicolumn{1}{|l|}{No} & Nama Pengujian                                                                 & Skenario                                                                       & Tampilan                                                                                                                                     & Hasil    \\ \hline
+		1                        & \begin{tabular}[c]{@{}l@{}}Melihat halaman\\ dashboard\end{tabular}            & \begin{tabular}[c]{@{}l@{}}Masuk ke halaman\\ web monitoring\end{tabular}      & \begin{tabular}[c]{@{}l@{}}Muncul halaman\\ dashboard serta total\\ pengguna yang\\ menggunakan algo-\\ ritma K-Means dan\\ SVM\end{tabular} & Berhasil \\ \hline
+		2                        & \begin{tabular}[c]{@{}l@{}}Melihat detail\\ algoritma SVM\end{tabular}         & \begin{tabular}[c]{@{}l@{}}Tekan pilihan\\ "Algoritma SVM"\end{tabular}        & \begin{tabular}[c]{@{}l@{}}Muncul detail estimasi\\ pengguna algoritma \\ SVM serta keterangan\end{tabular}                                  & Berhasil \\ \hline
+		3                        & \begin{tabular}[c]{@{}l@{}}Melihat detail \\ algoritma \\ K-Means\end{tabular} & \begin{tabular}[c]{@{}l@{}}Tekan pilihan\\ "Algoritma \\ K-Means"\end{tabular} & \begin{tabular}[c]{@{}l@{}}Muncul detail estimasi\\ pengguna algoritma \\ K-Means serta\\ keterangan\end{tabular}                            & Berhasil \\ \hline
 	\end{tabular}
 \end{table}
 
@@ -667,37 +656,34 @@ def getEstimasi():
 	\centering
 	\caption{\textit{Usability Testing} dengan menggunakan metode UMUX}
 	\label{UMUX}
-	% Please add the following required packages to your document preamble:
-	% \usepackage[table,xcdraw]{xcolor}
-	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
 	\begin{tabular}{|ccccc|c|c|}
 		\hline
-		\rowcolor[HTML]{CBCEFB}
-		\multicolumn{1}{|c|}{\cellcolor[HTML]{CBCEFB}Responden} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}Skor Q1} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}Skor Q2} & \multicolumn{1}{c|}{\cellcolor[HTML]{CBCEFB}Skor Q3} & Skor Q4 & Skor UMUX & Skor UMUX-lite \\ \hline
-		\multicolumn{1}{|c|}{1}                                 & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 1       & 100,00    & 87,90          \\ \hline
-		\multicolumn{1}{|c|}{2}                                 & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 1       & 100,00    & 87,90          \\ \hline
-		\multicolumn{1}{|c|}{3}                                 & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{2}                               & \multicolumn{1}{c|}{7}                               & 1       & 87,50     & 77,06          \\ \hline
-		\multicolumn{1}{|c|}{4}                                 & \multicolumn{1}{c|}{6}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 1       & 95,83     & 82,48          \\ \hline
-		\multicolumn{1}{|c|}{5}                                 & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{6}                               & 2       & 91,67     & 82,48          \\ \hline
-		\multicolumn{1}{|c|}{6}                                 & \multicolumn{1}{c|}{6}                               & \multicolumn{1}{c|}{2}                               & \multicolumn{1}{c|}{6}                               & 1       & 87,50     & 77,06          \\ \hline
-		\multicolumn{1}{|c|}{7}                                 & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 1       & 100,00    & 87,90          \\ \hline
-		\multicolumn{1}{|c|}{8}                                 & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{6}                               & 2       & 91,67     & 82,48          \\ \hline
-		\multicolumn{1}{|c|}{9}                                 & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 1       & 100,00    & 87,9           \\ \hline
-		\multicolumn{1}{|c|}{10}                                & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{2}                               & \multicolumn{1}{c|}{7}                               & 2       & 83,33     & 97,00          \\ \hline
-		\multicolumn{1}{|c|}{11}                                & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{5}                               & \multicolumn{1}{c|}{7}                               & 1       & 83,33     & 87,90          \\ \hline
-		\multicolumn{1}{|c|}{12}                                & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{2}                               & \multicolumn{1}{c|}{6}                               & 1       & 83,33     & 71,65          \\ \hline
-		\multicolumn{1}{|c|}{13}                                & \multicolumn{1}{c|}{6}                               & \multicolumn{1}{c|}{2}                               & \multicolumn{1}{c|}{6}                               & 1       & 87,50     & 77,06          \\ \hline
-		\multicolumn{1}{|c|}{14}                                & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 2       & 95,83     & 87,90          \\ \hline
-		\multicolumn{1}{|c|}{15}                                & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 1       & 100,00    & 87,90          \\ \hline
-		\multicolumn{1}{|c|}{16}                                & \multicolumn{1}{c|}{6}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 2       & 91,67     & 82,48          \\ \hline
-		\multicolumn{1}{|c|}{17}                                & \multicolumn{1}{c|}{6}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{6}                               & 1       & 91,67     & 77,06          \\ \hline
-		\multicolumn{1}{|c|}{18}                                & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 1       & 100,00    & 87,90          \\ \hline
-		\multicolumn{1}{|c|}{19}                                & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{6}                               & 2       & 83,33     & 71,65          \\ \hline
-		\multicolumn{1}{|c|}{20}                                & \multicolumn{1}{c|}{6}                               & \multicolumn{1}{c|}{2}                               & \multicolumn{1}{c|}{6}                               & 2       & 83,33     & 77,06          \\ \hline
-		\multicolumn{1}{|c|}{21}                                & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 1       & 100,00    & 87,90          \\ \hline
-		\multicolumn{1}{|c|}{22}                                & \multicolumn{1}{c|}{7}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{7}                               & 1       & 100,00    & 87,90          \\ \hline
-		\multicolumn{1}{|c|}{23}                                & \multicolumn{1}{c|}{6}                               & \multicolumn{1}{c|}{1}                               & \multicolumn{1}{c|}{6}                               & 2       & 87,50     & 77,06          \\ \hline
-		\multicolumn{5}{|c|}{Rata-rata}                         & 93,84                                                & 84,13                                                                                                                                              \\ \hline
+		\rowcolor[HTML]{FFFFFF}
+		\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}Responden} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}c@{}}Skor \\ Q1\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}c@{}}Skor \\ Q2\end{tabular}} & \multicolumn{1}{c|}{\cellcolor[HTML]{FFFFFF}\begin{tabular}[c]{@{}c@{}}Skor \\ Q3\end{tabular}} & \begin{tabular}[c]{@{}c@{}}Skor \\ Q4\end{tabular} & \begin{tabular}[c]{@{}c@{}}Skor \\ UMUX\end{tabular} & \begin{tabular}[c]{@{}c@{}}Skor \\ UMUX-lite\end{tabular} \\ \hline
+		\multicolumn{1}{|c|}{1}                                 & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 100,00                                               & 87,90                                                     \\ \hline
+		\multicolumn{1}{|c|}{2}                                 & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 100,00                                               & 87,90                                                     \\ \hline
+		\multicolumn{1}{|c|}{3}                                 & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{2}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 87,50                                                & 77,06                                                     \\ \hline
+		\multicolumn{1}{|c|}{4}                                 & \multicolumn{1}{c|}{6}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 95,83                                                & 82,48                                                     \\ \hline
+		\multicolumn{1}{|c|}{5}                                 & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{6}                                                                          & 2                                                  & 91,67                                                & 82,48                                                     \\ \hline
+		\multicolumn{1}{|c|}{6}                                 & \multicolumn{1}{c|}{6}                                                                          & \multicolumn{1}{c|}{2}                                                                          & \multicolumn{1}{c|}{6}                                                                          & 1                                                  & 87,50                                                & 77,06                                                     \\ \hline
+		\multicolumn{1}{|c|}{7}                                 & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 100,00                                               & 87,90                                                     \\ \hline
+		\multicolumn{1}{|c|}{8}                                 & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{6}                                                                          & 2                                                  & 91,67                                                & 82,48                                                     \\ \hline
+		\multicolumn{1}{|c|}{9}                                 & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 100,00                                               & 87,9                                                      \\ \hline
+		\multicolumn{1}{|c|}{10}                                & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{2}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 2                                                  & 83,33                                                & 97,00                                                     \\ \hline
+		\multicolumn{1}{|c|}{11}                                & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{5}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 83,33                                                & 87,90                                                     \\ \hline
+		\multicolumn{1}{|c|}{12}                                & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{2}                                                                          & \multicolumn{1}{c|}{6}                                                                          & 1                                                  & 83,33                                                & 71,65                                                     \\ \hline
+		\multicolumn{1}{|c|}{13}                                & \multicolumn{1}{c|}{6}                                                                          & \multicolumn{1}{c|}{2}                                                                          & \multicolumn{1}{c|}{6}                                                                          & 1                                                  & 87,50                                                & 77,06                                                     \\ \hline
+		\multicolumn{1}{|c|}{14}                                & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 2                                                  & 95,83                                                & 87,90                                                     \\ \hline
+		\multicolumn{1}{|c|}{15}                                & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 100,00                                               & 87,90                                                     \\ \hline
+		\multicolumn{1}{|c|}{16}                                & \multicolumn{1}{c|}{6}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 2                                                  & 91,67                                                & 82,48                                                     \\ \hline
+		\multicolumn{1}{|c|}{17}                                & \multicolumn{1}{c|}{6}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{6}                                                                          & 1                                                  & 91,67                                                & 77,06                                                     \\ \hline
+		\multicolumn{1}{|c|}{18}                                & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 100,00                                               & 87,90                                                     \\ \hline
+		\multicolumn{1}{|c|}{19}                                & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{6}                                                                          & 2                                                  & 83,33                                                & 71,65                                                     \\ \hline
+		\multicolumn{1}{|c|}{20}                                & \multicolumn{1}{c|}{6}                                                                          & \multicolumn{1}{c|}{2}                                                                          & \multicolumn{1}{c|}{6}                                                                          & 2                                                  & 83,33                                                & 77,06                                                     \\ \hline
+		\multicolumn{1}{|c|}{21}                                & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 100,00                                               & 87,90                                                     \\ \hline
+		\multicolumn{1}{|c|}{22}                                & \multicolumn{1}{c|}{7}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{7}                                                                          & 1                                                  & 100,00                                               & 87,90                                                     \\ \hline
+		\multicolumn{1}{|c|}{23}                                & \multicolumn{1}{c|}{6}                                                                          & \multicolumn{1}{c|}{1}                                                                          & \multicolumn{1}{c|}{6}                                                                          & 2                                                  & 87,50                                                & 77,06                                                     \\ \hline
+		\multicolumn{5}{|c|}{Rata-rata}                         & 93,84                                                                                           & 84,13                                                                                                                                                                                                                                                                                                                                                                     \\ \hline
 	\end{tabular}
 \end{table}
 
