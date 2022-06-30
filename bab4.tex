@@ -316,6 +316,15 @@ print(classification_report(y_test,y_pred))
 	      \captionof{lstlisting}{Potongan Kode Program Proses Pengujian Akurasi}
 \end{enumerate}
 
+\par Data \textit{training} yang digunakan adalah sebanyak 1638 dan data \textit{testing} sebanyak 410 data. Pengumpulan data dilakukan dengan cara melakukan pemetaan kekuatan sinyal yang telah dijelaskan pada \textbf{BAB III}. Hasil dari proses pengujian metode klasifikasi SVM menunjukkan bahwa untuk data kekuatan sinyal memiliki rata-rata \textit{F1-Score} dengan nilai 95\%. Hasil pengujian data \textit{testing} menggunakan metode SVM ini dapat dilihat pada Gambar \ref{hasil-akurasi}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=13cm, height=5cm]{gambar/confusionmatrix.PNG}
+	\caption{Hasil Akurasi Data \textit{Testing}}
+	\label{hasil-akurasi}
+\end{figure}
+
 \section{PEMBUATAN SISTEM}
 \par Proses pembuatan sistem adalah tahapan implementasi dari hasil rancangan sebelumnya. Aplikasi-aplikasi yang akan dibuat adalah sebagai berikut:
 \begin{enumerate}[1.]
@@ -536,58 +545,53 @@ def getEstimasi():
 
 \par Proses ini bertujuan untuk melihat apakah sistem yang sudah di bangun sesuai dengan rancangan. Adapun beberapa pengujian yang akan dilakukan adalah pengujian keakuratan hasil menggunakan algoritma SVM, pengujian \textit{usability} dengan menggunakan metode UMUX dan pengujian fungsionalitas menggunakan metode \textit{Black box}.
 
-\subsection{Pengujian Keakuratan Prediksi Menggunakan Algoritma SVM}
-\begin{enumerate}
+\subsection{Pengujian Keakuratan Algoritma SVM Berdasarkan Penggunaan Aplikasi pada Setiap Lokasi di dalam Gedung A FMIPA USK}
 
-	\item Pengujian Keakuratan Data Testing Menggunakan Algoritma SVM berdasarkan nilai F1-Score
+\par Pengujian ini dilakukan bertujuan untuk menganalisis keakuratan algoritma SVM di setiap lokasi di dalam gedung A FMIPA USK. Peneliti akan menjalankan aplikasi utama berbasis Android di setiap label, masing-masing label akan diujicoba sebanyak 20 kali. Dari percobaan 20 kali pada sebuah label, maka akan dilihat berapakah yang benar diprediksi dan berapakah yang salah. Hasil dari proses pengujian metode klasifikasi SVM ini menunjukkan hasil sebesar 92,5\%.  Hasil pengujian menggunakan metode SVM pada setiap label ini dapat dilihat pada Tabel \ref{tabelpercobaansvm2}
 
-	      \par Pengujian ini di analisis menggunakan kode Python. Data \textit{training} yang digunakan adalah sebanyak 1638 dan data \textit{testing} sebanyak 410 data. Pengumpulan data dilakukan dengan cara melakukan pemetaan kekuatan sinyal yang telah dijelaskan pada \textbf{BAB III}. Hasil dari proses pengujian metode klasifikasi SVM menunjukkan bahwa untuk data kekuatan sinyal memiliki rata-rata \textit{F1-Score} dengan nilai 95\%. Hasil pengujian data \textit{testing} menggunakan metode SVM ini dapat dilihat pada Tabel \ref{tabelpercobaansvm1}
+% Please add the following required packages to your document preamble:
+% \usepackage{multirow}
+% \usepackage[table,xcdraw]{xcolor}
+% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+% \begin{table}[H]
+% 	\center
+% 	\caption{Analisis Keakuratan SVM pada setiap lokasi atau label}
+% 	\label{tabelpercobaansvm2}
+% 	\begin{tabular}{|lccccccccccc|}
+% 		\hline
+% 		\multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}}                        & \multicolumn{11}{c|}{\cellcolor[HTML]{EFEFEF}Percobaan}                                                                                                                                                                                                                                                   \\ \cline{2-12}
+% 		\multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Label}} & \multicolumn{1}{c|}{1}                                  & \multicolumn{1}{c|}{2}  & \multicolumn{1}{c|}{3}  & \multicolumn{1}{c|}{4}  & \multicolumn{1}{c|}{5}  & \multicolumn{1}{c|}{6}  & \multicolumn{1}{c|}{7}  & \multicolumn{1}{c|}{8}  & \multicolumn{1}{c|}{9}  & \multicolumn{1}{c|}{10} & Hasil \\ \hline
+% 		\multicolumn{1}{|l|}{Tangga 1}                                        & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 90\%  \\ \hline
+% 		\multicolumn{1}{|l|}{Tangga 2}                                        & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 70\%  \\ \hline
+% 		\multicolumn{1}{|l|}{Koridor Lab Jaringan}                            & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 90\%  \\ \hline
+% 		\multicolumn{1}{|l|}{Koridor Lab Database}                            & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & 80\%  \\ \hline
+% 		\multicolumn{1}{|l|}{Koridor Lab GIS}                                 & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 100\% \\ \hline
+% 		\multicolumn{1}{|l|}{Lantai 1}                                        & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 90\%  \\ \hline
+% 		\multicolumn{11}{|c|}{Rata-rata}                                      & 86,67\%                                                                                                                                                                                                                                                                                                   \\ \hline
+% 	\end{tabular}
+% \end{table}
 
-	      % Please add the following required packages to your document preamble:
-	      % \usepackage{multirow}
-	      \begin{table}[H]
-		      \center
-		      \caption{Analisis Keakuratan SVM pada setiap lokasi atau label}
-		      \label{tabelpercobaansvm1}
-		      \begin{tabular}{|l|c|c|c|c|}
-			      \hline
-			      Kelas label          & \multicolumn{1}{l|}{Precision} & \multicolumn{1}{l|}{Recall} & \multicolumn{1}{l|}{F1-Score} & \multicolumn{1}{l|}{Rata-rata F1-Score} \\ \hline
-			      Koridor Lab Database & 78\%                           & 92\%                        & 85\%                          & \multirow{6}{*}{95\%}                   \\ \cline{1-4}
-			      Koridor Lab GIS      & 97\%                           & 87\%                        & 92\%                          &                                         \\ \cline{1-4}
-			      Koridor Lab Jaringan & 92\%                           & 86\%                        & 89\%                          &                                         \\ \cline{1-4}
-			      Lantai 1             & 100\%                          & 100\%                       & 100\%                         &                                         \\ \cline{1-4}
-			      Tangga 1             & 99\%                           & 97\%                        & 98\%                          &                                         \\ \cline{1-4}
-			      Tangga 2             & 94\%                           & 96\%                        & 95\%                          &                                         \\ \hline
-		      \end{tabular}
-	      \end{table}
+\vspace{-0.2cm}
+\begin{landscape}
+	\begin{table}[H]
+		\center
+		\caption{Analisis Keakuratan SVM pada setiap lokasi atau label}
+		\label{tabelpercobaansvm2}
+		\begin{tabular}{|l|cccccccccccccccccccc|c|c|}
+			\hline
+			\multirow{2}{*}{}    & \multicolumn{20}{c|}{Pengujian Akurasi Aplikasi LocaLization} & \multicolumn{1}{l|}{}  & \multicolumn{1}{l|}{}                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \cline{2-23}
+			                     & \multicolumn{1}{c|}{1}                                        & \multicolumn{1}{c|}{2} & \multicolumn{1}{c|}{3} & \multicolumn{1}{c|}{4} & \multicolumn{1}{c|}{5} & \multicolumn{1}{c|}{6} & \multicolumn{1}{c|}{7} & \multicolumn{1}{c|}{8} & \multicolumn{1}{c|}{9} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{11} & \multicolumn{1}{c|}{12} & \multicolumn{1}{c|}{13} & \multicolumn{1}{c|}{14} & \multicolumn{1}{c|}{15} & \multicolumn{1}{c|}{16} & \multicolumn{1}{c|}{17} & \multicolumn{1}{c|}{18} & \multicolumn{1}{c|}{19} & 20 & jumlah & rata-rata \\ \hline
+			tangga 1             & \multicolumn{1}{c|}{1}                                        & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & 1  & 19     & 95\%      \\ \hline
+			tangga 2             & \multicolumn{1}{c|}{1}                                        & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & 1  & 18     & 90\%      \\ \hline
+			koridor lab GIS      & \multicolumn{1}{c|}{1}                                        & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{0}  & 1  & 19     & 95\%      \\ \hline
+			koridor lab database & \multicolumn{1}{c|}{1}                                        & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{0} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & 1  & 17     & 85\%      \\ \hline
+			koridor lab jaringan & \multicolumn{1}{c|}{1}                                        & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & 1  & 18     & 90\%      \\ \hline
+			lantai 1             & \multicolumn{1}{c|}{1}                                        & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1} & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & \multicolumn{1}{c|}{1}  & 1  & 20     & 100\%     \\ \hline
+			                     & \multicolumn{20}{c|}{rata-rata}                               & 18,5                   & 92,5\%                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \\ \hline
+		\end{tabular}
+	\end{table}
+\end{landscape}
 
-	\item Pengujian Keakuratan Algoritma SVM Berdasarkan Penggunaan Aplikasi pada Setiap Lokasi di dalam Gedung A FMIPA USK.
-
-	      \par Pengujian ini dilakukan bertujuan untuk menganalisis keakuratan algoritma SVM di setiap lokasi di dalam gedung A FMIPA USK. Peneliti akan menjalankan aplikasi utama berbasis Android di setiap label, masing-masing label akan diujicoba sebanyak 10 kali. Dari percobaan 10 kali pada sebuah label, maka akan dilihat berapakah yang benar diprediksi dan berapakah yang salah. Hasil dari proses pengujian metode klasifikasi SVM ini menunjukkan hasil sebesar 86,67\%.  Hasil pengujian menggunakan metode SVM pada setiap label ini dapat dilihat pada Tabel \ref{tabelpercobaansvm2}
-
-	      % Please add the following required packages to your document preamble:
-	      % \usepackage{multirow}
-	      % \usepackage[table,xcdraw]{xcolor}
-	      % If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
-	      \begin{table}[H]
-		      \center
-		      \caption{Analisis Keakuratan SVM pada setiap lokasi atau label}
-		      \label{tabelpercobaansvm2}
-		      \begin{tabular}{|lccccccccccc|}
-			      \hline
-			      \multicolumn{1}{|c|}{\cellcolor[HTML]{EFEFEF}}                        & \multicolumn{11}{c|}{\cellcolor[HTML]{EFEFEF}Percobaan}                                                                                                                                                                                                                                                   \\ \cline{2-12}
-			      \multicolumn{1}{|c|}{\multirow{-2}{*}{\cellcolor[HTML]{EFEFEF}Label}} & \multicolumn{1}{c|}{1}                                  & \multicolumn{1}{c|}{2}  & \multicolumn{1}{c|}{3}  & \multicolumn{1}{c|}{4}  & \multicolumn{1}{c|}{5}  & \multicolumn{1}{c|}{6}  & \multicolumn{1}{c|}{7}  & \multicolumn{1}{c|}{8}  & \multicolumn{1}{c|}{9}  & \multicolumn{1}{c|}{10} & Hasil \\ \hline
-			      \multicolumn{1}{|l|}{Tangga 1}                                        & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 90\%  \\ \hline
-			      \multicolumn{1}{|l|}{Tangga 2}                                        & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 70\%  \\ \hline
-			      \multicolumn{1}{|l|}{Koridor Lab Jaringan}                            & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 90\%  \\ \hline
-			      \multicolumn{1}{|l|}{Koridor Lab Database}                            & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & 80\%  \\ \hline
-			      \multicolumn{1}{|l|}{Koridor Lab GIS}                                 & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 100\% \\ \hline
-			      \multicolumn{1}{|l|}{Lantai 1}                                        & \multicolumn{1}{c|}{10}                                 & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{0}  & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & \multicolumn{1}{c|}{10} & 90\%  \\ \hline
-			      \multicolumn{11}{|c|}{Rata-rata}                                      & 86,67\%                                                                                                                                                                                                                                                                                                   \\ \hline
-		      \end{tabular}
-	      \end{table}
-
-\end{enumerate}
 
 \subsection{Pengujian Fungsionalitas Menggunakan Black box}
 \par Tujuan pengujian \textit{black box} adalah untuk menguji fungsionalitas dari aplikasi yang telah dibuat dengan cara menjalankan aplikasi tersebut apakah sesuai dengan alur bisnis yang diinginkan atau tidak. Proses ini melihat fungsi yang tidak sesuai pada aplikasi dan kesalahan-kesalahan aplikasi dalam mengerjakan suatu perintah. Pengujian \textit{black box} dilakukan pada aplikasi utama berbasis Android yaitu aplikasi LocaLization dan aplikasi \textit{web monitoring}. Beberapa fitur aplikasi yang diuji menggunakan metode \textit{black box} dapat dilihat pada Tabel \ref{blackbox-aplikasi-utama}, dan Tabel \ref{blackbox-web-monitoring}

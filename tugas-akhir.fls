@@ -1,6 +1,6 @@
-PWD d:\Punya Liza\.KULIAH\TUGAS AKHIR\HASIL PENELITIAN\HASIL TA INSYAALLAH FIX\Hasil\Latexproposal
+PWD d:\KULIAH\TUGAS AKHIR\HASIL PENELITIAN\HASIL TA INSYAALLAH FIX\Hasil\Latexproposal
 INPUT C:\Users\ACER\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT d:\Punya Liza\.KULIAH\TUGAS AKHIR\HASIL PENELITIAN\HASIL TA INSYAALLAH FIX\Hasil\Latexproposal\tugas-akhir.tex
+INPUT d:\KULIAH\TUGAS AKHIR\HASIL PENELITIAN\HASIL TA INSYAALLAH FIX\Hasil\Latexproposal\tugas-akhir.tex
 OUTPUT tugas-akhir.log
 INPUT .\jifhasil.cls
 INPUT .\jifhasil.cls
@@ -1350,6 +1350,13 @@ INPUT .\gambar\strukturcodemodel.png
 INPUT .\gambar\strukturcodemodel.png
 INPUT .\gambar\strukturcodemodel.png
 INPUT .\gambar\strukturcodemodel.png
+INPUT .\gambar\confusionmatrix.PNG
+INPUT .\gambar\confusionmatrix.PNG
+INPUT gambar\confusionmatrix.PNG
+INPUT .\gambar\confusionmatrix.PNG
+INPUT .\gambar\confusionmatrix.PNG
+INPUT .\gambar\confusionmatrix.PNG
+INPUT .\gambar\confusionmatrix.PNG
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
 INPUT C:\Users\ACER\AppData\Local\Programs\MiKTeX\tex\latex\listings\lstlang1.sty
